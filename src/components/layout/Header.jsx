@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logoImage from "./assets/logo.png";
+import logoImage from "./assets/logo_large.png";
 import "./header.css";
 import { Link } from "react-router-dom";
 
@@ -13,7 +13,7 @@ const Header = ({ navLinks }) => {
     <header>
       <nav className="container grid nav-bar">
         <HashLink className="nav-bar-logo" to="/">
-          <img src={logoImage} alt="Little Lemon logo" />
+          <img src={logoImage} alt="SerLopez Logo" />
         </HashLink>
         <button
           className="nav-bar-hamburger"

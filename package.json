@@ -2,9 +2,9 @@
   "name": "site_web_2.0",
   "homepage": ".",
   "repository": {
-  "type": "git",
-  "url": ""
-},
+    "type": "git",
+    "url": ""
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
