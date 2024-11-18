@@ -7,8 +7,8 @@ const Hero = () => {
     <section className="hero">
       <div className="container grid">
         <div className="hero-information">
-          <h1>Little Lemon</h1>
-          <h2>Chicago</h2>
+          <h1>Sergio Lopez</h1>
+          <h2>Developer Front-End</h2>
           <p>
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.

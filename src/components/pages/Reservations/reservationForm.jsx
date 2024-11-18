@@ -3,26 +3,24 @@ import { Formik } from "formik";
 import FormField from "./formField";
 import emailjs from '@emailjs/browser';
 
-const ReservationForm = ({ availableTimes, dispatchOnDateChange, submitData }) => {
-  const minimumDate = new Date().toISOString().split("T")[0];
-  const minimumNumberOfGuests = 1;
-  const maximumNumberOfGuests = 10;
+const ReservationForm = ({ submitData }) => {
   const occasions = ["Birthday", "Anniversary", "Engagement", "Other"];
 
   return (
     <Formik
       initialValues={{
-        name: "",
+        firstName: "",
+        lastName: "",
         mail: "",
-        date: minimumDate,
-        time: availableTimes[0],
-        numberOfGuests: minimumNumberOfGuests,
         occasion: occasions[0],
       }}
       validate={(values) => {
         const errors = {};
-        if (!values.name) {
-          errors.name = "Please enter your name";
+        if (!values.firstName) {
+          errors.firstName = "Please enter your first name";
+        }
+        if (!values.lastName) {
+          errors.lastName = "Please enter your last name";
         }
         if (!values.mail) {
           errors.mail = "Please enter an email";
@@ -30,15 +28,6 @@ const ReservationForm = ({ availableTimes, dispatchOnDateChange, submitData }) =
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.mail)
         ) {
           errors.mail = "Invalid email address";
-        }
-        if (!values.date) {
-          errors.date = "Please choose a valid date";
-        }
-        if (!values.time) {
-          errors.time = "Please choose a valid time";
-        }
-        if (!values.numberOfGuests || values.numberOfGuests < minimumNumberOfGuests || values.numberOfGuests > maximumNumberOfGuests) {
-          errors.numberOfGuests = `Please enter a number between ${minimumNumberOfGuests} and ${maximumNumberOfGuests}`;
         }
         if (!values.occasion) {
           errors.occasion = "Please choose a valid occasion";
@@ -79,16 +68,28 @@ const ReservationForm = ({ availableTimes, dispatchOnDateChange, submitData }) =
         isSubmitting,
       }) => (
         <form onSubmit={handleSubmit}>
-          <FormField label="Name" htmlFor="reservation-name">
+          <FormField label="First Name" htmlFor="reservation-first-name">
             <input
               type="text"
-              name="name"
-              id="reservation-name"
+              name="firstName"
+              id="reservation-first-name"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.name}
+              value={values.firstName}
             />
-            {errors.name && touched.name && <div className="error">{errors.name}</div>}
+            {errors.firstName && touched.firstName && <div className="error">{errors.firstName}</div>}
+          </FormField>
+
+          <FormField label="Last Name" htmlFor="reservation-last-name">
+            <input
+              type="text"
+              name="lastName"
+              id="reservation-last-name"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.lastName}
+            />
+            {errors.lastName && touched.lastName && <div className="error">{errors.lastName}</div>}
           </FormField>
 
           <FormField label="Email address" htmlFor="reservation-mail">
@@ -101,55 +102,6 @@ const ReservationForm = ({ availableTimes, dispatchOnDateChange, submitData }) =
               value={values.mail}
             />
             {errors.mail && touched.mail && <div className="error">{errors.mail}</div>}
-          </FormField>
-
-          <FormField label="Date" htmlFor="reservation-date">
-            <input
-              type="date"
-              name="date"
-              id="reservation-date"
-              min={minimumDate}
-              onChange={(e) => {
-                handleChange(e);
-                dispatchOnDateChange(e.target.value);
-              }}
-              onBlur={handleBlur}
-              value={values.date}
-            />
-            {errors.date && touched.date && <div className="error">{errors.date}</div>}
-          </FormField>
-
-          <FormField label="Time" htmlFor="reservation-time">
-            <select
-              name="time"
-              id="reservation-time"
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.time}
-            >
-              {availableTimes.map((time) => (
-                <option key={time} value={time}>
-                  {time}
-                </option>
-              ))}
-            </select>
-            {errors.time && touched.time && <div className="error">{errors.time}</div>}
-          </FormField>
-
-          <FormField label="Number of guests" htmlFor="reservation-number-guests">
-            <input
-              type="number"
-              name="numberOfGuests"
-              id="reservation-number-guests"
-              min={minimumNumberOfGuests}
-              max={maximumNumberOfGuests}
-              onChange={handleChange}
-              onBlur={handleBlur}
-              value={values.numberOfGuests}
-            />
-            {errors.numberOfGuests && touched.numberOfGuests && (
-              <div className="error">{errors.numberOfGuests}</div>
-            )}
           </FormField>
 
           <FormField label="Occasion" htmlFor="reservation-occasion">

@@ -23,8 +23,8 @@ const Layout = ({ children }) => {
       path: "/reservations",
       hashLink: false,
     },
-    {
-      name: "Order Online",
+    /*{
+      name: "Order On",
       path: "/orderOnline",
       hashLink: false,
     },
@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       name: "Login",
       path: "/login",
       hashLink: false,
-    },
+    },*/
   ];
 
   return (
