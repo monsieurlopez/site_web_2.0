@@ -33,16 +33,16 @@ const meals = [
 const WeekSpecials = () => {
 
   const handleClick = () => {
-    const imageUrl = require("../../layout/assets/menu.webp");
+    const imageUrl = require("../../layout/assets/CV_Sergio_LOPEZ.pdf");
     window.open(imageUrl, "_blank", "noopener,noreferrer");
   };
 
   return (
     <section className="container grid week-specials" id="menu">
       <div className="week-specials-header">
-        <h2>This week specials!</h2>
+        <h2>Portfolio</h2>
         <HashLink className="button-primary" to="/#menu" onClick={handleClick}>
-          Online Menu
+          Download CV
         </HashLink>
       </div>
       {meals.map((meal, index) => (

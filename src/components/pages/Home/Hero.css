@@ -1,11 +1,20 @@
 .hero {
   padding-top: 1.875rem;
-  background-color: #495e57;
+  position: relative;
+  background-image: url('/src/components/pages/Home/assets/fondo_web.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 2rem 0;
 }
 
 .hero .container {
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero-information {
@@ -13,14 +22,14 @@
 }
 
 .hero-information h1 {
-  color: #f4ce14;
+  color: #4c4b5a;
   font-size: 3.5rem;
   height: 2.5rem;
   line-height: 2.5rem;
 }
 
 .hero-information h2 {
-  color: #ffffff;
+  color: #716f85;
   font-size: 2.25rem;
   height: 2.25rem;
   line-height: 2.25rem;
@@ -28,7 +37,7 @@
 
 .hero-information p {
   margin-top: 1.5rem;
-  color: #ffffff;
+  color: #716f85;
   font-size: 1.125rem;
 }
 

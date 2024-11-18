@@ -4,7 +4,6 @@ import FormField from "./formField";
 import emailjs from '@emailjs/browser';
 
 const ReservationForm = ({ submitData }) => {
-  const occasions = ["Birthday", "Anniversary", "Engagement", "Other"];
 
   return (
     <Formik
@@ -12,7 +11,8 @@ const ReservationForm = ({ submitData }) => {
         firstName: "",
         lastName: "",
         mail: "",
-        occasion: occasions[0],
+        subject: "",
+        message: "",
       }}
       validate={(values) => {
         const errors = {};
@@ -29,21 +29,24 @@ const ReservationForm = ({ submitData }) => {
         ) {
           errors.mail = "Invalid email address";
         }
-        if (!values.occasion) {
-          errors.occasion = "Please choose a valid occasion";
+        if (!values.subject) {
+          errors.subject = "Please enter a subject";
+        }
+        if (!values.message) {
+          errors.message = "Please enter a message";
         }
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
         const service_id = 'service_i3vng1m';
-        const template_id = 'template_ueghurd';
+        const template_id = 'template_cepy6gg';
         const public_id = 'gbtOYXQ6SZQAOaHko';
 
         const templateParams = {
-          from_name: "Little Lemon",
+          from_name: `${values.firstName} ${values.lastName}`,
           user_email: values.mail,
-          to_name: values.name,
-          message: `You have a reservation on ${values.date} at ${values.time} for ${values.numberOfGuests} guests.`,
+          subject: values.subject,
+          message: values.message,
         };
 
         emailjs.send(service_id, template_id, templateParams, public_id)
@@ -104,21 +107,27 @@ const ReservationForm = ({ submitData }) => {
             {errors.mail && touched.mail && <div className="error">{errors.mail}</div>}
           </FormField>
 
-          <FormField label="Occasion" htmlFor="reservation-occasion">
-            <select
-              name="occasion"
-              id="reservation-occasion"
+          <FormField label="Subject" htmlFor="reservation-subjet">
+            <input
+              type="text"
+              name="subject"
+              id="reservation-subjet"
               onChange={handleChange}
               onBlur={handleBlur}
-              value={values.occasion}
-            >
-              {occasions.map((occasion) => (
-                <option key={occasion} value={occasion}>
-                  {occasion}
-                </option>
-              ))}
-            </select>
-            {errors.occasion && touched.occasion && <div className="error">{errors.occasion}</div>}
+              value={values.subject}
+            />
+            {errors.subject && touched.subject && <div className="error">{errors.subject}</div>}
+          </FormField>
+
+          <FormField label="Message" htmlFor="reservation-message">
+            <textarea
+              name="message"
+              id="reservation-message"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.message}
+            />
+            {errors.message && touched.message && <div className="error">{errors.message}</div>}
           </FormField>
 
           <button
@@ -126,7 +135,7 @@ const ReservationForm = ({ submitData }) => {
             type="submit"
             disabled={isSubmitting}
           >
-            Reserve now!
+            Send
           </button>
         </form>
       )}

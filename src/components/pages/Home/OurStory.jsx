@@ -1,12 +1,12 @@
-import chefsMarioAndAdrian1Img from "./assets/chefs-mario-and-adrian_1.jpg";
-import chefsMarioAndAdrian2Img from "./assets/chefs-mario-and-adrian_2.jpg";
+import chefsMarioAndAdrian1Img from "./assets/foto_pc.jpg";
+import chefsMarioAndAdrian2Img from "./assets/foto_linkedin1.jpeg";
 import "./OurStory.css";
 
 const OurStory = () => {
   return (
     <section className="container grid our-story" id="about">
       <div className="our-story-description">
-        <h2>Our Story</h2>
+        <h2>About me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

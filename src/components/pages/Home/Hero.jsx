@@ -1,5 +1,4 @@
 import { HashLink } from "react-router-hash-link";
-import restaurantFoodImage from "./assets/restaurant-food.jpg";
 import "./Hero.css";
 
 const Hero = () => {
@@ -8,20 +7,15 @@ const Hero = () => {
       <div className="container grid">
         <div className="hero-information">
           <h1>Sergio Lopez</h1>
-          <h2>Developer Front-End</h2>
+          <h2>Front-End Developer</h2>
           <p>
-            We are a family owned Mediterranean restaurant, focused on
-            traditional recipes served with a modern twist.
+          Dedicated to crafting seamless and visually engaging user experiences.
+          I strive to transform ideas into functional, user-friendly digital solutions.
           </p>
           <HashLink className="button-primary" to="/reservations">
-            Reserve a table
+            Contact me now!
           </HashLink>
         </div>
-        <img
-          className="hero-image"
-          src={restaurantFoodImage}
-          alt="Restaurant food"
-        />
       </div>
     </section>
   );

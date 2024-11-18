@@ -4,19 +4,18 @@ import { useLocation } from "react-router-dom";
 
 const ConfirmedReservation = () => {
   const location = useLocation();
-  const { firstName, lastName, mail, occasion } = location.state || {};
+  const { firstName, lastName, mail, subject, message } = location.state || {};
 
   return (
     <div className="container confirmed-reservation">
       <FontAwesomeIcon icon={faCircleCheck} size="3x" />
-      <h2>Your table has been reserved!</h2>
-      <p>You'll receive a confirmation email with all the details.</p>
+      <h2>Your message has been envoyed!</h2>
       <div className="reservation-summary">
-        <h3>Reservation Details</h3>
-        <p><strong>First Name:</strong> {firstName}</p>
-        <p><strong>Last Name:</strong> {lastName}</p>
+        <h3>Message Details</h3>
+        <p><strong>Name:</strong> {firstName} {lastName}</p>
         <p><strong>Email:</strong> {mail}</p>
-        <p><strong>Occasion:</strong> {occasion}</p>
+        <p><strong>Subject:</strong> {subject}</p>
+        <p><strong>Message:</strong> {message}</p>
       </div>
     </div>
   );

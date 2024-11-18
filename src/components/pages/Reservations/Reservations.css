@@ -83,3 +83,13 @@
     grid-column: 1 / span 1;
   }
 }
+
+#reservation-message{
+  padding: 0.5rem 0.5rem;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  background: #ffffff;
+  color: #495e57;
+  cursor: pointer;
+}
