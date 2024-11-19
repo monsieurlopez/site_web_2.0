@@ -36,7 +36,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
-        <h2>Testimonials</h2>
+        <h2>Skills</h2>
         {customers.map((customer, index) => (
           <TestimonialCard key={index} customer={customer} />
         ))}

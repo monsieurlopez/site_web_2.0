@@ -1,6 +1,13 @@
 .testimonials {
   padding: 2rem 0;
   background-color: #495E57;
+  /*padding-top: 1.875rem;
+  position: relative;
+  background-image: url('/src/components/pages/Home/assets/fondo_web_2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 2rem 0;*/
 }
 
 .testimonials .container {

@@ -1,5 +1,5 @@
 import chefsMarioAndAdrian1Img from "./assets/foto_pc.jpg";
-import chefsMarioAndAdrian2Img from "./assets/foto_linkedin1.jpeg";
+import chefsMarioAndAdrian2Img from "./assets/foto_linkedin1.jpg";
 import "./OurStory.css";
 
 const OurStory = () => {
