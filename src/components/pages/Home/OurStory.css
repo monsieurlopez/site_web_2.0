@@ -16,29 +16,18 @@
   grid-column: 2;
   position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  height: 25.5rem;
-  margin: auto 0;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 .our-story-chefs img {
-  position: absolute;
-  width: 23.5rem;
-  height: 15.75rem;
+  max-width: 70%;
+  height: auto;
   border-radius: 1rem;
   object-fit: cover;
-  object-position: 78% 50%;
-}
-
-.our-story-chefs img:nth-of-type(1) {
-  top: 0;
-  right: 0;
-}
-
-.our-story-chefs img:nth-of-type(2) {
-  bottom: 0;
-  left: 0;
 }
 
 @media (max-width: 915px) {

@@ -73,3 +73,24 @@
     grid-row: auto;
   }
 }
+
+.meal-badges {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los badges se ajusten a múltiples líneas si son demasiados */
+  gap: 0.2rem; /* Espaciado entre los badges */
+  margin-top: 0.5rem;
+}
+
+.meal-badge {
+  background-color: #f0f0f0; /* Fondo claro */
+  color: #333; /* Color del texto */
+  padding: 0.3rem 0.8rem; /* Espaciado interno del badge */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  font-size: 0.85rem; /* Tamaño de fuente */
+  font-weight: 500; /* Peso del texto */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+  white-space: nowrap; /* Evita que el texto del badge se quiebre */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+

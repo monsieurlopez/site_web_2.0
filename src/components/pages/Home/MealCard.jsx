@@ -1,6 +1,5 @@
-import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { HashLink } from "react-router-hash-link";
 import "./MealCard.css";
 
 const MealCard = ({ meal }) => {
@@ -11,13 +10,19 @@ const MealCard = ({ meal }) => {
       </div>
       <div className="meal-card-header">
         <h3>{meal.name}</h3>
-        <span>{meal.price}</span>
+        <a href={meal.url} target="_blank" rel="noopener noreferrer" className="meal-card-link-icon">
+          <FontAwesomeIcon icon={faLink} />
+        </a>
       </div>
       <div className="meal-card-body-footer">
         <p>{meal.description}</p>
-        <HashLink to="/orderOnline">
-          Order a delivery <FontAwesomeIcon icon={faMotorcycle} />
-        </HashLink>
+        <div className="meal-badges">
+          {meal.badges.map((badge, index) => (
+            <span key={index} className="meal-badge">
+              {badge}
+            </span>
+          ))}
+        </div>
       </div>
     </article>
   );

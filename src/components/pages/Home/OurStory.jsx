@@ -1,5 +1,4 @@
-import chefsMarioAndAdrian1Img from "./assets/foto_pc.jpg";
-import chefsMarioAndAdrian2Img from "./assets/foto_linkedin1.jpg";
+import chefsMarioAndAdrian1Img from "./assets/personal_photo.jpg";
 import "./OurStory.css";
 
 const OurStory = () => {
@@ -8,24 +7,13 @@ const OurStory = () => {
       <div className="our-story-description">
         <h2>About me</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Sed ut
-          perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-          voluptatem sequi nesciunt.
+        I am passionate about computers, which is why in 2023 I decided to make a career change into the world of web development. 
+        <br/><br/>After working for eight years in the financial sector, covering areas such as marketing, recruitment, and training, 
+        I decided to make a significant shift in my professional profile to enter the field of web development.
         </p>
       </div>
       <div className="our-story-chefs">
         <img src={chefsMarioAndAdrian1Img} alt="Chefs Mario and Adrian #1" />
-        <img src={chefsMarioAndAdrian2Img} alt="Chefs Mario and Adrian #2" />
       </div>
     </section>
   );
