@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HashLink } from "react-router-hash-link";
 import "./footer.css";
-import logoWhiteImage from "./assets/logo_white_large.png";
+import logoWhiteImage from "./assets/logo_large.png";
 
 const socials = [
   { icon: faGithub, url: "https://github.com/monsieurlopez" },
@@ -20,7 +20,7 @@ const Footer = ({ navLinks }) => {
       <img
         className="site-footer-logo"
         src={logoWhiteImage}
-        alt="Little Lemon"
+        alt="SerLopez"
       />
       <nav className="site-footer-nav">
         <h4>Sitemap</h4>

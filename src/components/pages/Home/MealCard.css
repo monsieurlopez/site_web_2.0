@@ -74,6 +74,13 @@
   }
 }
 
+.meal-card-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .meal-badges {
   display: flex;
   flex-wrap: wrap; /* Permite que los badges se ajusten a múltiples líneas si son demasiados */

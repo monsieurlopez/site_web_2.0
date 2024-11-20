@@ -1,5 +1,6 @@
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./MealCard.css";
 
 const MealCard = ({ meal }) => {
@@ -10,9 +11,14 @@ const MealCard = ({ meal }) => {
       </div>
       <div className="meal-card-header">
         <h3>{meal.name}</h3>
-        <a href={meal.url} target="_blank" rel="noopener noreferrer" className="meal-card-link-icon">
-          <FontAwesomeIcon icon={faLink} />
-        </a>
+        <div className="meal-card-icons">
+          <a href={meal.github} target="_blank" rel="noopener noreferrer" className="meal-card-github-icon">
+          <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href={meal.url} target="_blank" rel="noopener noreferrer" className="meal-card-link-icon">
+            <FontAwesomeIcon icon={faLink} />
+          </a>
+        </div>
       </div>
       <div className="meal-card-body-footer">
         <p>{meal.description}</p>

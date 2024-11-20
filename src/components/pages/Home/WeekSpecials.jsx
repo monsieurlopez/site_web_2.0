@@ -10,6 +10,7 @@ const meals = [
     name: "Little-Lemon",
     image: littleLemonImage,
     url: "https://little-lemon-restaurant-wine.vercel.app/",
+    github: "https://github.com/monsieurlopez/little-lemon-restaurant",
     description: `Final capstone project for Meta Front-end developer program on Coursera,
       which contains a detailed and responsive website with table-booking
       functionality.`,
@@ -19,6 +20,7 @@ const meals = [
     name: "Bruschetta",
     image: bruschettaImage,
     url: "",
+    github: "https://github.com/monsieurlopez",
     description: `Our Bruschetta is made from grilled bread that has been
       smeared with garlic and seasoned with salt and olive oil.`,
     badges: [],
@@ -27,6 +29,7 @@ const meals = [
     name: "Lemon Dessert",
     image: lemonDessertImage,
     url: "",
+    github: "https://github.com/monsieurlopez",
     description: `This comes straight from grandma's recipe book, every last
       ingredient has been sourced and is as authentic as can be imagined.`,
     badges: [],

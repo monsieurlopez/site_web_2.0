@@ -1,7 +1,7 @@
 .hero {
   padding-top: 1.875rem;
   position: relative;
-  background-image: url('/src/components/pages/Home/assets/fondo_web.jpg');
+  background-image: url('/src/components/pages/Home/assets/fondo_web_header.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
