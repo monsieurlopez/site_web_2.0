@@ -1,35 +1,32 @@
 import "./Testimonials.css";
 import TestimonialCard from "./TestimonialCard";
 
-const customers = [
-  {
-    fullName: "Anthony",
-    image:
-      "https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg",
-    rating: [1, 1, 1, 1, 0.5],
-    says: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus tempor felis a accumsan.",
-  },
-  {
-    fullName: "Mary",
-    image:
-      "https://images.unsplash.com/photo-1573497491765-dccce02b29df?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: [1, 1, 1, 1, 0],
-    says: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus tempor felis a accumsan.",
-  },
-  {
-    fullName: "John",
-    image:
-      "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: [1, 1, 1, 1, 0.5],
-    says: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus tempor felis a accumsan.",
-  },
-  {
-    fullName: "Sarah",
-    image:
-      "https://images.unsplash.com/photo-1581714161666-dade083654ae?q=80&w=2786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    rating: [1, 1, 1, 1, 1],
-    says: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempus tempor felis a accumsan.",
-  },
+import bootstrap_logo from "./assets/logo_bootstrap.svg";
+import chartjs_logo from "./assets/logo_chartjs.svg";
+import css_logo from "./assets/logo_css.png";
+import github_logo from "./assets/logo_github.svg";
+import html_logo from "./assets/logo_html.svg";
+import jquery_logo from "./assets/logo_jquery.svg";
+import js_logo from "./assets/logo_js.svg";
+import php_logo from "./assets/logo_php.png";
+import postgresql_logo from "./assets/logo_postgresql.svg";
+import react_logo from "./assets/logo_react.svg";
+import git_logo from "./assets/logo_git.png";
+import bootstrapTable_logo from "./assets/logo_bootstrapTable.png";
+
+const personalSkills = [
+  { name: "Bootstrap", image: bootstrap_logo },
+  { name: "Chart.js", image: chartjs_logo },
+  { name: "CSS", image: css_logo },
+  { name: "GitHub", image: github_logo },
+  { name: "HTML", image: html_logo },
+  { name: "jQuery", image: jquery_logo },
+  { name: "JavaScript", image: js_logo },
+  { name: "PHP", image: php_logo },
+  { name: "PostgreSQL", image: postgresql_logo },
+  { name: "Bootstrap Table", image: bootstrapTable_logo},
+  { name: "React", image: react_logo },
+  { name: "Git", image: git_logo },
 ];
 
 const Testimonials = () => {
@@ -37,9 +34,7 @@ const Testimonials = () => {
     <section className="testimonials">
       <div className="container grid">
         <h2>Skills</h2>
-        {customers.map((customer, index) => (
-          <TestimonialCard key={index} customer={customer} />
-        ))}
+          <TestimonialCard personalSkills={personalSkills} />
       </div>
     </section>
   );

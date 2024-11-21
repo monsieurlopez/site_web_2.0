@@ -9,18 +9,18 @@ const Layout = ({ children }) => {
       hashLink: true,
     },
     {
-      name: "About",
+      name: "Portfolio",
+      path: "/#portfolio",
+      hashLink: true,
+    },
+    {
+      name: "About me",
       path: "/#about",
       hashLink: true,
     },
     {
-      name: "Menu",
-      path: "/#menu",
-      hashLink: true,
-    },
-    {
-      name: "Reservations",
-      path: "/reservations",
+      name: "Contact",
+      path: "/contact",
       hashLink: false,
     },
     /*{

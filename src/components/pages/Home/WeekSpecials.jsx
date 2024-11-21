@@ -44,10 +44,10 @@ const WeekSpecials = () => {
   };
 
   return (
-    <section className="container grid week-specials" id="menu">
+    <section className="container grid week-specials" id="portfolio">
       <div className="week-specials-header">
         <h2>Portfolio</h2>
-        <HashLink className="button-primary" to="/#menu" onClick={handleClick}>
+        <HashLink className="button-primary" to="/#portfolio" onClick={handleClick}>
           Download CV
         </HashLink>
       </div>
