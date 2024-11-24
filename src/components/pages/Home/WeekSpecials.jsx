@@ -1,5 +1,5 @@
 import { HashLink } from "react-router-hash-link";
-import bruschettaImage from "./assets/bruschetta.jpg";
+import populationChartImage from "./assets/population-charts-photo.png";
 import littleLemonImage from "./assets/little-lemon.jpg";
 import lemonDessertImage from "./assets/lemon-dessert.jpeg";
 import "./WeekSpecials.css";
@@ -7,7 +7,7 @@ import MealCard from "./MealCard";
 
 const meals = [
   {
-    name: "Little-Lemon",
+    name: "Little Lemon",
     image: littleLemonImage,
     url: "https://little-lemon-restaurant-wine.vercel.app/",
     github: "https://github.com/monsieurlopez/little-lemon-restaurant",
@@ -17,13 +17,12 @@ const meals = [
     badges: ["HTML", "CSS", "Javascript", "React", "Fontawesome", "EmailJS", "Formik"],
   },
   {
-    name: "Bruschetta",
-    image: bruschettaImage,
+    name: "Population Charts",
+    image: populationChartImage,
     url: "",
-    github: "https://github.com/monsieurlopez",
-    description: `Our Bruschetta is made from grilled bread that has been
-      smeared with garlic and seasoned with salt and olive oil.`,
-    badges: [],
+    github: "https://github.com/monsieurlopez/population-charts",
+    description: `An application created to visualise population charts of the world.`,
+    badges: ["HTML", "CSS", "Javascript", "React", "Chartjs", "Axios", "Bootstrap"],
   },
   {
     name: "Lemon Dessert",
