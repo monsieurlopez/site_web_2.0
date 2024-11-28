@@ -19,7 +19,7 @@ const meals = [
   {
     name: "Population Charts",
     image: populationChartImage,
-    url: "",
+    url: "https://population-charts.vercel.app/",
     github: "https://github.com/monsieurlopez/population-charts",
     description: `An application created to visualise population charts of the world.`,
     badges: ["HTML", "CSS", "Javascript", "React", "Chartjs", "Axios", "Bootstrap"],
