@@ -133,7 +133,7 @@ const ReservationForm = ({ submitData }) => {
           <button
             className="button-primary"
             type="submit"
-            disabled={isSubmitting}
+            disabled={isSubmitting || !values.firstName || !values.lastName || !values.mail || !values.subject || !values.message}
           >
             Send
           </button>
