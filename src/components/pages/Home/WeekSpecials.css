@@ -17,9 +17,9 @@
 
 .week-specials-header h2 {
   line-height: 1;
-  font-family: "Markazi Text";
+  font-family: 'Pigiarniq', sans-serif;
   font-weight: normal;
-  font-size: 2.5rem;
+  font-size: 1.75rem;
 }
 
 @media (max-width: 960px) {

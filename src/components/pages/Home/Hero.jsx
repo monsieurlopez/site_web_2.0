@@ -9,7 +9,7 @@ const Hero = () => {
           <h1>Sergio López</h1>
           <h2>Front-End Developer</h2>
           <HashLink className="button-primary" to="/contact">
-            Contact me now!
+            Contact me now !
           </HashLink>
         </div>
       </div>

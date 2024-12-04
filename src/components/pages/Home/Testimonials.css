@@ -16,4 +16,8 @@
 .testimonials h2 {
   grid-row: 1;
   color: #272e2e;
+  line-height: 1;
+  font-family: 'Pigiarniq', sans-serif;
+  font-weight: normal;
+  font-size: 1.75rem;
 }

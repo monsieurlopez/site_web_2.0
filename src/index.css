@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Pigiarniq";
+  src: url("./components/outils/fonts/Pigiarniq.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 *,
 *:after,
 *:before {
@@ -15,10 +23,9 @@ html {
 }
 
 body {
-  font-family: Karla, sans-serif;
+  font-family: 'Pigiarniq', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  /*color: #003f69;*/
   color: #272e2e;
   background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
 }
