@@ -18,10 +18,14 @@
 }
 
 .hero-information h1 {
-  color: #003f69;
-  font-size: 4.5rem;
+  /*color: #003f69;*/
+  color: darkslategrey;
+  font-size: 3.75rem;
   height: 2.5rem;
   line-height: 2.5rem;
+  text-transform: uppercase;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
 }
 
 .hero-information h2 {

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik } from "formik";
 import FormField from "./formField";
 import emailjs from '@emailjs/browser';
 
 const ReservationForm = ({ submitData }) => {
+
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
   return (
     <Formik
@@ -128,6 +130,21 @@ const ReservationForm = ({ submitData }) => {
               value={values.message}
             />
             {errors.message && touched.message && <div className="error">{errors.message}</div>}
+          </FormField>
+
+          <FormField label="Terms and Conditions" htmlFor="terms-and-conditions">
+            <input
+              type="checkbox"
+              id="terms-and-conditions"
+              name="termsAccepted"
+              checked={termsAccepted}
+              onChange={() => setTermsAccepted(!termsAccepted)}
+              disabled={!termsAccepted}
+            />
+            <label htmlFor="terms-and-conditions">
+              I accept the <a href="/permisos-y-condiciones.html" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
+            </label>
+            {!termsAccepted && <div className="error">Please accept the Terms and Conditions</div>}
           </FormField>
 
           <button
