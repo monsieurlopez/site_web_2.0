@@ -55,3 +55,18 @@
     grid-row: 1;
   }
 }
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .hero-information h1 {
+    font-size: 3rem;
+  }
+
+  .hero-information h2 {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+}

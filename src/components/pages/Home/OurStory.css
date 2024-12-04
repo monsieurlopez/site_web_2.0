@@ -1,8 +1,7 @@
 .our-story {
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  padding: 4rem 0 4rem;
-  
+  padding: 2rem 0 2rem;
 }
 
 .our-story-description {
@@ -38,7 +37,7 @@
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
-  box-shadow: 0 0 20px #d9d9d9;
+  box-shadow: 0 0 30px #d9d9d9;
 }
 
 @media (max-width: 915px) {
@@ -74,5 +73,11 @@
 
   .our-story-chefs img {
     max-width: 100%;
+  }
+}
+
+@media (max-width:576px) {
+  .our-story {
+    padding: 1rem 0;
   }
 }

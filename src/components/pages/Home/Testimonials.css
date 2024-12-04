@@ -21,3 +21,9 @@
   font-weight: normal;
   font-size: 1.75rem;
 }
+
+@media (max-width:576px) {
+  .testimonials {
+    padding: 1rem 0;
+  }
+}

@@ -2,7 +2,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   gap: 1.25rem;
-  padding: 4rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
 
 .week-specials-header {
@@ -10,9 +10,8 @@
   grid-row: 1;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   gap: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 .week-specials-header h2 {
@@ -44,13 +43,21 @@
   }
 }
 
-@media (max-width: 449px) {
-  .week-specials-header {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1rem;
+@media (max-width: 576px) {
+  .week-specials {
+    padding: 1rem 0;
   }
 
+  .week-specials-header {
+    align-items: center;
+  }
+
+  .week-specials-header h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 449px) {
   .week-specials-header a {
     width: max-content;
   }
