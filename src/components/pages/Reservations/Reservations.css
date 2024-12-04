@@ -1,5 +1,5 @@
 .reservations {
-  min-height: calc(100vh - 6.25rem - 18rem);
+  min-height: calc(100vh - 6.25rem - 15rem);
 }
 
 .reservations h2 {
