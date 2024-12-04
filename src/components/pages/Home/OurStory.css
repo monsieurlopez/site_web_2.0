@@ -1,7 +1,7 @@
 .our-story {
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
-  padding: 8rem 0 4rem;
+  padding: 4rem 0 4rem;
 }
 
 .our-story-description {
