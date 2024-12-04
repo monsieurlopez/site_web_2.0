@@ -9,7 +9,7 @@
   overflow: hidden;
   background-color: #f9f9f9;
   box-shadow: 0 0 20px #d9d9d9;
-  border: 2px solid #003f69;
+  border: 0.15rem solid #272e2e;
 }
 
 .meal-card-image {
@@ -96,7 +96,7 @@
 
 .meal-badge {
   background-color: #f0f0f0; /* Fondo claro */
-  color: #333; /* Color del texto */
+  color: #272e2e; /* Color del texto */
   padding: 0.3rem 0.8rem; /* Espaciado interno del badge */
   border-radius: 0.5rem; /* Bordes redondeados */
   font-size: 0.85rem; /* Tamaño de fuente */
