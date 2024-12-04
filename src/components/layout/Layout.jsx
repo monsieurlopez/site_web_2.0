@@ -23,16 +23,6 @@ const Layout = ({ children }) => {
       path: "/contact",
       hashLink: false,
     },
-    /*{
-      name: "Order On",
-      path: "/orderOnline",
-      hashLink: false,
-    },
-    {
-      name: "Login",
-      path: "/login",
-      hashLink: false,
-    },*/
   ];
 
   return (

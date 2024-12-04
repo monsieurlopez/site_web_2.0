@@ -18,8 +18,15 @@ body {
   font-family: Karla, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495e57;
+  color: #003f69;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  /*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+  background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%);*/
 }
+
+
 
 header {
   position: fixed;
@@ -27,7 +34,7 @@ header {
   left: 0;
   width: 100%;
   height: max-content;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   z-index: 999;
 }
 
@@ -38,7 +45,7 @@ main {
 
 a {
   text-decoration: none;
-  color: #495e57;
+  color: #003f69;
 }
 
 h1,
@@ -111,14 +118,13 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   background-color: #f4ce14;
-  color: #495e57;
+  color: #003f69;
   font-weight: bold;
-  border: 2px solid #f4ce14;
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  background-color: #495e57;
-  border-color: #495e57;
+  background-color: #003f69;
+  border-color: #003f69;
   color: #ffffff;
 }

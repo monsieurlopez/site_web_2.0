@@ -1,9 +1,10 @@
 .site-footer {
   position: relative;
-  background-image: url('/src/components/pages/Home/assets/fondo_web_footer.jpg');
+  /*background-image: url('/src/components/pages/Home/assets/fondo_web_footer.jpg');*/
+  background-color: #f9f9f9;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #4c4b5a;
+  color: #003f69;
   padding: 2.5rem 6%;
   height: 15rem;
   display: grid;
