@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { Formik } from "formik";
 import FormField from "./formField";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const ReservationForm = ({ submitData }) => {
-
   const [termsAccepted, setTermsAccepted] = useState(false);
+  const [linkClicked, setLinkClicked] = useState(false);
+
+  const handleLinkClick = () => {
+    setLinkClicked(true);
+  };
 
   return (
     <Formik
@@ -40,9 +44,9 @@ const ReservationForm = ({ submitData }) => {
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
-        const service_id = 'service_i3vng1m';
-        const template_id = 'template_cepy6gg';
-        const public_id = 'gbtOYXQ6SZQAOaHko';
+        const service_id = "service_i3vng1m";
+        const template_id = "template_cepy6gg";
+        const public_id = "gbtOYXQ6SZQAOaHko";
 
         const templateParams = {
           from_name: `${values.firstName} ${values.lastName}`,
@@ -51,7 +55,8 @@ const ReservationForm = ({ submitData }) => {
           message: values.message,
         };
 
-        emailjs.send(service_id, template_id, templateParams, public_id)
+        emailjs
+          .send(service_id, template_id, templateParams, public_id)
           .then((response) => {
             console.log("Email sent successfully:", response);
           })
@@ -82,7 +87,9 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.firstName}
             />
-            {errors.firstName && touched.firstName && <div className="error">{errors.firstName}</div>}
+            {errors.firstName && touched.firstName && (
+              <div className="error">{errors.firstName}</div>
+            )}
           </FormField>
 
           <FormField label="Last Name" htmlFor="reservation-last-name">
@@ -94,7 +101,9 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.lastName}
             />
-            {errors.lastName && touched.lastName && <div className="error">{errors.lastName}</div>}
+            {errors.lastName && touched.lastName && (
+              <div className="error">{errors.lastName}</div>
+            )}
           </FormField>
 
           <FormField label="Email address" htmlFor="reservation-mail">
@@ -106,7 +115,9 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.mail}
             />
-            {errors.mail && touched.mail && <div className="error">{errors.mail}</div>}
+            {errors.mail && touched.mail && (
+              <div className="error">{errors.mail}</div>
+            )}
           </FormField>
 
           <FormField label="Subject" htmlFor="reservation-subjet">
@@ -118,7 +129,9 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.subject}
             />
-            {errors.subject && touched.subject && <div className="error">{errors.subject}</div>}
+            {errors.subject && touched.subject && (
+              <div className="error">{errors.subject}</div>
+            )}
           </FormField>
 
           <FormField label="Message" htmlFor="reservation-message">
@@ -129,28 +142,58 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.message}
             />
-            {errors.message && touched.message && <div className="error">{errors.message}</div>}
+            {errors.message && touched.message && (
+              <div className="error">{errors.message}</div>
+            )}
           </FormField>
 
-          <FormField label="Terms and Conditions" htmlFor="terms-and-conditions">
-            <input
-              type="checkbox"
-              id="terms-and-conditions"
-              name="termsAccepted"
-              checked={termsAccepted}
-              onChange={() => setTermsAccepted(!termsAccepted)}
-              disabled={!termsAccepted}
-            />
-            <label htmlFor="terms-and-conditions">
-              I accept the <a href="/permisos-y-condiciones.html" target="_blank" rel="noopener noreferrer">Terms and Conditions</a>
-            </label>
-            {!termsAccepted && <div className="error">Please accept the Terms and Conditions</div>}
+          <FormField
+            label="Terms and Conditions"
+            htmlFor="terms-and-conditions"
+          >
+            <div
+            className="checkbox-group"
+            >
+              <label
+                htmlFor="terms-and-conditions"
+              >
+                I accept the{" "}
+                <a
+                  className="link-permissions"
+                  href="/permisos-y-condiciones.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={handleLinkClick} 
+                >
+                  terms and conditions
+                </a>
+              </label>
+              <input
+                className="terms-checkbox"
+                type="checkbox"
+                id="terms-and-conditions"
+                name="termsAccepted"
+                checked={termsAccepted}
+                onChange={() => setTermsAccepted(!termsAccepted)}
+                disabled={!linkClicked}
+              />
+            </div>
+            {!termsAccepted && linkClicked && (
+              <div className="error">You must accept the terms to proceed.</div>
+            )}
           </FormField>
 
           <button
             className="button-primary"
             type="submit"
-            disabled={isSubmitting || !values.firstName || !values.lastName || !values.mail || !values.subject || !values.message}
+            disabled={
+              isSubmitting ||
+              !values.firstName ||
+              !values.lastName ||
+              !values.mail ||
+              !values.subject ||
+              !values.message
+            }
           >
             Send
           </button>

@@ -1,5 +1,5 @@
 .reservations {
-  min-height: calc(100vh - 6.25rem - 13rem);
+  min-height: calc(100vh - 6.25rem - 11rem);
 }
 
 .reservations h2 {
@@ -7,6 +7,8 @@
   padding: 1.5rem 2rem;
   color: #272e2e;
   height: max-content;
+  font-family: 'Pigiarniq', sans-serif;
+  font-size: 2rem;
 }
 
 .reservations form {
@@ -25,6 +27,7 @@
 }
 
 .form-field {
+  font-family: 'Pigiarniq', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
@@ -92,4 +95,25 @@
   background: #ffffff;
   color: #272e2e;
   cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+
+.terms-checkbox {
+  width: 50%;
+  height: 1.5rem;
+}
+
+.link-permissions {
+  width: 50%;
+  text-decoration: underline;
+  cursor: pointer;
+  color: darkblue;
 }
