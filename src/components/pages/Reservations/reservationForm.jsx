@@ -184,7 +184,7 @@ const ReservationForm = ({ submitData }) => {
           </FormField>
 
           <button
-            className="button-primary"
+            className="button-submit"
             type="submit"
             disabled={
               isSubmitting ||
@@ -192,7 +192,8 @@ const ReservationForm = ({ submitData }) => {
               !values.lastName ||
               !values.mail ||
               !values.subject ||
-              !values.message
+              !values.message ||
+              !termsAccepted
             }
           >
             Send
