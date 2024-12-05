@@ -25,9 +25,6 @@ const ReservationForm = ({ submitData }) => {
         if (!values.firstName) {
           errors.firstName = "Please enter your first name";
         }
-        if (!values.lastName) {
-          errors.lastName = "Please enter your last name";
-        }
         if (!values.mail) {
           errors.mail = "Please enter an email";
         } else if (
@@ -37,9 +34,6 @@ const ReservationForm = ({ submitData }) => {
         }
         if (!values.subject) {
           errors.subject = "Please enter a subject";
-        }
-        if (!values.message) {
-          errors.message = "Please enter a message";
         }
         return errors;
       }}
@@ -78,7 +72,7 @@ const ReservationForm = ({ submitData }) => {
         isSubmitting,
       }) => (
         <form onSubmit={handleSubmit}>
-          <FormField label="First Name" htmlFor="reservation-first-name">
+          <FormField label="First Name *" htmlFor="reservation-first-name">
             <input
               type="text"
               name="firstName"
@@ -101,12 +95,9 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.lastName}
             />
-            {errors.lastName && touched.lastName && (
-              <div className="error">{errors.lastName}</div>
-            )}
           </FormField>
 
-          <FormField label="Email address" htmlFor="reservation-mail">
+          <FormField label="Email address *" htmlFor="reservation-mail">
             <input
               type="email"
               name="mail"
@@ -120,7 +111,7 @@ const ReservationForm = ({ submitData }) => {
             )}
           </FormField>
 
-          <FormField label="Subject" htmlFor="reservation-subjet">
+          <FormField label="Subject *" htmlFor="reservation-subjet">
             <input
               type="text"
               name="subject"
@@ -142,13 +133,10 @@ const ReservationForm = ({ submitData }) => {
               onBlur={handleBlur}
               value={values.message}
             />
-            {errors.message && touched.message && (
-              <div className="error">{errors.message}</div>
-            )}
           </FormField>
 
           <FormField
-            label="Terms and Conditions"
+            label="Terms and Conditions *"
             htmlFor="terms-and-conditions"
           >
             <div
@@ -189,10 +177,8 @@ const ReservationForm = ({ submitData }) => {
             disabled={
               isSubmitting ||
               !values.firstName ||
-              !values.lastName ||
               !values.mail ||
               !values.subject ||
-              !values.message ||
               !termsAccepted
             }
           >

@@ -12,6 +12,7 @@ const Reservations = () => {
   return (
     <div className="reservations">
       <h2>Write me a message</h2>
+      <p> Fields with * are required </p>
       <ReservationForm
         submitData={submitData}
       />
