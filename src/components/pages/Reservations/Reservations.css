@@ -1,7 +1,6 @@
 .reservations {
   min-height: calc(100vh - 6.25rem - 6rem);
-  max-width: 61.75rem;
-  width: 90%;
+  max-width: 85rem;
   margin: 0rem auto;
 }
 
@@ -128,7 +127,6 @@
   align-items: center;
   text-align: start;
   gap: 0.5rem;
-  padding: 0.8rem;
 }
 
 .terms-checkbox {
