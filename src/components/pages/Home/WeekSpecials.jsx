@@ -9,7 +9,7 @@ const meals = [
   {
     name: "Personal Website",
     image: serlopez,
-    url: "https://site-web-2-0.vercel.app/",
+    url: "https://serlopez.com/",
     github: "https://github.com/monsieurlopez",
     description: `Dynamic and responsive personal portfolio website. Using modern technologies, it allows you to present your projects, skills, and contact information in a user-friendly and visually engaging way.`,
     badges: [
