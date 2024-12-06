@@ -4,6 +4,7 @@ import Home from "./components/pages/Home/Home";
 import Reservations from "./components/pages/Reservations/Reservations";
 import ConfirmedReservation from "./components/pages/Reservations/confirmedReservation";
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from "@vercel/analytics/react";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         </Routes>
       </Layout>
       <SpeedInsights />
+      <Analytics />
     </>
   );
 };
