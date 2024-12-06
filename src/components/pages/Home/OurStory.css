@@ -37,7 +37,6 @@
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
-  box-shadow: 0 0 30px #d9d9d9;
 }
 
 @media (max-width: 915px) {
