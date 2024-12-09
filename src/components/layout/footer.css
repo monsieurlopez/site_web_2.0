@@ -12,6 +12,11 @@
 }
 
 .site-footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
   width: 8rem;
 }
 
