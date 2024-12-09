@@ -1,0 +1,235 @@
+[33mcommit 9ef67994a12612c38a3bd507fc95d7dab4877c15[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Dec 9 11:15:46 2024 +0100
+
+    <fix> update CV
+
+[33mcommit 19adbc91187addf322481e51b5e42214258f969c[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Dec 9 09:54:32 2024 +0100
+
+    <fix> style logo footer
+
+[33mcommit a93f61ec77d3325213abfadd5ec0244cc6641eea[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Dec 9 09:36:45 2024 +0100
+
+    <fix> change style font size botton primary
+
+[33mcommit b29bb3209d8f6c86487bbfdf024f98e30ddb0d8c[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Dec 9 09:35:34 2024 +0100
+
+    <fix> add route #home
+
+[33mcommit eed6fdad5eac209df86e0db7b1b55a7528b9ecde[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Dec 9 09:34:25 2024 +0100
+
+    <fix> update typescritp and analytics
+
+[33mcommit fd95fd6f920134ba5f4856a68e558b0b04c50ec0[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Sat Dec 7 00:15:17 2024 +0100
+
+    <feat> add vercel Analytics
+
+[33mcommit 1c7cd3b2347e411f2882a9a6b004837afa115687[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Sat Dec 7 00:06:48 2024 +0100
+
+    <feature> add scrip vercel speed-insights
+
+[33mcommit 3f50f1036420515a250665b54124ae17b45cdc2e[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Fri Dec 6 23:53:53 2024 +0100
+
+    <fix> delete box-shadow img
+
+[33mcommit 1fdb707f5e80aadbda4af93841b8f3ba1bd64313[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Fri Dec 6 23:49:18 2024 +0100
+
+    <fix> update metatask
+
+[33mcommit c73cb3a80be5820d8890b69417ba0946686ed40b[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Fri Dec 6 23:29:26 2024 +0100
+
+    <fix> change url web personal and change meta content image
+
+[33mcommit 5fe0d2e619cd790187cf7be523078770772b8550[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Dec 5 12:02:12 2024 +0100
+
+    <fix style view form> change max-width container
+
+[33mcommit 2a8ffdef73334bf2ace497dc0f601304b68cdc7f[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Dec 5 11:55:43 2024 +0100
+
+    <fix form contact> add padding style to bigs widths
+
+[33mcommit cebbd8e57d5eb10caf17056f5af36bf16f9292f7[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Dec 5 11:34:37 2024 +0100
+
+    <fix style message confirmation> change style font and @media max-width 576px
+
+[33mcommit 42b6a38b74442fdc006ebe069af8ae0c1f1aa125[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Dec 5 11:00:24 2024 +0100
+
+    <fix footer css> change from column to row all @media
+
+[33mcommit abcceaa90d2adce32080314c368a9cc56aef8a0c[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Dec 5 10:45:58 2024 +0100
+
+    field required form added and <p> to explain
+
+[33mcommit f0c186402be952a16125ea8c98bf49a188238e6f[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Dec 5 10:15:24 2024 +0100
+
+    fix validation form terms and condition and style button submit @media max-width 576px
+
+[33mcommit 309a9145556fbd557e176614f7026a8509f5eabe[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 19:24:05 2024 +0100
+
+    confirmed message contact
+
+[33mcommit 3c5dd2f2a8cc3d770efdda84d25d5b7c11087c7c[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 18:37:26 2024 +0100
+
+    update padding section @media 576px
+
+[33mcommit 963eb2ca69225990947eff8d43b6dcf4e0e9b5c9[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 16:39:08 2024 +0100
+
+    add new font and change all type of fonts
+
+[33mcommit 7b710bbc4a81d4b8ef89b417b26639afc2a05153[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 14:56:05 2024 +0100
+
+    update style color theme
+
+[33mcommit ae8d2487f6eaa7bb9940422e058742223d76e48f[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 10:40:44 2024 +0100
+
+    update background-color body
+
+[33mcommit a4a295b554d8305a7cde993dc5b221124b5fdf8b[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 10:34:07 2024 +0100
+
+    update form and police title
+
+[33mcommit 3ab636b1e0980d9f343cd2d3a80846ac0913f3ca[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:50:38 2024 +0100
+
+    add border and border shadow portfolio, skills and about me
+
+[33mcommit 4f0d2efdeb96413f5358366980c1c2ad5b41d5a3[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:43:08 2024 +0100
+
+    add border-top footer
+
+[33mcommit 20b2b98f60c03985a87c9797001f2a4735c00529[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:40:52 2024 +0100
+
+    update height footer
+
+[33mcommit c5fa9e7e763dd083574313e615bcae791949ed04[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:33:06 2024 +0100
+
+    update text-aling footer
+
+[33mcommit c005092a12a3c93f727217a477a1a738bf69d7c1[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:28:12 2024 +0100
+
+    update padding body
+
+[33mcommit 890e91c51ea241bd40ae58d21d64cca2902cfaef[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:25:20 2024 +0100
+
+    correction button disabled form
+
+[33mcommit b012eadb8c856913b4a55e0e5620a492fb04d8ef[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:20:51 2024 +0100
+
+    correction bug footer contact
+
+[33mcommit 0617572a4c7bc15c1aced61617a2c5c9c891dbe2[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Dec 4 08:10:05 2024 +0100
+
+    update ui
+
+[33mcommit 2fab1592e7f50617d48f9e7fad9b1d460c1eb927[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Nov 28 18:46:11 2024 +0100
+
+    url population-charts
+
+[33mcommit b2275493ac2b34844da8353bcd13ce38b0e448b0[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Sun Nov 24 10:46:27 2024 +0100
+
+    update portfolio Population Chart
+
+[33mcommit 6c2bff46272a3cee14a65bd149b80e60aded8c63[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Nov 21 19:57:46 2024 +0100
+
+    Update skills
+
+[33mcommit 3c9dd90a63fc2bc37c7845d25ca564bd6acfc410[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Thu Nov 21 19:23:31 2024 +0100
+
+    update og:image
+
+[33mcommit 3936123cba6eb5e184e4db3e256a205e24c29374[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Nov 20 11:48:41 2024 +0100
+
+    update bg, cards and skills
+
+[33mcommit ad2869532fc000391ca3a48cd385090152edae4c[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Wed Nov 20 01:20:59 2024 +0100
+
+    Update cards portfolio
+
+[33mcommit 38d4a98c0a57cdd0e0ddfc8e3e4525550a94fa72[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Tue Nov 19 10:28:10 2024 +0100
+
+    update photos
+
+[33mcommit 2f34c268a727fb5a8425307b014445ddf83ee805[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Nov 18 20:24:18 2024 +0100
+
+    update photos, containers and form
+
+[33mcommit 2a2b95ebdb4666baa304f0eb7406e1799595860b[m
+Author: monsieurlopez <126283960+monsieurlopez@users.noreply.github.com>
+Date:   Mon Nov 18 11:23:56 2024 +0100
+
+    first update form
+
+[33mcommit 1fc6bf0f04e4d1a9c346f73b6dab9a890f38f7c2[
