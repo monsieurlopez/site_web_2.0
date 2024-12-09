@@ -12,7 +12,7 @@ const Header = ({ navLinks }) => {
   return (
     <header>
       <nav className="container grid nav-bar">
-        <HashLink className="nav-bar-logo" to="/">
+        <HashLink className="nav-bar-logo" to="/#home">
           <img src={logoImage} alt="SerLopez Logo" />
         </HashLink>
         <button
