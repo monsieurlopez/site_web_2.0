@@ -1,4 +1,4 @@
-import chefsMarioAndAdrian1Img from "./assets/personal_photo.jpg";
+import chefsMarioAndAdrian1Img from "./assets/personal_photo.png";
 import "./OurStory.css";
 
 const OurStory = () => {

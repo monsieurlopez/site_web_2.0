@@ -33,9 +33,9 @@
 }
 
 .our-story-chefs img {
-  max-width: 70%;
+  max-width: 55%;
   height: auto;
-  border-radius: 1rem;
+  border-radius: 9rem;
   object-fit: cover;
 }
 
@@ -58,6 +58,7 @@
     max-width: 50%;
     height: 26rem;
     width: unset;
+    border-radius: 12rem;
   }
 }
 
