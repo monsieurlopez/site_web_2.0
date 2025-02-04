@@ -1,14 +1,14 @@
 import Hero from "./Hero";
-import WeekSpecials from "./WeekSpecials";
-import Testimonials from "./Testimonials";
+import Portfolio from "./Portfolio";
+import Skills from "./Skills";
 import OurStory from "./OurStory";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <WeekSpecials />
-      <Testimonials />
+      <Portfolio/>
+      <Skills/>
       <OurStory />
     </>
   );

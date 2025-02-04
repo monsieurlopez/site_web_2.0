@@ -2,45 +2,45 @@ import PropTypes from "prop-types";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import "./MealCard.css";
+import "./Card.css";
 
-const MealCard = ({ meal }) => {
+const Project = ({ card }) => {
   return (
-    <article className="meal-card">
-      <div className="meal-card-image">
-        <img src={meal.image} alt={meal.name} loading="lazy" />
-        <div className="meal-card-image-overlay">
-          <a type="button" href={meal.url} target="_blank" rel="noopener noreferrer" className="meal-card-image-overlay-link">
+    <article className="project-card">
+      <div className="project-card-image">
+        <img src={card.image} alt={card.name} loading="lazy" />
+        <div className="project-card-image-overlay">
+          <a type="button" href={card.url} target="_blank" rel="noopener noreferrer" className="project-card-image-overlay-link">
             Visit the site
           </a>
         </div>
       </div>
-      <div className="meal-card-header">
-        <h3>{meal.name}</h3>
-        <div className="meal-card-icons">
+      <div className="project-card-header">
+        <h3>{card.name}</h3>
+        <div className="project-card-icons">
           <a
-            href={meal.github}
+            href={card.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="meal-card-github-icon"
+            className="project-card-github-icon"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href={meal.url}
+            href={card.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="meal-card-link-icon"
+            className="project-card-link-icon"
           >
             <FontAwesomeIcon icon={faLink} />
           </a>
         </div>
       </div>
-      <div className="meal-card-body-footer">
-        <p>{meal.description}</p>
-        <div className="meal-badges">
-          {meal.badges.map((badge, index) => (
-            <span key={index} className="meal-badge">
+      <div className="project-card-body-footer">
+        <p>{card.description}</p>
+        <div className="project-badges">
+          {card.badges.map((badge, index) => (
+            <span key={index} className="project-badge">
               {badge}
             </span>
           ))}
@@ -50,8 +50,8 @@ const MealCard = ({ meal }) => {
   );
 };
 
-MealCard.propTypes = {
-  meal: PropTypes.shape({
+Project.propTypes = {
+  card: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     github: PropTypes.string.isRequired,
@@ -61,4 +61,4 @@ MealCard.propTypes = {
   }).isRequired,
 };
 
-export default MealCard;
+export default Project;

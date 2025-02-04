@@ -3,9 +3,9 @@ import populationChartImage from "./assets/population-charts-photo.png";
 import littleLemonImage from "./assets/little-lemon.jpg";
 import serlopez from "./assets/portfolio-photo.png";
 import "./WeekSpecials.css";
-import MealCard from "./MealCard";
+import Cards from "./Cards";
 
-const meals = [
+const proyects = [
   {
     name: "Personal Website",
     image: serlopez,
@@ -58,7 +58,7 @@ const meals = [
   },
 ];
 
-const WeekSpecials = () => {
+const Portfolio = () => {
   const handleClick = () => {
     const imageUrl = require("../../layout/assets/CV_Sergio_LOPEZ.pdf");
     window.open(imageUrl, "_blank", "noopener,noreferrer");
@@ -76,11 +76,11 @@ const WeekSpecials = () => {
           Download CV
         </HashLink>
       </div>
-      {meals.map((meal, index) => (
-        <MealCard key={index} meal={meal} />
+      {proyects.map((card, index) => (
+        <Cards key={index} card={card} />
       ))}
     </section>
   );
 };
 
-export default WeekSpecials;
+export default Portfolio;

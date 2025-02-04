@@ -1,6 +1,6 @@
 import "./TestimonialCard.css";
 
-const TestimonialCard = ({ personalSkills }) => {
+const SectionSkills = ({ personalSkills }) => {
   return (
     <article className="testimonial-card">
        {personalSkills.map((skill, index) => (
@@ -13,4 +13,4 @@ const TestimonialCard = ({ personalSkills }) => {
   );
 };
 
-export default TestimonialCard;
+export default SectionSkills;

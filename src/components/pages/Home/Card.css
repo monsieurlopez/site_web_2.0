@@ -1,4 +1,4 @@
-.meal-card {
+.project-card {
   grid-column: auto;
   grid-row: 2;
   min-height: 31.25rem;
@@ -12,17 +12,17 @@
   transition: transform 0.3s ease;
 }
 
-.meal-card-image {
+.project-card-image {
   position: relative;
   height: 12.5rem;
   overflow: hidden;
 }
 
-.meal-card:hover .meal-card-image img {
+.project-card:hover .project-card-image img {
   transform: scale(1.08);
 }
 
-.meal-card-image img {
+.project-card-image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,7 +33,7 @@
   transition: all linear 300ms;
 }
 
-.meal-card-image-overlay {
+.project-card-image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -47,78 +47,78 @@
   transition: opacity 0.3s ease;
 }
 
-.meal-card-image:hover .meal-card-image-overlay {
+.project-card-image:hover .project-card-image-overlay {
   opacity: 1;
 }
 
-.meal-card-image-overlay-link {
+.project-card-image-overlay-link {
   color: #fff;
   font-size: 1.15rem;
   text-decoration: none;
 }
 
-.meal-card-header,
-.meal-card-body-footer {
+.project-card-header,
+.project-card-body-footer {
   padding: 0 1rem;
 }
 
-.meal-card-header {
+.project-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
 }
 
-.meal-card-header h3 {
+.project-card-header h3 {
   font-size: 1.125rem;
 }
 
-.meal-card-header span {
+.project-card-header span {
   font-weight: 700;
   color: #ee9972;
 }
 
-.meal-card-body-footer {
+.project-card-body-footer {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.meal-card-body-footer a {
+.project-card-body-footer a {
   font-weight: bold;
 }
 
-.meal-card-body-footer svg {
+.project-card-body-footer svg {
   margin-left: 0.5rem;
 }
 
 @media (max-width: 960px) {
-  .meal-card {
+  .project-card {
     grid-row: auto;
   }
 }
 
-.meal-card-icons {
+.project-card-icons {
   display: flex;
   gap: 0.5rem;
   align-items: center;
   justify-content: flex-end;
 }
 
-.meal-card a:hover,
-.meal-card a:focus {
+.project-card a:hover,
+.project-card a:focus {
   color: #f4ce14;
 }
 
-.meal-badges {
+.project-badges {
   display: flex;
   flex-wrap: wrap;
   gap: 0.2rem;
   margin-top: 0.5rem;
 }
 
-.meal-badge {
+.project-badge {
   background-color: #f0f0f0;
   color: #272e2e;
   padding: 0.3rem 0.8rem;
@@ -130,7 +130,7 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.meal-badge:hover {
+.project-badge:hover {
   background-color: #e0e0e0;
   color: #1a1a1a;
 }

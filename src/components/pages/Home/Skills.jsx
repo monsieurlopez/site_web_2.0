@@ -1,5 +1,5 @@
 import "./Testimonials.css";
-import TestimonialCard from "./TestimonialCard";
+import SectionSkills from "./SectionSkills";
 
 import bootstrap_logo from "./assets/logo_bootstrap.svg";
 import chartjs_logo from "./assets/logo_chartjs.svg";
@@ -29,15 +29,15 @@ const personalSkills = [
   { name: "Git", image: git_logo },
 ];
 
-const Testimonials = () => {
+const Skills = () => {
   return (
     <section className="testimonials">
       <div className="container grid">
         <h2>Skills</h2>
-          <TestimonialCard personalSkills={personalSkills} />
+          <SectionSkills personalSkills={personalSkills} />
       </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default Skills;

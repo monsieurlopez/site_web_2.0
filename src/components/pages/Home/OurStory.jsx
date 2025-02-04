@@ -1,4 +1,4 @@
-import chefsMarioAndAdrian1Img from "./assets/personal_photo.png";
+import personalPhoto from "./assets/personal_photo.png";
 import "./OurStory.css";
 
 const OurStory = () => {
@@ -13,7 +13,7 @@ const OurStory = () => {
         </p>
       </div>
       <div className="our-story-chefs">
-        <img src={chefsMarioAndAdrian1Img} alt="Chefs Mario and Adrian #1" />
+        <img src={personalPhoto} alt="Personal photo Sergio Lopez" />
       </div>
     </section>
   );
