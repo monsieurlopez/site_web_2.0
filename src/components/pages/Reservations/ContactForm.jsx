@@ -3,7 +3,7 @@ import { Formik } from "formik";
 import FormField from "./formField";
 import emailjs from "@emailjs/browser";
 
-const ReservationForm = ({ submitData }) => {
+const ContactForm = ({ submitData }) => {
   const [termsAccepted, setTermsAccepted] = useState(false);
   const [linkClicked, setLinkClicked] = useState(false);
 
@@ -72,11 +72,11 @@ const ReservationForm = ({ submitData }) => {
         isSubmitting,
       }) => (
         <form onSubmit={handleSubmit}>
-          <FormField label="First Name *" htmlFor="reservation-first-name">
+          <FormField label="First Name *" htmlFor="contact-first-name">
             <input
               type="text"
               name="firstName"
-              id="reservation-first-name"
+              id="contact-first-name"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.firstName}
@@ -86,22 +86,22 @@ const ReservationForm = ({ submitData }) => {
             )}
           </FormField>
 
-          <FormField label="Last Name" htmlFor="reservation-last-name">
+          <FormField label="Last Name" htmlFor="contact-last-name">
             <input
               type="text"
               name="lastName"
-              id="reservation-last-name"
+              id="contact-last-name"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.lastName}
             />
           </FormField>
 
-          <FormField label="Email address *" htmlFor="reservation-mail">
+          <FormField label="Email address *" htmlFor="contact-mail">
             <input
               type="email"
               name="mail"
-              id="reservation-mail"
+              id="contact-mail"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.mail}
@@ -111,11 +111,11 @@ const ReservationForm = ({ submitData }) => {
             )}
           </FormField>
 
-          <FormField label="Subject *" htmlFor="reservation-subjet">
+          <FormField label="Subject *" htmlFor="contact-subjet">
             <input
               type="text"
               name="subject"
-              id="reservation-subjet"
+              id="contact-subjet"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.subject}
@@ -125,10 +125,10 @@ const ReservationForm = ({ submitData }) => {
             )}
           </FormField>
 
-          <FormField label="Message" htmlFor="reservation-message">
+          <FormField label="Message" htmlFor="contact-message">
             <textarea
               name="message"
-              id="reservation-message"
+              id="contact-message"
               onChange={handleChange}
               onBlur={handleBlur}
               value={values.message}
@@ -190,4 +190,4 @@ const ReservationForm = ({ submitData }) => {
   );
 };
 
-export default ReservationForm;
+export default ContactForm;
