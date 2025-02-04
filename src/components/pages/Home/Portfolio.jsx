@@ -2,7 +2,7 @@ import { HashLink } from "react-router-hash-link";
 import populationChartImage from "./assets/population-charts-photo.png";
 import littleLemonImage from "./assets/little-lemon.jpg";
 import serlopez from "./assets/portfolio-photo.png";
-import "./WeekSpecials.css";
+import "./Portfolio.css";
 import Cards from "./Cards";
 
 const proyects = [
@@ -65,8 +65,8 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="container grid week-specials" id="portfolio">
-      <div className="week-specials-header">
+    <section className="container grid portfolio-projects" id="portfolio">
+      <div className="portfolio-projects-header">
         <h2>Portfolio</h2>
         <HashLink
           className="button-primary"
