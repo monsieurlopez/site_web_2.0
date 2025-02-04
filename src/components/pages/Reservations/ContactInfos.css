@@ -1,10 +1,10 @@
-.reservations {
+.container-contact {
   min-height: calc(100vh - 6.25rem - 6rem);
   max-width: 85rem;
   margin: 0rem auto;
 }
 
-.reservations h2 {
+.container-contact h2 {
   text-align: center;
   width: 100%;
   padding: 6rem 2rem 2rem 2rem;
@@ -14,7 +14,7 @@
   font-size: 2rem;
 }
 
-.reservations p {
+.container-contact p {
   text-align: center;
   width: 100%;
   padding: 0rem 2rem 2rem 2rem;
@@ -23,7 +23,7 @@
   font-size: 1rem;
 }
 
-.reservations form {
+.container-contact form {
   padding: 0 2rem 2rem;
   display: grid;
   align-items: center;
@@ -32,7 +32,7 @@
   width: 100%;
 }
 
-.reservations form button {
+.container-contact form button {
   width: max-content;
   margin: 0 auto;
   grid-column: 1 / span 2;
@@ -64,8 +64,8 @@
   position: absolute;
 }
 
-.reservations button:disabled,
-.reservations button[disabled] {
+.container-contact button:disabled,
+.container-contact button[disabled] {
   background-color: #edefee;
   border-color: #edefee;
   color: #adafae;
@@ -103,15 +103,15 @@
 }
 
 @media (max-width: 768px) {
-  .reservations form {
+  .container-contact form {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .reservations h2 {
+  .container-contact h2 {
     padding: 0rem 2rem;
   }
 
-  .reservations form button {
+  .container-contact form button {
     grid-column: 1 / span 1;
   }
 

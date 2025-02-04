@@ -1,8 +1,8 @@
-import "./Reservations.css";
+import "./ContactInfos.css";
 import { useNavigate } from "react-router-dom";
 import ReservationForm from "./reservationForm";
 
-const Reservations = () => {
+const ContactInfos = () => {
   const navigate = useNavigate();
 
   const submitData = (formData) => {
@@ -10,7 +10,7 @@ const Reservations = () => {
   };
 
   return (
-    <div className="reservations">
+    <div className="container-contact">
       <h2>Write me a message</h2>
       <p> Fields with * are required </p>
       <ReservationForm
@@ -20,4 +20,4 @@ const Reservations = () => {
   );
 };
 
-export default Reservations;
+export default ContactInfos;
