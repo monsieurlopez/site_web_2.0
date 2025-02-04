@@ -72,7 +72,7 @@
   cursor: not-allowed;
 }
 
-.confirmed-reservation {
+.confirmed-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,7 @@
   min-height: calc(100vh - 6.25rem - 6rem);
 }
 
-.confirmed-reservation h2 {
+.confirmed-contact h2 {
   padding: 1.5rem 0rem;
   color: #272e2e;
   height: max-content;
@@ -89,11 +89,11 @@
   font-size: 2rem;
 }
 
-.confirmed-reservation p {
+.confirmed-contact p {
   padding-top: 0.25rem;
 }
 
-.reservation-summary {
+.contact-summary {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -115,7 +115,7 @@
     grid-column: 1 / span 1;
   }
 
-  .confirmed-reservation h2 {
+  .confirmed-contact h2 {
     text-align: center;
     font-size: 1.5rem;
   }

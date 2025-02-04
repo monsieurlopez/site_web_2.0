@@ -6,7 +6,7 @@ const ContactInfos = () => {
   const navigate = useNavigate();
 
   const submitData = (formData) => {
-    navigate("/confirmedReservation", { state: formData });
+    navigate("/ConfirmedContact", { state: formData });
   };
 
   return (
