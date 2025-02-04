@@ -21,7 +21,7 @@
   padding-top: 1.5rem;
 }
 
-.our-story-chefs {
+.our-story-personal {
   grid-column: 2;
   position: relative;
   display: flex;
@@ -32,7 +32,7 @@
   overflow: hidden;
 }
 
-.our-story-chefs img {
+.our-story-personal img {
   max-width: 55%;
   height: auto;
   border-radius: 9rem;
@@ -45,7 +45,7 @@
     grid-template-rows: auto auto;
   }
 
-  .our-story-chefs {
+  .our-story-personal {
     grid-column: 1;
     position: static;
     justify-content: space-evenly;
@@ -53,7 +53,7 @@
     height: unset;
   }
 
-  .our-story-chefs img {
+  .our-story-personal img {
     position: static;
     max-width: 50%;
     height: 26rem;
@@ -67,11 +67,11 @@
     grid-template-rows: repeat(3, auto);
   }
 
-  .our-story-chefs {
+  .our-story-personal {
     flex-direction: column;
   }
 
-  .our-story-chefs img {
+  .our-story-personal img {
     max-width: 100%;
   }
 }

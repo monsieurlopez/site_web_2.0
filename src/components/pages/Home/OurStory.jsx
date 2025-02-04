@@ -12,7 +12,7 @@ const OurStory = () => {
         I decided to make a significant shift in my professional profile to enter the field of web development.
         </p>
       </div>
-      <div className="our-story-chefs">
+      <div className="our-story-personal">
         <img src={personalPhoto} alt="Personal photo Sergio Lopez" />
       </div>
     </section>
