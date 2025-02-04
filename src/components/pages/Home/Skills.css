@@ -1,4 +1,4 @@
-.testimonials {
+.lenguage-container-skills {
   padding-top: 1.875rem;
   position: relative;
   background-size: cover;
@@ -7,13 +7,13 @@
   padding: 2rem 0;
 }
 
-.testimonials .container {
+.lenguage-container-skills .container {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto auto;
   row-gap: 1.5rem;
 }
 
-.testimonials h2 {
+.lenguage-container-skills h2 {
   grid-row: 1;
   color: #272e2e;
   line-height: 1;
@@ -23,7 +23,7 @@
 }
 
 @media (max-width:576px) {
-  .testimonials {
+  .lenguage-container-skills {
     padding: 1rem 0;
   }
 }

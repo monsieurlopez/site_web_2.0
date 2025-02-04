@@ -1,4 +1,4 @@
-import "./Testimonials.css";
+import "./Skills.css";
 import SectionSkills from "./SectionSkills";
 
 import bootstrap_logo from "./assets/logo_bootstrap.svg";
@@ -31,7 +31,7 @@ const personalSkills = [
 
 const Skills = () => {
   return (
-    <section className="testimonials">
+    <section className="lenguage-container-skills">
       <div className="container grid">
         <h2>Skills</h2>
           <SectionSkills personalSkills={personalSkills} />
