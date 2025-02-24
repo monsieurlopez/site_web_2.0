@@ -1,43 +1,11 @@
 import { HashLink } from "react-router-hash-link";
-import populationChartImage from "./assets/population-charts-photo.png";
-import littleLemonImage from "./assets/little-lemon.jpg";
-import serlopez from "./assets/portfolio-photo.png";
+import populationChartImage from "./assets/img-population-chart.png";
+import littleLemonImage from "./assets/logo_litle_lemon.png";
+import inCodeCoin from "./assets/Logo-incodecoin.png";
 import "./Portfolio.css";
 import Cards from "./Cards";
 
 const proyects = [
-  {
-    name: "Personal Website",
-    image: serlopez,
-    url: "https://serlopez.com/",
-    github: "https://github.com/monsieurlopez",
-    description: `Dynamic and responsive personal portfolio website. Using modern technologies, it allows you to present your projects, skills, and contact information in a user-friendly and visually engaging way.`,
-    badges: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Fontawesome",
-      "EmailJS",
-      "Formik",
-    ],
-  },
-  {
-    name: "Population Charts",
-    image: populationChartImage,
-    url: "https://population-charts.vercel.app/",
-    github: "https://github.com/monsieurlopez/population-charts",
-    description: `An application created to visualise population charts of the world.`,
-    badges: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Chartjs",
-      "Axios",
-      "Bootstrap",
-    ],
-  },
   {
     name: "Little Lemon",
     image: littleLemonImage,
@@ -54,6 +22,31 @@ const proyects = [
       "Fontawesome",
       "EmailJS",
       "Formik",
+    ],
+  },
+  {
+    name: "In Code Coin",
+    image: inCodeCoin,
+    url: "https://in-code-coin.github.io/in-code-solutions/",
+    github: "https://github.com/IN-CODE-COIN/in-code-solutions",
+    description: `V 1.0 of the first project from the Fullstack Master's program.
+      Where users can access updated information on cryptocurrencies and fiat currencies. The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
+    badges: ["HTML", "CSS", "Vanilla Javascript", "Bootstrap", "GridJs"],
+  },
+  {
+    name: "Population Charts",
+    image: populationChartImage,
+    url: "https://population-charts.vercel.app/",
+    github: "https://github.com/monsieurlopez/population-charts",
+    description: `An application created to visualise population charts of the world.`,
+    badges: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Chartjs",
+      "Axios",
+      "Bootstrap",
     ],
   },
 ];
