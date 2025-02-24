@@ -13,6 +13,8 @@ import postgresql_logo from "./assets/logo_postgresql.svg";
 import react_logo from "./assets/logo_react.svg";
 import git_logo from "./assets/logo_git.png";
 import bootstrapTable_logo from "./assets/logo_bootstrapTable.png";
+import mysql_logo from "./assets/logo_mysql.svg";
+import typescript_logo from "./assets/logo_typescript.svg"
 
 const personalSkills = [
   { name: "Bootstrap", image: bootstrap_logo },
@@ -27,6 +29,8 @@ const personalSkills = [
   { name: "Bootstrap Table", image: bootstrapTable_logo},
   { name: "React", image: react_logo },
   { name: "Git", image: git_logo },
+  { name: "MySql", image: mysql_logo },
+  { name: "Typescript", image: typescript_logo },
 ];
 
 const Skills = () => {
