@@ -29,8 +29,8 @@ const proyects = [
     image: inCodeCoin,
     url: "https://in-code-coin.github.io/in-code-solutions/",
     github: "https://github.com/IN-CODE-COIN/in-code-solutions",
-    description: `V 1.0 of the first project from the Fullstack Master's program.
-      Where users can access updated information on cryptocurrencies and fiat currencies. The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
+    description: `
+      The users can access updated information on cryptocurrencies and fiat currencies. The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
     badges: ["HTML", "CSS", "Vanilla Javascript", "Bootstrap", "GridJs"],
   },
   {
