@@ -26,7 +26,7 @@ Este es el repositorio de mi web personal, donde muestro mis proyectos más dest
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/monsieurlopez/site_web_2.0
    ```
 2. Entrar en la carpeta del proyecto:
    ```bash
