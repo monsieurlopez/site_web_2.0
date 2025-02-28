@@ -97,6 +97,7 @@
 @media (max-width: 960px) {
   .project-card {
     grid-row: auto;
+    max-width: 24rem;
   }
 }
 
