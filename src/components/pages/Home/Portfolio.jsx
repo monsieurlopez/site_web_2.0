@@ -31,7 +31,7 @@ const proyects = [
     github: "https://github.com/IN-CODE-COIN/in-code-solutions",
     description: `
       The users can access updated information on cryptocurrencies and fiat currencies. The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
-    badges: ["HTML", "CSS", "Vanilla Javascript", "Bootstrap", "GridJs"],
+    badges: ["HTML", "CSS", "Vanilla Javascript", "Bootstrap", "GridJs", "APIs"],
   },
   {
     name: "Population Charts",
