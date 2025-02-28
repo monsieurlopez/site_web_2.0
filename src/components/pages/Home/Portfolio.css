@@ -1,17 +1,18 @@
 .portfolio-projects {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto;
-  gap: 1.25rem;
-  padding: 2rem 0 2rem;
+  padding: 2rem 0;
 }
 
 .portfolio-projects-header {
-  grid-column: 1 / 4;
-  grid-row: 1;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1rem;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
 .portfolio-projects-header h2 {
@@ -40,6 +41,13 @@
 
   .portfolio-projects-header {
     grid-column: 1 / 2;
+  }
+
+  .slick-slider .slick-next {
+    right: -15px !important;
+  }
+  .slick-slider .slick-prev {
+    left: -15px !important;
   }
 }
 
