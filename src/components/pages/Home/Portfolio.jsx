@@ -34,14 +34,21 @@ const proyects = [
     url: "https://in-code-coin.github.io/in-code-solutions/",
     github: "https://github.com/IN-CODE-COIN/in-code-solutions",
     description: `The users can access updated information on cryptocurrencies and fiat currencies. The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
-    badges: ["HTML", "CSS", "Vanilla Javascript", "Bootstrap", "GridJs", "APIs"],
+    badges: [
+      "HTML",
+      "CSS",
+      "Vanilla Javascript",
+      "Bootstrap",
+      "GridJs",
+      "APIs",
+    ],
   },
   {
     name: "Population Charts",
     image: populationChartImage,
     url: "https://population-charts.vercel.app/",
     github: "https://github.com/monsieurlopez/population-charts",
-    description: `An application created to visualise population charts of the world.`,
+    description: `An application created to visualize population charts of the world through responsive graphs that adapt to different device sizes and can be downloaded.`,
     badges: [
       "HTML",
       "CSS",
@@ -57,14 +64,14 @@ const proyects = [
     image: barbaraGarciaImage,
     url: "https://barbara-garcia-torres.vercel.app/",
     github: "https://github.com/monsieurlopez/barbara-garcia-torres",
-    description: `The website provides clear and accessible information on physiotherapy and lactation consulting services.`,
+    description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
     badges: [
       "HTML",
       "CSS",
       "Vanilla Javascript",
       "APIs",
       "Bootstrap",
-      "EmailJS"
+      "EmailJS",
     ],
   },
 ];
@@ -102,7 +109,11 @@ const Portfolio = () => {
     <section className="container portfolio-projects" id="portfolio">
       <div className="portfolio-projects-header">
         <h2>Portfolio</h2>
-        <HashLink className="button-primary" to="/#portfolio" onClick={handleClick}>
+        <HashLink
+          className="button-primary"
+          to="/#portfolio"
+          onClick={handleClick}
+        >
           Download CV
         </HashLink>
       </div>
