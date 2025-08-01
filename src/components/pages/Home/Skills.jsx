@@ -14,7 +14,12 @@ import react_logo from "./assets/logo_react.svg";
 import git_logo from "./assets/logo_git.png";
 import bootstrapTable_logo from "./assets/logo_bootstrapTable.png";
 import mysql_logo from "./assets/logo_mysql.svg";
-import typescript_logo from "./assets/logo_typescript.svg"
+import typescript_logo from "./assets/logo_typescript.svg";
+import mongodb_logo from "./assets/logo_mongodb.svg";
+import laravel_logo from "./assets/logo_laravel.svg";
+import nodejs_logo from "./assets/logo_nodejs.svg";
+import tailwind_logo from "./assets/logo_tailwind.svg";
+import vite_logo from "./assets/logo_vite.svg";
 
 const personalSkills = [
   { name: "Bootstrap", image: bootstrap_logo },
@@ -26,11 +31,16 @@ const personalSkills = [
   { name: "JavaScript", image: js_logo },
   { name: "PHP", image: php_logo },
   { name: "PostgreSQL", image: postgresql_logo },
-  { name: "Bootstrap Table", image: bootstrapTable_logo},
+  { name: "Bootstrap Table", image: bootstrapTable_logo },
   { name: "React", image: react_logo },
   { name: "Git", image: git_logo },
   { name: "MySql", image: mysql_logo },
   { name: "Typescript", image: typescript_logo },
+  { name: "MongoDB", image: mongodb_logo },
+  { name: "Laravel", image: laravel_logo },
+  { name: "Node.js", image: nodejs_logo },
+  { name: "Tailwind", image: tailwind_logo },
+  { name: "Vite", image: vite_logo },
 ];
 
 const Skills = () => {
@@ -38,7 +48,7 @@ const Skills = () => {
     <section className="lenguage-container-skills">
       <div className="container grid">
         <h2>Skills</h2>
-          <SectionSkills personalSkills={personalSkills} />
+        <SectionSkills personalSkills={personalSkills} />
       </div>
     </section>
   );
