@@ -147,8 +147,6 @@ const ContactForm = ({ submitData }) => {
                 <Link
                   className="link-permissions"
                   to="/conditions"
-                  target="_blank"
-                  rel="noopener noreferrer"
                   onClick={handleLinkClick}
                 >
                   terms and conditions
