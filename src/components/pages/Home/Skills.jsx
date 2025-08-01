@@ -8,7 +8,7 @@ import github_logo from "./assets/logo_github.svg";
 import html_logo from "./assets/logo_html.svg";
 import jquery_logo from "./assets/logo_jquery.svg";
 import js_logo from "./assets/logo_js.svg";
-import php_logo from "./assets/logo_php.png";
+import php_logo from "./assets/logo_php.webp";
 import postgresql_logo from "./assets/logo_postgresql.svg";
 import react_logo from "./assets/logo_react.svg";
 import git_logo from "./assets/logo_git.png";

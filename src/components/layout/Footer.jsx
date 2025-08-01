@@ -6,7 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { HashLink } from "react-router-hash-link";
 import "./footer.css";
-import logoWhiteImage from "./assets/logo_large.png";
+import logoWhiteImage from "./assets/logo_large.webp";
 
 const socials = [
   { icon: faGithub, url: "https://github.com/monsieurlopez" },

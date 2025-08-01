@@ -1,9 +1,9 @@
 import { HashLink } from "react-router-hash-link";
 import Slider from "react-slick";
-import populationChartImage from "./assets/img-population-chart.png";
-import barbaraGarciaImage from "./assets/img-barbara.png";
-import littleLemonImage from "./assets/logo_litle_lemon.png";
-import inCodeCoin from "./assets/Logo-incodecoin.png";
+import populationChartImage from "./assets/img-population-chart.webp";
+import barbaraGarciaImage from "./assets/img-barbara.webp";
+import littleLemonImage from "./assets/logo_litle_lemon.webp";
+import inCodeCoin from "./assets/Logo-incodecoin.webp";
 import "./Portfolio.css";
 import Cards from "./Cards";
 import "slick-carousel/slick/slick.css";
