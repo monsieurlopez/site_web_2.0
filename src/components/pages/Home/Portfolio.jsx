@@ -62,7 +62,7 @@ const proyects = [
   {
     name: "Bárbara García Torres",
     image: barbaraGarciaImage,
-    url: "https://barbara-garcia-torres.vercel.app/",
+    url: "https://www.barbaragarciatorresibclc.com/",
     github: "https://github.com/monsieurlopez/barbara-garcia-torres",
     description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
     badges: [
