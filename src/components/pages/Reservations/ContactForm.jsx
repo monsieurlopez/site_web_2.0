@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Formik } from "formik";
 import FormField from "./formField";
 import emailjs from "@emailjs/browser";
+import { Conditions } from "../Conditions/Conditions";
 
 const ContactForm = ({ submitData }) => {
   const [termsAccepted, setTermsAccepted] = useState(false);
@@ -139,22 +141,18 @@ const ContactForm = ({ submitData }) => {
             label="Terms and Conditions *"
             htmlFor="terms-and-conditions"
           >
-            <div
-            className="checkbox-group"
-            >
-              <label
-                htmlFor="terms-and-conditions"
-              >
+            <div className="checkbox-group">
+              <label htmlFor="terms-and-conditions">
                 I accept the{" "}
-                <a
+                <Link
                   className="link-permissions"
-                  href="/permisos-y-condiciones.html"
+                  to="/conditions"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={handleLinkClick} 
+                  onClick={handleLinkClick}
                 >
                   terms and conditions
-                </a>
+                </Link>
               </label>
               <input
                 className="terms-checkbox"
