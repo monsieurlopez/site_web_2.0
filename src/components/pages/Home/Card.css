@@ -134,7 +134,7 @@
   color: #272e2e;
   padding: 0.3rem 0.8rem;
   border-radius: 0.5rem;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
@@ -146,4 +146,35 @@
 .project-badge:hover {
   background-color: #e0e0e0;
   color: #1a1a1a;
+}
+
+/** Style badges for type **/
+.type-Personal {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.type-Client {
+  background-color: #61ed82;
+  color: #055518;
+}
+
+.type-Capstone {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-Demo {
+  background-color: #eac754;
+  color: #423e35;
+}
+
+.status-Online {
+  background-color: #71a9e6;
+  color: #021c38;
+}
+
+.status-Working {
+  background-color: #d1ecf1;
+  color: #0c5460;
 }

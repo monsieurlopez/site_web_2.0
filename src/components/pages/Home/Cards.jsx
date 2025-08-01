@@ -10,7 +10,13 @@ const Project = ({ card }) => {
       <div className="project-card-image">
         <img src={card.image} alt={card.name} loading="lazy" />
         <div className="project-card-image-overlay">
-          <a type="button" href={card.url} target="_blank" rel="noopener noreferrer" className="project-card-image-overlay-link">
+          <a
+            type="button"
+            href={card.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-card-image-overlay-link"
+          >
             Visit the site
           </a>
         </div>
@@ -37,6 +43,12 @@ const Project = ({ card }) => {
         </div>
       </div>
       <div className="project-card-body-footer">
+        <div className="project-card-meta">
+          <span className={`project-badge type-${card.type}`}>{card.type}</span>
+          <span className={`project-badge status-${card.status}`}>
+            {card.status}
+          </span>
+        </div>
         <p>{card.description}</p>
         <div className="project-badges">
           {card.badges.map((badge, index) => (

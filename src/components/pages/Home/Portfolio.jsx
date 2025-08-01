@@ -15,7 +15,7 @@ const proyects = [
     image: littleLemonImage,
     url: "https://little-lemon-restaurant-wine.vercel.app/",
     github: "https://github.com/monsieurlopez/little-lemon-restaurant",
-    description: `Final capstone project for Meta Front-end developer program on Coursera,
+    description: `Project for Meta Front-end developer program on Coursera,
       which contains a detailed and responsive website with table-booking
       functionality.`,
     badges: [
@@ -27,13 +27,15 @@ const proyects = [
       "EmailJS",
       "Formik",
     ],
+    type: "Capstone",
+    status: "Demo",
   },
   {
     name: "In Code Coin",
     image: inCodeCoin,
     url: "https://in-code-coin.github.io/in-code-solutions/",
     github: "https://github.com/IN-CODE-COIN/in-code-solutions",
-    description: `The users can access updated information on cryptocurrencies and fiat currencies. The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
+    description: `The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
     badges: [
       "HTML",
       "CSS",
@@ -42,13 +44,15 @@ const proyects = [
       "GridJs",
       "APIs",
     ],
+    type: "Capstone",
+    status: "Demo",
   },
   {
     name: "Population Charts",
     image: populationChartImage,
     url: "https://population-charts.vercel.app/",
     github: "https://github.com/monsieurlopez/population-charts",
-    description: `An application created to visualize population charts of the world through responsive graphs that adapt to different device sizes and can be downloaded.`,
+    description: `An application created to visualize population charts through responsive graphs that adapt to different device sizes and can be downloaded.`,
     badges: [
       "HTML",
       "CSS",
@@ -58,6 +62,8 @@ const proyects = [
       "Axios",
       "Bootstrap",
     ],
+    type: "Personal",
+    status: "Demo",
   },
   {
     name: "Bárbara García Torres",
@@ -73,6 +79,8 @@ const proyects = [
       "Bootstrap",
       "EmailJS",
     ],
+    type: "Client",
+    status: "Online",
   },
 ];
 
