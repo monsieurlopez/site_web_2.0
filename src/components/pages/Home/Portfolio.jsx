@@ -31,6 +31,23 @@ const proyects = [
     status: "Demo",
   },
   {
+    name: "Bárbara García Torres",
+    image: barbaraGarciaImage,
+    url: "https://www.barbaragarciatorresibclc.com/",
+    github: "https://github.com/monsieurlopez/barbara-garcia-torres",
+    description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
+    badges: [
+      "HTML",
+      "CSS",
+      "Vanilla Javascript",
+      "APIs",
+      "Bootstrap",
+      "EmailJS",
+    ],
+    type: "Client",
+    status: "Online",
+  },
+  {
     name: "In Code Coin",
     image: inCodeCoin,
     url: "https://in-code-coin.github.io/in-code-solutions/",
@@ -64,23 +81,6 @@ const proyects = [
     ],
     type: "Personal",
     status: "Demo",
-  },
-  {
-    name: "Bárbara García Torres",
-    image: barbaraGarciaImage,
-    url: "https://www.barbaragarciatorresibclc.com/",
-    github: "https://github.com/monsieurlopez/barbara-garcia-torres",
-    description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
-    badges: [
-      "HTML",
-      "CSS",
-      "Vanilla Javascript",
-      "APIs",
-      "Bootstrap",
-      "EmailJS",
-    ],
-    type: "Client",
-    status: "Online",
   },
 ];
 
