@@ -10,15 +10,17 @@ const Project = ({ card }) => {
       <div className="project-card-image">
         <img src={card.image} alt={card.name} loading="lazy" />
         <div className="project-card-image-overlay">
-          <a
-            type="button"
-            href={card.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card-image-overlay-link"
-          >
-            Visit the site
-          </a>
+          {card.demo && (
+            <a
+              type="button"
+              href={card.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card-image-overlay-link"
+            >
+              Visit the site
+            </a>
+          )}
         </div>
       </div>
       <div className="project-card-header">
@@ -29,6 +31,7 @@ const Project = ({ card }) => {
             target="_blank"
             rel="noopener noreferrer"
             className="project-card-github-icon"
+            title="Go to GitHub"
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
@@ -36,7 +39,8 @@ const Project = ({ card }) => {
             href={card.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-card-link-icon"
+            className={`project-card-link-icon ${!card.demo ? "disabled" : ""}`}
+            title={`${!card.demo ? "Site not available" : "Go to site"}`}
           >
             <FontAwesomeIcon icon={faLink} />
           </a>

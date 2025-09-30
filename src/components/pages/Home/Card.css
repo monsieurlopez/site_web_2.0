@@ -122,6 +122,12 @@
   color: #f4ce14;
 }
 
+/* Icon link disabled */
+.project-card-link-icon.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .project-badges {
   display: flex;
   flex-wrap: wrap;
