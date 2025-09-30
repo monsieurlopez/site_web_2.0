@@ -20,14 +20,15 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #f9f9f9;
 }
 
 body {
-  font-family: 'Pigiarniq', sans-serif;
+  font-family: "Pigiarniq", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #272e2e;
-  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  /*background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);*/
 }
 
 header {
@@ -116,7 +117,8 @@ img {
   display: grid;
 }
 
-.button-primary, .button-submit {
+.button-primary,
+.button-submit {
   padding: 0.5rem 1rem;
   border-radius: 2rem;
   background-color: #f4ce14;
@@ -127,9 +129,9 @@ img {
 
 @media (max-width: 576px) {
   .button-primary {
-    padding: 0.30rem 0.5rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 1rem;
-    font-size: 0.8rem
+    font-size: 0.8rem;
   }
 }
 
