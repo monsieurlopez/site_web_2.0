@@ -8,7 +8,7 @@
   border-radius: 1rem;
   overflow: hidden;
   background-color: #f9f9f9;
-  box-shadow: 0 0 20px #d9d9d9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -120,6 +120,12 @@
 .project-card a:hover,
 .project-card a:focus {
   color: #f4ce14;
+}
+
+/* Icon link disabled */
+.project-card-link-icon.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .project-badges {

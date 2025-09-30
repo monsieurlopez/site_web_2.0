@@ -4,6 +4,7 @@ import populationChartImage from "./assets/img-population-chart.webp";
 import barbaraGarciaImage from "./assets/img-barbara.webp";
 import littleLemonImage from "./assets/logo_litle_lemon.webp";
 import inCodeCoin from "./assets/Logo-incodecoin.webp";
+import cryptoworldImage from "./assets/img-cryptoworld.webp";
 import "./Portfolio.css";
 import Cards from "./Cards";
 import "slick-carousel/slick/slick.css";
@@ -29,6 +30,7 @@ const proyects = [
     ],
     type: "Capstone",
     status: "Demo",
+    demo: true,
   },
   {
     name: "Bárbara García Torres",
@@ -46,6 +48,27 @@ const proyects = [
     ],
     type: "Client",
     status: "Online",
+    demo: true,
+  },
+  {
+    name: "Cryptoworld",
+    image: cryptoworldImage,
+    url: "https://population-charts.vercel.app/",
+    github: "https://github.com/IN-CODE-COIN/cryptoworld-2.0",
+    description: `Web platform designed for searching, tracking, and managing cryptocurrencies.`,
+    badges: [
+      "PHP",
+      "Laravel",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "Axios",
+      "MySql",
+      "APIs",
+    ],
+    type: "Capstone",
+    status: "Working",
+    demo: false,
   },
   {
     name: "In Code Coin",
@@ -63,6 +86,7 @@ const proyects = [
     ],
     type: "Capstone",
     status: "Demo",
+    demo: true,
   },
   {
     name: "Population Charts",
@@ -81,6 +105,7 @@ const proyects = [
     ],
     type: "Personal",
     status: "Demo",
+    demo: true,
   },
 ];
 

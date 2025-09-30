@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="container grid">
         <div className="hero-information">
           <h1>Sergio López</h1>
-          <h2>Front-End Developer</h2>
+          <h2>Full Stack Developer</h2>
           <HashLink className="button-primary" to="/contact">
             Contact me now !
           </HashLink>

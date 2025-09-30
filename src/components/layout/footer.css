@@ -3,12 +3,12 @@
   background-color: #f9f9f9;
   color: #272e2e;
   padding: 1rem 6%;
-  height: 6rem;
+  height: auto;
   display: grid;
   gap: 2rem;
   justify-content: space-evenly;
-  grid-template-columns: repeat(3, minmax(6rem, max-content));
-  border-top: 0.15rem solid #272e2e;
+  grid-template-columns: repeat(2, minmax(6rem, max-content));
+  border-top: 0.1rem solid #272e2e;
 }
 
 .site-footer-logo {
@@ -60,7 +60,6 @@
 
 @media (max-width: 768px) {
   .site-footer {
-    height: 16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
