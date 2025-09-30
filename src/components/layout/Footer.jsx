@@ -24,16 +24,6 @@ const Footer = ({ navLinks }) => {
         <img className="logo" src={logoWhiteImage} alt="SerLopez" />
       </div>
 
-      <nav className="site-footer-nav">
-        <h4>Sitemap</h4>
-        <ul>
-          {navLinks.map((navLink, index) => (
-            <li key={index}>
-              <HashLink to={navLink.path}>{navLink.name}</HashLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
       <div className="site-footer-social">
         <h4>Connect with me</h4>
         {socials.map((social, index) => (
