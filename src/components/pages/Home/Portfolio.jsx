@@ -14,7 +14,7 @@ const proyects = [
   {
     name: "Cryptoworld",
     image: cryptoworldImage,
-    url: "https://population-charts.vercel.app/",
+    url: "",
     github: "https://github.com/IN-CODE-COIN/cryptoworld-2.0",
     description: `Web platform designed for searching, tracking, and managing cryptocurrencies.`,
     badges: [
@@ -30,12 +30,13 @@ const proyects = [
     type: "Capstone",
     status: "Working",
     demo: false,
+    githubPrive: false,
   },
   {
     name: "Bárbara García Torres",
     image: barbaraGarciaImage,
     url: "https://www.barbaragarciatorresibclc.com/",
-    github: "https://github.com/monsieurlopez/barbara-garcia-torres",
+    github: "",
     description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
     badges: [
       "HTML",
@@ -48,6 +49,7 @@ const proyects = [
     type: "Client",
     status: "Online",
     demo: true,
+    githubPrive: true,
   },
   {
     name: "Little Lemon",
@@ -69,6 +71,7 @@ const proyects = [
     type: "Capstone",
     status: "Demo",
     demo: true,
+    githubPrive: false,
   },
   {
     name: "In Code Coin",
@@ -87,6 +90,7 @@ const proyects = [
     type: "Capstone",
     status: "Demo",
     demo: true,
+    githubPrive: false,
   },
   {
     name: "Population Charts",
@@ -106,6 +110,7 @@ const proyects = [
     type: "Personal",
     status: "Demo",
     demo: true,
+    githubPrive: false,
   },
 ];
 

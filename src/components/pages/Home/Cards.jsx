@@ -27,20 +27,22 @@ const Project = ({ card }) => {
         <h3>{card.name}</h3>
         <div className="project-card-icons">
           <a
-            href={card.github}
+            href={card.github ? undefined : card.githubPrive}
             target="_blank"
             rel="noopener noreferrer"
-            className="project-card-github-icon"
-            title="Go to GitHub"
+            className={`project-card-github-icon ${card.githubPrive ? "disabled" : ""}`}
+            title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
+            onClick={(e) => card.githubPrive && e.preventDefault()}
           >
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href={card.url}
+            href={!card.demo ? undefined : card.url}
             target="_blank"
             rel="noopener noreferrer"
             className={`project-card-link-icon ${!card.demo ? "disabled" : ""}`}
             title={`${!card.demo ? "Site not available" : "Go to site"}`}
+            onClick={(e) => card.demo && e.preventDefault()}
           >
             <FontAwesomeIcon icon={faLink} />
           </a>

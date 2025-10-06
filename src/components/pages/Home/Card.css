@@ -123,7 +123,8 @@
 }
 
 /* Icon link disabled */
-.project-card-link-icon.disabled {
+.project-card-link-icon.disabled,
+.project-card-github-icon.disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
