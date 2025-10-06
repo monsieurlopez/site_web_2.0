@@ -37,7 +37,7 @@ const Project = ({ card }) => {
             <FontAwesomeIcon icon={faGithub} />
           </a>
           <a
-            href={!card.demo ? card : undefined}
+            href={card.demo ? card : undefined}
             target="_blank"
             rel="noopener noreferrer"
             className={`project-card-link-icon ${!card.demo ? "disabled" : ""}`}
