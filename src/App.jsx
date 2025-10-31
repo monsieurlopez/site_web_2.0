@@ -1,28 +1,32 @@
 import { Route, Routes } from "react-router-dom";
+import { lazy, Suspense } from "react";
 import Layout from "./components/layout/Layout";
-import Home from "./components/pages/Home/Home";
-import ContactInfos from "./components/pages/Reservations/ContactInfos";
-import ConfirmedContact from "./components/pages/Reservations/ConfirmedContact";
-import { Conditions } from "./components/pages/Conditions/Conditions";
-import Projects from "./components/pages/Projects/Projects";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 
+const Home = lazy(() => import("./components/pages/Home/Home"));
+const ContactInfos = lazy(() => import("./components/pages/Reservations/ContactInfos"));
+const ConfirmedContact = lazy(() => import("./components/pages/Reservations/ConfirmedContact"));
+const Conditions = lazy(() => import("./components/pages/Conditions/Conditions"));
+const Projects = lazy(() => import("./components/pages/Projects/Projects"));
+
 const App = () => {
-  return (
-    <>
-      <Layout>
-        <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/contact" element={<ContactInfos />} />
-        <Route path="/ConfirmedContact" element={<ConfirmedContact />} />
-        <Route path="/conditions" element={<Conditions />} />
-          <Route path="/portfolio" element={<Projects />} />
-        </Routes>
-      </Layout>
-      <SpeedInsights />
-      <Analytics />
+return (
+<>
+<Layout>
+<Suspense fallback={<div>Loading...</div>}>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/home" element={<Home />} />
+    <Route path="/contact" element={<ContactInfos />} />
+    <Route path="/ConfirmedContact" element={<ConfirmedContact />} />
+  <Route path="/conditions" element={<Conditions />} />
+    <Route path="/portfolio" element={<Projects />} />
+    </Routes>
+  </Suspense>
+</Layout>
+  <SpeedInsights />
+    <Analytics />
     </>
   );
 };

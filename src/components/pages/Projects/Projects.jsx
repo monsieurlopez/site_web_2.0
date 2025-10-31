@@ -130,7 +130,7 @@ const Projects = () => {
   return (
     <section className="container projects-section" id="portfolio">
       <div className="portfolio-projects-header">
-        <h2>All Portfolio</h2>
+        <h2>All Projects</h2>
         <HashLink
           className="button-primary"
           to="/#portfolio"

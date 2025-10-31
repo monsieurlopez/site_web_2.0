@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import barbaraGarciaImage from "./assets/img-barbara.webp";
@@ -172,11 +172,11 @@ const Portfolio = () => {
 
       <div className="show-all-container">
         <Link to="/portfolio" className="button-primary">
-          Show All
+          Show All Projects
         </Link>
       </div>
     </section>
   );
 };
 
-export default Portfolio;
+export default React.memo(Portfolio);

@@ -40,11 +40,11 @@ const ContactForm = ({ submitData }) => {
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
-        const service_id = "service_i3vng1m";
-        const template_id = "template_cepy6gg";
-        const public_id = "gbtOYXQ6SZQAOaHko";
+      const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const public_id = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-        const templateParams = {
+      const templateParams = {
           from_name: `${values.firstName} ${values.lastName}`,
           user_email: values.mail,
           subject: values.subject,

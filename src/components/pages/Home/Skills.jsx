@@ -1,46 +1,56 @@
 import "./Skills.css";
 import SectionSkills from "./SectionSkills";
 
-import bootstrap_logo from "./assets/logo_bootstrap.svg";
-import chartjs_logo from "./assets/logo_chartjs.svg";
-import css_logo from "./assets/logo_css.png";
-import github_logo from "./assets/logo_github.svg";
-import html_logo from "./assets/logo_html.svg";
-import jquery_logo from "./assets/logo_jquery.svg";
-import js_logo from "./assets/logo_js.svg";
-import php_logo from "./assets/logo_php.webp";
-import postgresql_logo from "./assets/logo_postgresql.svg";
-import react_logo from "./assets/logo_react.svg";
-import git_logo from "./assets/logo_git.png";
-import bootstrapTable_logo from "./assets/logo_bootstrapTable.png";
-import mysql_logo from "./assets/logo_mysql.svg";
-import typescript_logo from "./assets/logo_typescript.svg";
-import mongodb_logo from "./assets/logo_mongodb.svg";
-import laravel_logo from "./assets/logo_laravel.svg";
-import nodejs_logo from "./assets/logo_nodejs.svg";
-import tailwind_logo from "./assets/logo_tailwind.svg";
-import vite_logo from "./assets/logo_vite.svg";
+import {
+  bootstrapLogo,
+  chartjsLogo,
+  cssLogo,
+  githubLogo,
+  htmlLogo,
+  jqueryLogo,
+  jsLogo,
+  phpLogo,
+  postgresqlLogo,
+  reactLogo,
+  gitLogo,
+  bootstrapTableLogo,
+  mysqlLogo,
+  typescriptLogo,
+  mongodbLogo,
+  laravelLogo,
+  nodejsLogo,
+  tailwindLogo,
+  viteLogo,
+  dockerLogo,
+  postmanLogo,
+  vercelLogo,
+  vueLogo,
+} from "./assets";
 
 const personalSkills = [
-  { name: "Bootstrap", image: bootstrap_logo },
-  { name: "Chart.js", image: chartjs_logo },
-  { name: "CSS", image: css_logo },
-  { name: "GitHub", image: github_logo },
-  { name: "HTML", image: html_logo },
-  { name: "jQuery", image: jquery_logo },
-  { name: "JavaScript", image: js_logo },
-  { name: "PHP", image: php_logo },
-  { name: "PostgreSQL", image: postgresql_logo },
-  { name: "Bootstrap Table", image: bootstrapTable_logo },
-  { name: "React", image: react_logo },
-  { name: "Git", image: git_logo },
-  { name: "MySql", image: mysql_logo },
-  { name: "Typescript", image: typescript_logo },
-  { name: "MongoDB", image: mongodb_logo },
-  { name: "Laravel", image: laravel_logo },
-  { name: "Node.js", image: nodejs_logo },
-  { name: "Tailwind", image: tailwind_logo },
-  { name: "Vite", image: vite_logo },
+{ name: "Bootstrap", image: bootstrapLogo },
+{ name: "Chart.js", image: chartjsLogo },
+{ name: "CSS", image: cssLogo },
+{ name: "GitHub", image: githubLogo },
+{ name: "HTML", image: htmlLogo },
+{ name: "jQuery", image: jqueryLogo },
+{ name: "JavaScript", image: jsLogo },
+{ name: "PHP", image: phpLogo },
+{ name: "PostgreSQL", image: postgresqlLogo },
+{ name: "Bootstrap Table", image: bootstrapTableLogo },
+{ name: "React", image: reactLogo },
+{ name: "Git", image: gitLogo },
+{ name: "MySql", image: mysqlLogo },
+{ name: "Typescript", image: typescriptLogo },
+{ name: "MongoDB", image: mongodbLogo },
+{ name: "Laravel", image: laravelLogo },
+{ name: "Node.js", image: nodejsLogo },
+{ name: "Tailwind", image: tailwindLogo },
+{ name: "Vite", image: viteLogo },
+{ name: "Docker", image: dockerLogo },
+{ name: "Postman", image: postmanLogo },
+{ name: "Vercel", image: vercelLogo },
+{ name: "Vue", image: vueLogo },
 ];
 
 const Skills = () => {

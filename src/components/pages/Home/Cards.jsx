@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -79,4 +80,4 @@ Project.propTypes = {
   }).isRequired,
 };
 
-export default Project;
+export default React.memo(Project);
