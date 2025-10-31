@@ -25,7 +25,8 @@
     "react-router-hash-link": "^2.4.3",
     "react-slick": "^0.30.3",
     "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+      "prop-types": "^15.8.1"
   },
   "scripts": {
     "dev": "vite",
