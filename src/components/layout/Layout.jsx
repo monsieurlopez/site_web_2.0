@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     },
     {
       name: "Portfolio",
-      path: "/#portfolio",
+      path: "/portfolio",
       hashLink: true,
     },
     {

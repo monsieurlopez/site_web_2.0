@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import barbaraGarciaImage from "./assets/img-barbara.webp";
-import littleLemonImage from "./assets/logo_litle_lemon.webp";
-import cryptoworldImage from "./assets/img-cryptoworld.webp";
-import "./Portfolio.css";
-import Cards from "./Cards";
+import Cards from "../Home/Cards";
+import populationChartImage from "../Home/assets/img-population-chart.webp";
+import barbaraGarciaImage from "../Home/assets/img-barbara.webp";
+import littleLemonImage from "../Home/assets/logo_litle_lemon.webp";
+import inCodeCoin from "../Home/assets/Logo-incodecoin.webp";
+import cryptoworldImage from "../Home/assets/img-cryptoworld.webp";
+import "./Projects.css";
 
-const featuredProjects = [
+const proyects = [
   {
     name: "Cryptoworld",
     image: cryptoworldImage,
@@ -54,8 +55,8 @@ const featuredProjects = [
     url: "https://little-lemon-restaurant-wine.vercel.app/",
     github: "https://github.com/monsieurlopez/little-lemon-restaurant",
     description: `Project for Meta Front-end developer program on Coursera,
-  which contains a detailed and responsive website with table-booking
-  functionality.`,
+      which contains a detailed and responsive website with table-booking
+      functionality.`,
     badges: [
       "HTML",
       "CSS",
@@ -70,9 +71,48 @@ const featuredProjects = [
     demo: true,
     githubPrive: false,
   },
+  {
+    name: "In Code Coin",
+    image: inCodeCoin,
+    url: "https://in-code-coin.github.io/in-code-solutions/",
+    github: "https://github.com/IN-CODE-COIN/in-code-solutions",
+    description: `The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
+    badges: [
+      "HTML",
+      "CSS",
+      "Vanilla Javascript",
+      "Bootstrap",
+      "GridJs",
+      "APIs",
+    ],
+    type: "Capstone",
+    status: "Demo",
+    demo: true,
+    githubPrive: false,
+  },
+  {
+    name: "Population Charts",
+    image: populationChartImage,
+    url: "https://population-charts.vercel.app/",
+    github: "https://github.com/monsieurlopez/population-charts",
+    description: `An application created to visualize population charts through responsive graphs that adapt to different device sizes and can be downloaded.`,
+    badges: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Chartjs",
+      "Axios",
+      "Bootstrap",
+    ],
+    type: "Personal",
+    status: "Demo",
+    demo: true,
+    githubPrive: false,
+  },
 ];
 
-const Portfolio = () => {
+const Projects = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -88,9 +128,9 @@ const Portfolio = () => {
   };
 
   return (
-    <section className="container portfolio-section" id="portfolio">
-      <div className="portfolio-header">
-        <h2>Portfolio</h2>
+    <section className="container projects-section" id="portfolio">
+      <div className="portfolio-projects-header">
+        <h2>All Portfolio</h2>
         <HashLink
           className="button-primary"
           to="/#portfolio"
@@ -100,12 +140,10 @@ const Portfolio = () => {
         </HashLink>
       </div>
 
-      <div className="featured-projects">
+      <div className="projects-grid">
         {isMobile
-          ? featuredProjects.map((card, index) => (
-              <Cards key={index} card={card} />
-            ))
-          : featuredProjects.map((card, index) => (
+          ? proyects.map((card, index) => <Cards key={index} card={card} />)
+          : proyects.map((card, index) => (
               <article key={index} className="project-horizontal-card">
                 <div className="project-horizontal-image">
                   <img src={card.image} alt={card.name} loading="lazy" />
@@ -169,14 +207,8 @@ const Portfolio = () => {
               </article>
             ))}
       </div>
-
-      <div className="show-all-container">
-        <Link to="/portfolio" className="button-primary">
-          Show All
-        </Link>
-      </div>
     </section>
   );
 };
 
-export default Portfolio;
+export default Projects;
