@@ -144,7 +144,8 @@
 
 .project-horizontal-meta {
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 0.75rem;
 }
 

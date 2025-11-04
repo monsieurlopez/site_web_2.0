@@ -1,14 +1,41 @@
 import { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Cards from "../Home/Cards";
 import populationChartImage from "../Home/assets/img-population-chart.webp";
 import barbaraGarciaImage from "../Home/assets/img-barbara.webp";
 import littleLemonImage from "../Home/assets/logo_litle_lemon.webp";
 import inCodeCoin from "../Home/assets/Logo-incodecoin.webp";
 import cryptoworldImage from "../Home/assets/img-cryptoworld.webp";
+import insidersPulseImage from "../Home/assets/img-insiderspulse.webp";
 import "./Projects.css";
 
 const proyects = [
+  {
+    name: "Insiders Pulse",
+    image: insidersPulseImage,
+    url: "https://insiderspulse.com/",
+    github: "",
+    description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
+    badges: [
+      "Nodejs",
+      "Express",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "ChakraUI",
+      "Postgresql",
+      "Resend",
+      "Google Cloud",
+      "Vercel",
+    ],
+    type: "Client",
+    status: "Online",
+    demo: true,
+    githubPrive: true,
+  },
   {
     name: "Cryptoworld",
     image: cryptoworldImage,
@@ -164,36 +191,38 @@ const Projects = () => {
                 <div className="project-horizontal-content">
                   <div className="project-horizontal-header">
                     <h3>{card.name}</h3>
-                    <div className="project-horizontal-icons">
-                      <a
-                        href={card.githubPrive ? undefined : card.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
-                        title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
-                        onClick={(e) => card.githubPrive && e.preventDefault()}
-                      >
-                        <i className="fab fa-github"></i>
-                      </a>
-                      <a
-                        href={card.demo ? card.url : undefined}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
-                        title={`${!card.demo ? "Site not available" : "Go to site"}`}
-                        onClick={(e) => !card.demo && e.preventDefault()}
-                      >
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
                   </div>
                   <div className="project-horizontal-meta">
-                    <span className={`project-badge type-${card.type}`}>
+                  <div className="project-horizontal-badges-meta">
+                  <span className={`project-badge type-${card.type}`}>
                       {card.type}
                     </span>
-                    <span className={`project-badge status-${card.status}`}>
+                  <span className={`project-badge status-${card.status}`}>
                       {card.status}
-                    </span>
+                      </span>
+                    </div>
+                  <div className="project-horizontal-icons">
+                  <a
+                    href={card.githubPrive ? undefined : card.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
+                    title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
+                      onClick={(e) => card.githubPrive && e.preventDefault()}
+                  >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  <a
+                    href={card.demo ? card.url : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
+                    title={`${!card.demo ? "Site not available" : "Go to site"}`}
+                      onClick={(e) => !card.demo && e.preventDefault()}
+                  >
+                      <FontAwesomeIcon icon={faLink} />
+                      </a>
+                    </div>
                   </div>
                   <p>{card.description}</p>
                   <div className="project-horizontal-badges">

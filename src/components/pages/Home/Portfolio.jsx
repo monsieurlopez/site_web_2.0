@@ -1,13 +1,39 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import barbaraGarciaImage from "./assets/img-barbara.webp";
-import littleLemonImage from "./assets/logo_litle_lemon.webp";
 import cryptoworldImage from "./assets/img-cryptoworld.webp";
+import insidersPulseImage from "./assets/img-insiderspulse.webp";
 import "./Portfolio.css";
 import Cards from "./Cards";
 
 const featuredProjects = [
+  {
+    name: "Insiders Pulse",
+    image: insidersPulseImage,
+    url: "https://insiderspulse.com/",
+    github: "",
+    description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
+    badges: [
+      "Nodejs",
+      "Express",
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "ChakraUI",
+      "Postgresql",
+      "Resend",
+      "Google Cloud",
+      "Vercel",
+    ],
+    type: "Client",
+    status: "Online",
+    demo: true,
+    githubPrive: true,
+  },
   {
     name: "Cryptoworld",
     image: cryptoworldImage,
@@ -47,28 +73,6 @@ const featuredProjects = [
     status: "Online",
     demo: true,
     githubPrive: true,
-  },
-  {
-    name: "Little Lemon",
-    image: littleLemonImage,
-    url: "https://little-lemon-restaurant-wine.vercel.app/",
-    github: "https://github.com/monsieurlopez/little-lemon-restaurant",
-    description: `Project for Meta Front-end developer program on Coursera,
-  which contains a detailed and responsive website with table-booking
-  functionality.`,
-    badges: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Fontawesome",
-      "EmailJS",
-      "Formik",
-    ],
-    type: "Capstone",
-    status: "Demo",
-    demo: true,
-    githubPrive: false,
   },
 ];
 
@@ -126,36 +130,38 @@ const Portfolio = () => {
                 <div className="project-horizontal-content">
                   <div className="project-horizontal-header">
                     <h3>{card.name}</h3>
-                    <div className="project-horizontal-icons">
-                      <a
-                        href={card.githubPrive ? undefined : card.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
-                        title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
-                        onClick={(e) => card.githubPrive && e.preventDefault()}
-                      >
-                        <i className="fab fa-github"></i>
-                      </a>
-                      <a
-                        href={card.demo ? card.url : undefined}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
-                        title={`${!card.demo ? "Site not available" : "Go to site"}`}
-                        onClick={(e) => !card.demo && e.preventDefault()}
-                      >
-                        <i className="fas fa-link"></i>
-                      </a>
-                    </div>
                   </div>
                   <div className="project-horizontal-meta">
-                    <span className={`project-badge type-${card.type}`}>
+                  <div className="project-horizontal-badges-meta">
+                  <span className={`project-badge type-${card.type}`}>
                       {card.type}
                     </span>
-                    <span className={`project-badge status-${card.status}`}>
+                  <span className={`project-badge status-${card.status}`}>
                       {card.status}
-                    </span>
+                      </span>
+                    </div>
+                  <div className="project-horizontal-icons">
+                  <a
+                    href={card.githubPrive ? undefined : card.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
+                    title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
+                      onClick={(e) => card.githubPrive && e.preventDefault()}
+                  >
+                      <FontAwesomeIcon icon={faGithub} />
+                    </a>
+                  <a
+                    href={card.demo ? card.url : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
+                    title={`${!card.demo ? "Site not available" : "Go to site"}`}
+                      onClick={(e) => !card.demo && e.preventDefault()}
+                  >
+                      <FontAwesomeIcon icon={faLink} />
+                      </a>
+                    </div>
                   </div>
                   <p>{card.description}</p>
                   <div className="project-horizontal-badges">
