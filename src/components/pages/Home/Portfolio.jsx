@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import cv from "../../layout/assets/CV_Sergio_LOPEZ.pdf";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -87,19 +88,14 @@ const Portfolio = () => {
   }, []);
 
   const handleClick = () => {
-    const imageUrl = require("../../layout/assets/CV_Sergio_LOPEZ.pdf");
-    window.open(imageUrl, "_blank", "noopener,noreferrer");
+    window.open("/CV_Sergio_LOPEZ.pdf", "_blank", "noopener,noreferrer");
   };
 
   return (
     <section className="container portfolio-section" id="portfolio">
       <div className="portfolio-header">
         <h2>Portfolio</h2>
-        <HashLink
-          className="button-primary"
-          to="/#portfolio"
-          onClick={handleClick}
-        >
+        <HashLink className="button-primary" onClick={handleClick}>
           Download CV
         </HashLink>
       </div>
@@ -132,34 +128,34 @@ const Portfolio = () => {
                     <h3>{card.name}</h3>
                   </div>
                   <div className="project-horizontal-meta">
-                  <div className="project-horizontal-badges-meta">
-                  <span className={`project-badge type-${card.type}`}>
-                      {card.type}
-                    </span>
-                  <span className={`project-badge status-${card.status}`}>
-                      {card.status}
+                    <div className="project-horizontal-badges-meta">
+                      <span className={`project-badge type-${card.type}`}>
+                        {card.type}
+                      </span>
+                      <span className={`project-badge status-${card.status}`}>
+                        {card.status}
                       </span>
                     </div>
-                  <div className="project-horizontal-icons">
-                  <a
-                    href={card.githubPrive ? undefined : card.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
-                    title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
-                      onClick={(e) => card.githubPrive && e.preventDefault()}
-                  >
-                      <FontAwesomeIcon icon={faGithub} />
-                    </a>
-                  <a
-                    href={card.demo ? card.url : undefined}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
-                    title={`${!card.demo ? "Site not available" : "Go to site"}`}
-                      onClick={(e) => !card.demo && e.preventDefault()}
-                  >
-                      <FontAwesomeIcon icon={faLink} />
+                    <div className="project-horizontal-icons">
+                      <a
+                        href={card.githubPrive ? undefined : card.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
+                        title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
+                        onClick={(e) => card.githubPrive && e.preventDefault()}
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                      </a>
+                      <a
+                        href={card.demo ? card.url : undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
+                        title={`${!card.demo ? "Site not available" : "Go to site"}`}
+                        onClick={(e) => !card.demo && e.preventDefault()}
+                      >
+                        <FontAwesomeIcon icon={faLink} />
                       </a>
                     </div>
                   </div>
