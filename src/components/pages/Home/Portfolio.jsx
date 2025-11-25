@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import cv from "../../layout/assets/CV_Sergio_LOPEZ.pdf";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
