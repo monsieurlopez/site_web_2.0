@@ -37,7 +37,7 @@ const featuredProjects = [
   {
     name: "Cryptoworld",
     image: cryptoworldImage,
-    url: "",
+    url: "https://cryptoworld.cloud/",
     github: "https://github.com/IN-CODE-COIN/cryptoworld-2.0",
     description: `Web platform designed for searching, tracking, and managing cryptocurrencies.`,
     badges: [
@@ -49,10 +49,12 @@ const featuredProjects = [
       "Axios",
       "MySql",
       "APIs",
+      "Docker",
+      "Nginx"
     ],
     type: "Capstone",
-    status: "Working",
-    demo: false,
+    status: "Online",
+    demo: true,
     githubPrive: false,
   },
   {
