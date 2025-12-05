@@ -30,7 +30,6 @@ const proyects = [
       "Postgresql",
       "Resend",
       "Google Cloud",
-      "Vercel",
     ],
     type: "Client",
     status: "Online",
