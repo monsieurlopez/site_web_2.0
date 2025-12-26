@@ -11,6 +11,7 @@ import inCodeCoin from "../Home/assets/Logo-incodecoin.webp";
 import cryptoworldImage from "../Home/assets/img-cryptoworld.webp";
 import insidersPulseImage from "../Home/assets/img-insiderspulse.webp";
 import timetoImage from "../Home/assets/img-timeto.webp";
+import euroratesImage from "../Home/assets/img-eurorates.webp";
 import "./Projects.css";
 
 const proyects = [
@@ -37,6 +38,28 @@ const proyects = [
     githubPrive: true,
   },
   {
+    name: "Euro Rates API",
+    image: euroratesImage,
+    url: "https://euroratesapi.dev/",
+    github: "https://github.com/monsieurlopez/landing-currencies",
+    description: `Free API for real-time EUR exchange rates from the European Central Bank (BCE). Get official currency conversion data with our simple, fast, and reliable REST API.`,
+    badges: [
+      "PHP",
+      "Laravel",
+      "Vuejs",
+      "Vuetify",
+      "MySql",
+      "APIs",
+      "Docker",
+      "Nginx",
+      "SEO",
+    ],
+    type: "Capstone",
+    status: "Online",
+    demo: true,
+    githubPrive: false,
+  },
+  {
     name: "Cryptoworld",
     image: cryptoworldImage,
     url: "",
@@ -56,7 +79,7 @@ const proyects = [
     ],
     type: "Capstone",
     status: "Online",
-    demo: true,
+    demo: false,
     githubPrive: false,
   },
   {

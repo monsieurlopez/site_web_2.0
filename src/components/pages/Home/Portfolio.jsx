@@ -7,6 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import barbaraGarciaImage from "./assets/img-barbara.webp";
 import cryptoworldImage from "./assets/img-cryptoworld.webp";
 import insidersPulseImage from "./assets/img-insiderspulse.webp";
+import euroratesImage from "./assets/img-eurorates.webp";
 import "./Portfolio.css";
 import Cards from "./Cards";
 
@@ -34,6 +35,28 @@ const featuredProjects = [
     githubPrive: true,
   },
   {
+    name: "Euro Rates API",
+    image: euroratesImage,
+    url: "https://euroratesapi.dev/",
+    github: "https://github.com/monsieurlopez/landing-currencies",
+    description: `Free API for real-time EUR exchange rates from the European Central Bank (BCE). Get official currency conversion data with our simple, fast, and reliable REST API.`,
+    badges: [
+      "PHP",
+      "Laravel",
+      "Vuejs",
+      "Vuetify",
+      "MySql",
+      "APIs",
+      "Docker",
+      "Nginx",
+      "SEO",
+    ],
+    type: "Capstone",
+    status: "Online",
+    demo: true,
+    githubPrive: false,
+  },
+  {
     name: "Cryptoworld",
     image: cryptoworldImage,
     url: "https://cryptoworld.cloud/",
@@ -49,11 +72,11 @@ const featuredProjects = [
       "MySql",
       "APIs",
       "Docker",
-      "Nginx"
+      "Nginx",
     ],
     type: "Capstone",
     status: "Online",
-    demo: true,
+    demo: false,
     githubPrive: false,
   },
   {
