@@ -39,7 +39,7 @@ const featuredProjects = [
     image: euroratesImage,
     url: "https://euroratesapi.dev/",
     github: "https://github.com/monsieurlopez/landing-currencies",
-    description: `Free API for real-time EUR exchange rates from the European Central Bank (BCE). Get official currency conversion data with our simple, fast, and reliable REST API.`,
+    description: `Free API for real-time EUR exchange rates from the European Central Bank (BCE).`,
     badges: [
       "PHP",
       "Laravel",
