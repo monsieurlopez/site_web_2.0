@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const ConfirmedContact = () => {
   const location = useLocation();
-  const { firstName, lastName, mail, subject, message } = location.state || {};
+  const { name, mail, message } = location.state || {};
 
   return (
     <div className="container confirmed-contact">
@@ -12,10 +12,15 @@ const ConfirmedContact = () => {
       <h2>Your message has been envoyed!</h2>
       <div className="contact-summary">
         <h3>Message Details</h3>
-        <p><strong>Name:</strong> {firstName} {lastName}</p>
-        <p><strong>Email:</strong> {mail}</p>
-        <p><strong>Subject:</strong> {subject}</p>
-        <p><strong>Message:</strong> {message}</p>
+        <p>
+          <strong>Name:</strong> {name}
+        </p>
+        <p>
+          <strong>Email:</strong> {mail}
+        </p>
+        <p>
+          <strong>Message:</strong> {message}
+        </p>
       </div>
     </div>
   );
