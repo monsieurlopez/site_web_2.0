@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 const Home = lazy(() => import("./components/pages/Home/Home"));
 const ContactInfos = lazy(() => import("./components/pages/Reservations/ContactInfos"));
 const ConfirmedContact = lazy(() => import("./components/pages/Reservations/ConfirmedContact"));
-const Conditions = lazy(() => import("./components/pages/Conditions/Conditions"));
+const Conditions = lazy(() => import("./components/pages/Conditions/Conditions").then(m => ({ default: m.Conditions })));
 const Projects = lazy(() => import("./components/pages/Projects/Projects"));
 
 const App = () => {

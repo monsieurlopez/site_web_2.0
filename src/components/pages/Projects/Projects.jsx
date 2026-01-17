@@ -4,7 +4,7 @@ import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Cards from "../Home/Cards";
-import populationChartImage from "../Home/assets/img-population-chart.webp";
+//import populationChartImage from "../Home/assets/img-population-chart.webp";
 import barbaraGarciaImage from "../Home/assets/img-barbara.webp";
 import littleLemonImage from "../Home/assets/logo_litle_lemon.webp";
 import inCodeCoin from "../Home/assets/Logo-incodecoin.webp";
@@ -48,10 +48,12 @@ const proyects = [
       "Laravel",
       "Vuejs",
       "Vuetify",
+      "Tailwind",
       "MySql",
       "APIs",
       "Docker",
       "Nginx",
+      "Swagger",
       "SEO",
     ],
     type: "Capstone",
@@ -154,7 +156,7 @@ const proyects = [
     demo: true,
     githubPrive: false,
   },
-  {
+  /*{
     name: "Population Charts",
     image: populationChartImage,
     url: "https://population-charts.vercel.app/",
@@ -173,7 +175,7 @@ const proyects = [
     status: "Demo",
     demo: true,
     githubPrive: false,
-  },
+  },*/
 ];
 
 const Projects = () => {
