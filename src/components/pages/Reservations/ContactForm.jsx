@@ -26,11 +26,11 @@ const ContactForm = ({ submitData }) => {
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
-      const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-      const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-      const public_id = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+        const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const template_id = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const public_id = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      const templateParams = {
+        const templateParams = {
           from_name: values.name,
           user_email: values.mail,
           message: values.message,
@@ -99,11 +99,11 @@ const ContactForm = ({ submitData }) => {
 
           <div className="privacy-notice">
             <p>
-              By clicking "Send Message", you agree that your name, email, and message will be used solely to respond to your inquiry. We do not store your personal data for any other purpose. Your information is protected and handled in accordance with{" "}
-              <Link
-                className="link-permissions"
-                to="/conditions"
-              >
+              By clicking "Send Message", you agree that your name, email, and
+              message will be used solely to respond to your inquiry. We do not
+              store your personal data for any other purpose. Your information
+              is protected and handled in accordance with{" "}
+              <Link className="link-permissions" to="/conditions">
                 data protection regulations
               </Link>
               .
@@ -113,11 +113,7 @@ const ContactForm = ({ submitData }) => {
           <button
             className="button-submit"
             type="submit"
-            disabled={
-              isSubmitting ||
-              !values.name ||
-              !values.mail
-            }
+            disabled={isSubmitting || !values.name || !values.mail}
           >
             Send Message
           </button>

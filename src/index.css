@@ -124,10 +124,14 @@ img {
   color: #272e2e;
   font-weight: bold;
   font-size: 0.9rem;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
 }
 
 @media (max-width: 576px) {
-  .button-primary {
+  .button-primary,
+  .button-submit {
     padding: 0.3rem 0.5rem;
     border-radius: 1rem;
     font-size: 0.8rem;
@@ -135,7 +139,9 @@ img {
 }
 
 .button-primary:hover,
-.button-primary:focus {
+.button-primary:focus,
+.button-submit:hover,
+.button-submit:focus {
   background-color: #272e2e;
   border-color: #272e2e;
   color: #ffffff;
