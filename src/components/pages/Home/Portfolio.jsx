@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -100,6 +99,57 @@ const featuredProjects = [
     demo: true,
     githubPrive: true,
   },
+  {
+    name: "Time to the Games",
+    image: euroratesImage,
+    url: "https://timetothegames.com/",
+    github: "",
+    description: `Countdown to the next Summer Olympic Games 2028. Stay updated with the time remaining until the Olympics begin.`,
+    badges: ["HTML", "CSS", "Vanilla Javascript", "Cloudflare", "SEO"],
+    type: "Capstone",
+    status: "Online",
+    demo: true,
+    githubPrive: true,
+  },
+  {
+    name: "Little Lemon",
+    image: insidersPulseImage,
+    url: "https://little-lemon-restaurant-wine.vercel.app/",
+    github: "https://github.com/monsieurlopez/little-lemon-restaurant",
+    description: `Project for Meta Front-end developer program on Coursera, which contains a detailed and responsive website with table-booking functionality.`,
+    badges: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React",
+      "Fontawesome",
+      "EmailJS",
+      "Formik",
+    ],
+    type: "Capstone",
+    status: "Demo",
+    demo: true,
+    githubPrive: false,
+  },
+  {
+    name: "In Code Coin",
+    image: cryptoworldImage,
+    url: "https://in-code-coin.github.io/in-code-solutions/",
+    github: "https://github.com/IN-CODE-COIN/in-code-solutions",
+    description: `The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
+    badges: [
+      "HTML",
+      "CSS",
+      "Vanilla Javascript",
+      "Bootstrap",
+      "GridJs",
+      "APIs",
+    ],
+    type: "Capstone",
+    status: "Demo",
+    demo: true,
+    githubPrive: false,
+  },
 ];
 
 const Portfolio = () => {
@@ -197,11 +247,7 @@ const Portfolio = () => {
             ))}
       </div>
 
-      <div className="show-all-container">
-        <Link to="/portfolio" className="button-primary">
-          Show All Projects
-        </Link>
-      </div>
+
     </section>
   );
 };

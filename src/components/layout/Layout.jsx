@@ -9,14 +9,14 @@ const Layout = ({ children }) => {
       hashLink: true,
     },
     {
-      name: "Portfolio",
-      path: "/portfolio",
-      hashLink: true,
-    },
-    {
       name: "About me",
       path: "/#about",
       hashLink: true,
+    },
+    {
+      name: "Aion",
+      path: "/aion",
+      hashLink: false,
     },
     {
       name: "Contact",

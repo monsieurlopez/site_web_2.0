@@ -1,24 +1,29 @@
 .our-story {
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  padding: 2rem 0 2rem;
+  gap: 3rem;
+  padding: 4rem 0;
+  align-items: center;
 }
 
 .our-story-description {
   grid-column: 1;
-  font-family: 'Pigiarniq', sans-serif;
-  font-weight: normal;
 }
 
 .our-story-description h2 {
   line-height: 1;
   font-family: 'Pigiarniq', sans-serif;
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+  color: #272e2e;
+  margin-bottom: 1.5rem;
 }
 
 .our-story-description p {
-  padding-top: 1.5rem;
+  padding-top: 0;
+  color: #555;
+  line-height: 1.8;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .our-story-personal {
@@ -33,38 +38,52 @@
 }
 
 .our-story-personal img {
-  max-width: 55%;
+  max-width: 70%;
   height: auto;
-  border-radius: 9rem;
+  border-radius: 12px;
   object-fit: cover;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.our-story-personal img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(244, 206, 20, 0.2);
 }
 
 @media (max-width: 915px) {
   .our-story {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    gap: 2rem;
+    padding: 2.5rem 0;
+  }
+
+  .our-story-description h2 {
+    font-size: 2rem;
   }
 
   .our-story-personal {
     grid-column: 1;
     position: static;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: row;
     height: unset;
   }
 
   .our-story-personal img {
     position: static;
-    max-width: 50%;
-    height: 26rem;
+    max-width: 70%;
+    height: auto;
     width: unset;
-    border-radius: 12rem;
+    border-radius: 12px;
   }
 }
 
 @media (max-width: 715px) {
   .our-story {
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 2rem 0;
   }
 
   .our-story-personal {
@@ -72,12 +91,25 @@
   }
 
   .our-story-personal img {
-    max-width: 100%;
+    max-width: 80%;
+  }
+
+  .our-story-description h2 {
+    font-size: 1.75rem;
   }
 }
 
 @media (max-width:576px) {
   .our-story {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    gap: 1.5rem;
+  }
+
+  .our-story-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .our-story-personal img {
+    max-width: 90%;
   }
 }

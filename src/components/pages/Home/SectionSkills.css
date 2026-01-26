@@ -2,12 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.personal-skill:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #f4ce14;
 }
 
 .skill-item {
@@ -15,32 +22,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.2rem;
+  margin: 0;
   position: relative;
+  transition: all 0.3s ease;
 }
 
 .skill-item img {
   max-width: 3.5rem;
   height: auto;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
   transition: transform 0.3s ease;
 }
 
 .skill-item h4 {
-  font-size: 0.9rem;
-  color: #f9f9f9;
+  font-size: 0.85rem;
+  color: #666;
   margin: 0;
   opacity: 0;
-  transition:
-    opacity 0.3s ease,
-    color 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: monospace;
+  font-weight: normal;
 }
 
 .skill-item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 .skill-item:hover h4 {
   opacity: 1;
-  color: #333;
+  color: #f4ce14;
 }

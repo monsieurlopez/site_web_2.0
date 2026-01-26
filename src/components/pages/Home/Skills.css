@@ -1,16 +1,16 @@
 .lenguage-container-skills {
-  padding-top: 1.875rem;
+  padding: 4rem 0;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 2rem 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
 }
 
 .lenguage-container-skills .container {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto auto;
-  row-gap: 1.5rem;
+  row-gap: 2rem;
 }
 
 .lenguage-container-skills h2 {
@@ -19,11 +19,25 @@
   line-height: 1;
   font-family: 'Pigiarniq', sans-serif;
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+}
+
+@media (max-width:768px) {
+  .lenguage-container-skills {
+    padding: 3rem 0;
+  }
+
+  .lenguage-container-skills h2 {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width:576px) {
   .lenguage-container-skills {
-    padding: 1rem 0;
+    padding: 2rem 0;
+  }
+
+  .lenguage-container-skills h2 {
+    font-size: 1.75rem;
   }
 }
