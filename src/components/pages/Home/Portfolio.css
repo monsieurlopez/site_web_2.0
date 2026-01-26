@@ -71,38 +71,13 @@
   transform: scale(1.08);
 }
 
+/* Remove overlay - cleaner design */
 .project-horizontal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(26, 26, 26, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-horizontal-card:hover .project-horizontal-overlay {
-  opacity: 1;
+  display: none;
 }
 
 .project-horizontal-link {
-  background: #f4ce14;
-  color: #1a1a1a;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  font-size: 0.9rem;
-}
-
-.project-horizontal-link:hover {
-  background: white;
-  color: #1a1a1a;
+  display: none;
 }
 
 /* Content */
