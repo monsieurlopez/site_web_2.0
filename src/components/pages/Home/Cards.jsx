@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faLink, faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./Card.css";
@@ -10,56 +10,51 @@ const Project = ({ card }) => {
     <article className="project-card">
       <div className="project-card-image">
         <img src={card.image} alt={card.name} loading="lazy" />
-        <div className="project-card-image-overlay">
-          {card.demo && (
+      </div>
+
+      <div className="project-card-content">
+        <div className="project-card-top">
+          <div className="project-card-title-section">
+            <h3>{card.name}</h3>
+            <div className="project-card-badges-inline">
+              <span className={`project-badge-inline type-${card.type}`}>
+                {card.type}
+              </span>
+              <span className={`project-badge-inline status-${card.status}`}>
+                {card.status}
+              </span>
+            </div>
+          </div>
+          <div className="project-card-icons">
+            {card.demo && (
+              <a
+                href={card.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-card-visit-link"
+                title="Visit the site"
+              >
+                <FontAwesomeIcon icon={faExternalLink} />
+              </a>
+            )}
             <a
-              type="button"
-              href={card.url}
+              href={card.githubPrive ? undefined : card.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="project-card-image-overlay-link"
+              className={`project-card-github-icon ${card.githubPrive ? "disabled" : ""}`}
+              title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
+              onClick={(e) => card.githubPrive && e.preventDefault()}
             >
-              Visit the site
+              <FontAwesomeIcon icon={faGithub} />
             </a>
-          )}
+          </div>
         </div>
-      </div>
-      <div className="project-card-header">
-        <h3>{card.name}</h3>
-        <div className="project-card-icons">
-          <a
-            href={card.githubPrive ? undefined : card.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`project-card-github-icon ${card.githubPrive ? "disabled" : ""}`}
-            title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
-            onClick={(e) => card.githubPrive && e.preventDefault()}
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a
-            href={card.demo ? card.url : undefined}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`project-card-link-icon ${!card.demo ? "disabled" : ""}`}
-            title={`${!card.demo ? "Site not available" : "Go to site"}`}
-            onClick={(e) => !card.demo && e.preventDefault()}
-          >
-            <FontAwesomeIcon icon={faLink} />
-          </a>
-        </div>
-      </div>
-      <div className="project-card-body-footer">
-        <div className="project-card-meta">
-          <span className={`project-badge type-${card.type}`}>{card.type}</span>
-          <span className={`project-badge status-${card.status}`}>
-            {card.status}
-          </span>
-        </div>
-        <p>{card.description}</p>
-        <div className="project-badges">
+
+        <p className="project-card-description">{card.description}</p>
+
+        <div className="project-card-tags">
           {card.badges.map((badge, index) => (
-            <span key={index} className="project-badge">
+            <span key={index} className="project-tag">
               {badge}
             </span>
           ))}
