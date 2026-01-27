@@ -1,108 +1,111 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import barbaraGarciaImage from "./assets/img-barbara.webp";
-import cryptoworldImage from "./assets/img-cryptoworld.webp";
-import insidersPulseImage from "./assets/img-insiderspulse.webp";
-import euroratesImage from "./assets/img-eurorates.webp";
-import "./Portfolio.css";
-import "./PortfolioAionStyle.css";
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import barbaraGarciaImage from './assets/img-barbara.webp';
+import cryptoworldImage from './assets/img-cryptoworld.webp';
+import insidersPulseImage from './assets/img-insiderspulse.webp';
+import euroratesImage from './assets/img-eurorates.webp';
+import './Portfolio.css';
+import './PortfolioAionStyle.css';
 
 const featuredProjects = [
   {
     id: 1,
-    name: "Insiders Pulse",
-    logo: insidersPulseImage,
-    url: "https://insiderspulse.com/",
-    github: "",
-    description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
+    name: 'Find Your API',
+    image: barbaraGarciaImage,
+    url: 'https://findyourapi.com/',
+    github: '',
+    description: `Modern, interactive platform designed to help developers discover, explore, rate, and comment on public APIs.`,
     badges: [
-      "Nodejs",
-      "Express",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "ChakraUI",
-      "Postgresql",
-      "Resend",
-      "Google Cloud",
+      'PHP',
+      'Laravel',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Resend',
+      'Cludflare',
+      'Docker',
+      'Clerk',
     ],
-    type: "Client",
-    status: "Online",
+    type: 'Personal',
+    status: 'Online',
     demo: true,
     githubPrive: true,
-    color: "#f4ce14",
+    color: '#272e2e',
   },
   {
     id: 2,
-    name: "Cryptoworld",
-    logo: cryptoworldImage,
-    url: "https://cryptoworld.cloud/",
-    github: "https://github.com/IN-CODE-COIN/cryptoworld-2.0",
-    description: `Web platform designed for searching, tracking, and managing cryptocurrencies.`,
+    name: 'Euro Rates API',
+    logo: euroratesImage,
+    url: 'https://eurorate.vercel.app/',
+    github: 'https://github.com/monsieurlopez/euro-rates-api',
+    description: `Real-time currency exchange rates API and web platform for tracking EUR conversions with historical data.`,
     badges: [
-      "PHP",
-      "Laravel",
-      "React",
-      "TypeScript",
-      "Tailwind",
-      "Axios",
-      "MySql",
-      "APIs",
-      "Docker",
-      "Nginx",
+      'React',
+      'TypeScript',
+      'Node.js',
+      'Express',
+      'PostgreSQL',
+      'REST API',
+      'Vercel',
+      'APIs',
     ],
-    type: "Capstone",
-    status: "Online",
-    demo: false,
+    type: 'Personal',
+    status: 'Online',
+    demo: true,
     githubPrive: false,
-    color: "#272e2e",
+    color: '#1e40af',
   },
   {
     id: 3,
-    name: "Bárbara García Torres",
-    logo: barbaraGarciaImage,
-    url: "https://www.barbaragarciatorresibclc.com/",
-    github: "",
-    description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
+    name: 'Insiders Pulse',
+    logo: insidersPulseImage,
+    url: 'https://insiderspulse.com/',
+    github: '',
+    description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
     badges: [
-      "HTML",
-      "CSS",
-      "Vanilla Javascript",
-      "APIs",
-      "Bootstrap",
-      "EmailJS",
+      'Nodejs',
+      'Express',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'ChakraUI',
+      'Postgresql',
+      'Resend',
+      'Google Cloud',
     ],
-    type: "Client",
-    status: "Online",
+    type: 'Personal',
+    status: 'Working',
     demo: true,
     githubPrive: true,
-    color: "#f4ce14",
+    color: '#f4ce14',
   },
   {
     id: 4,
-    name: "Euro Rates API",
-    logo: euroratesImage,
-    url: "https://eurorate.vercel.app/",
-    github: "https://github.com/monsieurlopez/euro-rates-api",
-    description: `Real-time currency exchange rates API and web platform for tracking EUR conversions with historical data.`,
+    name: 'Cryptoworld',
+    logo: cryptoworldImage,
+    url: 'https://cryptoworld.cloud/',
+    github: 'https://github.com/IN-CODE-COIN/cryptoworld-2.0',
+    description: `Web platform designed for searching, tracking, and managing cryptocurrencies.`,
     badges: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "REST API",
-      "Vercel",
-      "APIs",
+      'PHP',
+      'Laravel',
+      'React',
+      'TypeScript',
+      'Tailwind',
+      'Axios',
+      'MySql',
+      'APIs',
+      'Docker',
+      'Nginx',
     ],
-    type: "Personal",
-    status: "Online",
-    demo: true,
+    type: 'Capstone',
+    status: 'Online',
+    demo: false,
     githubPrive: false,
-    color: "#1e40af",
+    color: '#272e2e',
   },
 ];
 
@@ -120,12 +123,12 @@ const Portfolio = () => {
           <article
             key={project.id}
             className="portfolio-project-card"
-            style={{ "--card-color": project.color }}
+            style={{ '--card-color': project.color }}
           >
             <div className="portfolio-project-visual">
-              <img 
-                src={project.logo} 
-                alt={project.name} 
+              <img
+                src={project.logo}
+                alt={project.name}
                 className="portfolio-project-logo"
                 loading="lazy"
               />
@@ -180,9 +183,9 @@ const Portfolio = () => {
             </div>
           </article>
         ))}
-       </div>
-            </section>
-            );
-            };
+      </div>
+    </section>
+  );
+};
 
-            export default React.memo(Portfolio);
+export default React.memo(Portfolio);

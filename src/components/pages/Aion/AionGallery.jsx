@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import barbaraGarciaImage from "../Home/assets/img-barbara.webp";
-import "./aion.css";
+import { useState, useEffect } from 'react';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import barbaraGarciaImage from '../Home/assets/img-barbara.webp';
+import littleLemonImage from '../Home/assets/logo_litle_lemon.webp';
+
+import './aion.css';
 
 const AionGallery = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -10,29 +12,33 @@ const AionGallery = () => {
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
   const projects = [
     {
       id: 1,
-      name: "SerLopez",
-      description: "Educational platform landing page with emphasis on course enrollment.",
-      industry: "Tech",
-      metrics: "1K+ Students",
-      image: "📚",
-      color: "#A78BFA",
+      name: 'Bárbara García Torres',
+      description:
+        'Professional website for physiotherapy and lactation support services with clear information architecture and client testimonials.',
+      industry: 'Healthcare',
+      url: 'https://www.barbaragarciatorresibclc.com/',
+      image: barbaraGarciaImage,
+      isImageUrl: true,
+      color: '#F4A261',
     },
     {
       id: 2,
-      name: "Bárbara García Torres",
-      description: "Professional website for physiotherapy and lactation support services with clear information architecture and client testimonials.",
-      industry: "Healthcare",
-      url: "https://www.barbaragarciatorresibclc.com/",
-      image: barbaraGarciaImage,
+      name: 'Little Lemon',
+      description: `Project for Meta Front-end developer program on Coursera,
+      which contains a detailed and responsive website with table-booking
+      functionality.`,
+      industry: 'Food & Beverage',
+      url: 'https://little-lemon-restaurant-wine.vercel.app/',
+      image: littleLemonImage,
       isImageUrl: true,
-      color: "#F4A261",
+      color: '#495e57',
     },
   ];
 
@@ -49,19 +55,19 @@ const AionGallery = () => {
             <article
               key={project.id}
               className="aion-project-card"
-              style={{ "--card-color": project.color }}
+              style={{ '--card-color': project.color }}
             >
               <div className="aion-project-visual">
                 {project.isImageUrl ? (
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.name}
-                    style={{ 
-                      maxWidth: "90%", 
-                      maxHeight: "90%", 
-                      width: "auto",
-                      height: "auto",
-                      objectFit: "contain" 
+                    style={{
+                      maxWidth: '90%',
+                      maxHeight: '90%',
+                      width: 'auto',
+                      height: 'auto',
+                      objectFit: 'contain',
                     }}
                   />
                 ) : (
@@ -85,13 +91,13 @@ const AionGallery = () => {
                   </div>
                 )}
 
-                <a 
-                  href={project.url || "#"} 
-                  target={project.url ? "_blank" : undefined}
-                  rel={project.url ? "noopener noreferrer" : undefined}
+                <a
+                  href={project.url || '#'}
+                  target={project.url ? '_blank' : undefined}
+                  rel={project.url ? 'noopener noreferrer' : undefined}
                   className="aion-project-link"
                 >
-                  {project.url ? "Visit Site" : "View Case Study"}
+                  {project.url ? 'Visit Site' : 'View Case Study'}
                   <FontAwesomeIcon icon={faLink} />
                 </a>
               </div>
