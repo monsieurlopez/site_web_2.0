@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "Pigiarniq";
-  src: url("./components/outils/fonts/Pigiarniq.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 *,
 *:after,
 *:before {
