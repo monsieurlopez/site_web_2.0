@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import barbaraGarciaImage from "../Home/assets/img-barbara.webp";
 import "./aion.css";
 
 const AionGallery = () => {
@@ -16,57 +17,22 @@ const AionGallery = () => {
   const projects = [
     {
       id: 1,
-      name: "TechStart - SaaS Platform",
-      description: "Modern landing page for a B2B SaaS startup focusing on cloud solutions.",
-      industry: "Technology",
-      metrics: "45% CTR Increase",
-      color: "#FF6B6B",
-      image: "🚀",
-    },
-    {
-      id: 2,
-      name: "GreenLeaf - Eco Products",
-      description: "E-commerce focused landing page for sustainable lifestyle products.",
-      industry: "E-commerce",
-      metrics: "38% Conversion Rate",
-      color: "#51CF66",
-      image: "🌿",
-    },
-    {
-      id: 3,
-      name: "FitFlow - Fitness App",
-      description: "Engaging landing page for a mobile fitness tracking application.",
-      industry: "Health & Fitness",
-      metrics: "2.5K Sign-ups",
-      color: "#4ECDC4",
-      image: "💪",
-    },
-    {
-      id: 4,
-      name: "DataViz - Analytics Tool",
-      description: "Professional landing page for enterprise analytics and visualization software.",
-      industry: "Data & Analytics",
-      metrics: "$150K MRR",
-      color: "#5C7CFA",
-      image: "📊",
-    },
-    {
-      id: 5,
-      name: "Creative Studio - Agency",
-      description: "Portfolio landing page showcasing creative services and portfolio work.",
-      industry: "Creative Services",
-      metrics: "30 New Clients",
-      color: "#FFB84D",
-      image: "🎨",
-    },
-    {
-      id: 6,
-      name: "ProLearn - Online Course",
+      name: "SerLopez",
       description: "Educational platform landing page with emphasis on course enrollment.",
-      industry: "Education",
+      industry: "Tech",
       metrics: "1K+ Students",
       image: "📚",
       color: "#A78BFA",
+    },
+    {
+      id: 2,
+      name: "Bárbara García Torres",
+      description: "Professional website for physiotherapy and lactation support services with clear information architecture and client testimonials.",
+      industry: "Healthcare",
+      url: "https://www.barbaragarciatorresibclc.com/",
+      image: barbaraGarciaImage,
+      isImageUrl: true,
+      color: "#F4A261",
     },
   ];
 
@@ -86,7 +52,21 @@ const AionGallery = () => {
               style={{ "--card-color": project.color }}
             >
               <div className="aion-project-visual">
-                <div className="aion-project-emoji">{project.image}</div>
+                {project.isImageUrl ? (
+                  <img 
+                    src={project.image} 
+                    alt={project.name}
+                    style={{ 
+                      maxWidth: "90%", 
+                      maxHeight: "90%", 
+                      width: "auto",
+                      height: "auto",
+                      objectFit: "contain" 
+                    }}
+                  />
+                ) : (
+                  <div className="aion-project-emoji">{project.image}</div>
+                )}
               </div>
 
               <div className="aion-project-content">
@@ -97,14 +77,21 @@ const AionGallery = () => {
 
                 <p className="aion-project-description">{project.description}</p>
 
-                <div className="aion-project-metrics">
-                  <div className="aion-metric">
-                    <span className="aion-metric-value">{project.metrics}</span>
+                {project.metrics && (
+                  <div className="aion-project-metrics">
+                    <div className="aion-metric">
+                      <span className="aion-metric-value">{project.metrics}</span>
+                    </div>
                   </div>
-                </div>
+                )}
 
-                <a href="#" className="aion-project-link">
-                  View Case Study
+                <a 
+                  href={project.url || "#"} 
+                  target={project.url ? "_blank" : undefined}
+                  rel={project.url ? "noopener noreferrer" : undefined}
+                  className="aion-project-link"
+                >
+                  {project.url ? "Visit Site" : "View Case Study"}
                   <FontAwesomeIcon icon={faLink} />
                 </a>
               </div>

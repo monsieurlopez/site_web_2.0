@@ -1,5 +1,5 @@
-import personalPhoto from "./assets/personal_photo.webp";
-
+//import personalPhoto from "./assets/personal_photo.webp";
+import personalPhoto from "./assets/hero_w.webp";
 import "./AboutModern.css";
 
 const OurStory = () => {
