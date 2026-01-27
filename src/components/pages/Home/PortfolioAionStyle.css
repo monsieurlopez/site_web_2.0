@@ -31,7 +31,7 @@
 
 /* Visual Section */
 .portfolio-project-visual {
-  height: 220px;
+  height: 280px;
   background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
   display: flex;
   align-items: center;
@@ -46,10 +46,10 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
-  padding: 1rem;
+  padding: 0.75rem;
   transition: transform 0.3s ease;
-  max-width: 85%;
-  max-height: 85%;
+  max-width: 95%;
+  max-height: 95%;
 }
 
 /* Content Section */

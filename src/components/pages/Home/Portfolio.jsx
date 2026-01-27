@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import barbaraGarciaImage from './assets/img-barbara.webp';
+import findyourapiImage from './assets/img-findyourapi.webp';
 import cryptoworldImage from './assets/img-cryptoworld.webp';
 import insidersPulseImage from './assets/img-insiderspulse.webp';
 import euroratesImage from './assets/img-eurorates.webp';
@@ -14,7 +14,7 @@ const featuredProjects = [
   {
     id: 1,
     name: 'Find Your API',
-    image: barbaraGarciaImage,
+    logo: findyourapiImage,
     url: 'https://findyourapi.com/',
     github: '',
     description: `Modern, interactive platform designed to help developers discover, explore, rate, and comment on public APIs.`,
@@ -27,13 +27,14 @@ const featuredProjects = [
       'Resend',
       'Cludflare',
       'Docker',
+      'Nginx',
       'Clerk',
     ],
     type: 'Personal',
     status: 'Online',
     demo: true,
     githubPrive: true,
-    color: '#272e2e',
+    color: '#8B5CF6',
   },
   {
     id: 2,
@@ -50,6 +51,7 @@ const featuredProjects = [
       'PostgreSQL',
       'REST API',
       'Vercel',
+      'Nginx',
       'APIs',
     ],
     type: 'Personal',
