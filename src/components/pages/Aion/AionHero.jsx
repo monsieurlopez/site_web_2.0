@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./aion.css";
+import imgAion from "../../layout/assets/img_aion.webp";
 
 const AionHero = () => {
   const navigate = useNavigate();
@@ -8,9 +9,14 @@ const AionHero = () => {
     <section className="aion-hero">
       <div className="aion-hero-content">
         <div className="aion-hero-text">
-          <h1 className="aion-title">High-Impact Landing Pages</h1>
+          <h1 className="aion-logo-title">
+            <img src={imgAion} alt="AION" />
+          </h1>
+          <h2 className="aion-subtitle-title">Timeless Web Presence</h2>
           <p className="aion-subtitle">
-            Beautiful, fast, and conversion-focused landing pages designed to turn visitors into customers.
+            Aion represents eternity and timeless quality. We create landing pages that showcase professional expertise and knowledge, 
+            designed to highlight your work and experience rather than chase immediate conversions. For professionals and companies ready 
+            to make a lasting impression.
           </p>
           <div className="aion-hero-cta">
             <button
@@ -38,7 +44,7 @@ const AionHero = () => {
             <div className="aion-visual-inner">Performance</div>
           </div>
           <div className="aion-visual-card aion-visual-3">
-            <div className="aion-visual-inner">Conversion</div>
+            <div className="aion-visual-inner">Experience</div>
           </div>
         </div>
       </div>

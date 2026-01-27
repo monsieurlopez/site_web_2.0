@@ -81,6 +81,29 @@ const featuredProjects = [
     githubPrive: true,
     color: "#f4ce14",
   },
+  {
+    id: 4,
+    name: "Euro Rates API",
+    logo: euroratesImage,
+    url: "https://eurorate.vercel.app/",
+    github: "https://github.com/monsieurlopez/euro-rates-api",
+    description: `Real-time currency exchange rates API and web platform for tracking EUR conversions with historical data.`,
+    badges: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "REST API",
+      "Vercel",
+      "APIs",
+    ],
+    type: "Personal",
+    status: "Online",
+    demo: true,
+    githubPrive: false,
+    color: "#1e40af",
+  },
 ];
 
 const Portfolio = () => {

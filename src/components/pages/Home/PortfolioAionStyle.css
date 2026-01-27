@@ -1,8 +1,10 @@
 /* ===== PORTFOLIO AION STYLE ===== */
 .featured-projects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .portfolio-project-card {
@@ -29,7 +31,7 @@
 
 /* Visual Section */
 .portfolio-project-visual {
-  height: 180px;
+  height: 220px;
   background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
   display: flex;
   align-items: center;
@@ -44,8 +46,10 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
-  padding: 1.5rem;
+  padding: 1rem;
   transition: transform 0.3s ease;
+  max-width: 85%;
+  max-height: 85%;
 }
 
 /* Content Section */
@@ -69,7 +73,7 @@
   color: #1a1a1a;
   margin: 0;
   font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
   line-height: 1.3;
 }
 
@@ -82,7 +86,7 @@
   font-weight: 600;
   text-transform: uppercase;
   white-space: nowrap;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
   letter-spacing: 0.3px;
 }
 
@@ -91,7 +95,7 @@
   font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
   flex-grow: 1;
 }
 
@@ -108,7 +112,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .status-Online {
@@ -137,7 +141,7 @@
   border-radius: 4px;
   font-size: 0.75rem;
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
   border: 1px solid #e5e5e5;
   transition: all 0.2s ease;
 }
@@ -165,7 +169,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 0.9rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .portfolio-project-link:hover {

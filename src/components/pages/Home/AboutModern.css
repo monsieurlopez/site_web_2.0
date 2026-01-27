@@ -27,7 +27,7 @@
   color: #666;
   line-height: 1.7;
   margin: 0 0 2rem 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .about-story {
@@ -56,7 +56,7 @@
   font-weight: 600;
   color: #1a1a1a;
   margin: 0 0 0.5rem 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .about-highlight p {
@@ -64,7 +64,7 @@
   color: #666;
   line-height: 1.6;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .about-closing {
@@ -73,7 +73,7 @@
   font-style: italic;
   font-weight: 500;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 /* ===== IMAGE ===== */

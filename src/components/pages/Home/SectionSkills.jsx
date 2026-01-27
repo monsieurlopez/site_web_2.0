@@ -1,5 +1,3 @@
-import "./SectionSkills.css";
-
 const SectionSkills = ({ category, skills }) => {
   return (
     <article className="skill-category">

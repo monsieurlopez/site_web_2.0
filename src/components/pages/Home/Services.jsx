@@ -17,17 +17,16 @@ const Services = () => {
           <div className="service-card fullstack-card">
             <div className="service-card-header">
               <h3>Fullstack Developer</h3>
-              <span className="service-badge">Complete Apps</span>
+              <span className="service-badge">Professional Experience</span>
             </div>
             <p className="service-description">
-              Capable of creating complete applications using modern technologies. From database architecture to user interfaces, I deliver high-quality, scalable solutions.
+              Experienced in developing full-stack applications with a focus on modern technologies. I specialize in frontend frameworks and backend development with proven professional expertise.
             </p>
             <ul className="service-list">
-              <li>Backend with Node.js & Express</li>
-              <li>Frontend with React & TypeScript</li>
-              <li>Databases (PostgreSQL, MySQL)</li>
+              <li>Frontend: React, Vue & TypeScript</li>
+              <li>Backend: Node.js, Express & PHP Laravel</li>
+              <li>Database Architecture</li>
               <li>API Design & Integration</li>
-              <li>Cloud Deployment</li>
             </ul>
             <button 
               className="service-button"
@@ -46,13 +45,13 @@ const Services = () => {
               <span className="service-badge">Aion</span>
             </div>
             <p className="service-description">
-              Beautiful, high-converting landing pages for businesses and entrepreneurs. Clean design, optimized for conversions, and ready to drive results.
+              Helping professionals build their online presence with simple, elegant landing pages. Only the essentials, nothing unnecessary—clean design focused on results.
             </p>
             <ul className="service-list">
-              <li>Modern, clean design</li>
-              <li>Mobile-first approach</li>
-              <li>SEO optimized</li>
-              <li>Fast loading times</li>
+              <li>Simple & elegant design</li>
+              <li>Essential features only</li>
+              <li>Mobile-first responsive</li>
+              <li>Fast & optimized</li>
               <li>Conversion focused</li>
             </ul>
             <button 

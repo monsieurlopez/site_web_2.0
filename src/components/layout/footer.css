@@ -54,11 +54,25 @@
   margin-bottom: 0.25rem;
 }
 
+.site-footer-social  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer-social a {
+  transition: transform 0.3s ease;
+}
+
+.site-footer-social a:hover {
+  transform: scale(1.1);
+}
+
 .site-footer-social svg {
   margin-right: 1rem;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .site-footer {
     display: flex;
     flex-direction: column;
@@ -72,4 +86,4 @@
   .site-footer-logo {
     width: 8rem;
   }
-}
+}*/

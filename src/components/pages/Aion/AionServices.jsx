@@ -4,24 +4,24 @@ const AionServices = () => {
   const services = [
     {
       number: "01",
-      title: "Strategy & Planning",
+      title: "Discovery & Strategy",
       description:
-        "We start by understanding your business goals, target audience, and competitive landscape. A well-planned landing page is the foundation for success.",
-      features: ["Market Research", "User Flow Analysis", "Conversion Goals"],
+        "We understand your professional background, expertise, and the message you want to convey. We craft a strategy that showcases your knowledge and positions you as an authority in your field.",
+      features: ["Brand Positioning", "User Experience Flow", "Content Strategy"],
     },
     {
       number: "02",
-      title: "Design & Development",
+      title: "Design & Build",
       description:
-        "Custom, modern designs that reflect your brand and engage visitors. Built with performance and accessibility in mind.",
-      features: ["Responsive Design", "Modern UI/UX", "Fast Loading"],
+        "Custom, elegant design that reflects your professional identity. Built with modern technologies, ensuring fast load times and an exceptional user experience across all devices.",
+      features: ["Responsive Design", "Modern Aesthetics", "Performance First"],
     },
     {
       number: "03",
-      title: "Optimization & Launch",
+      title: "Deploy & Support",
       description:
-        "Tested, optimized, and ready to convert. We ensure your page performs on every device and ranks well in search results.",
-      features: ["A/B Testing", "SEO Optimized", "Analytics Ready"],
+        "Your page goes live, optimized and ready. We ensure everything works perfectly and provide ongoing support to keep your digital presence strong.",
+      features: ["SEO Ready", "Analytics Setup", "Ongoing Support"],
     },
   ];
 
@@ -52,14 +52,16 @@ const AionServices = () => {
 
         <div className="aion-services-story">
           <div className="aion-story-content">
-            <h3>Our Approach</h3>
+            <h3>The AION Philosophy</h3>
             <p>
-              Every landing page we create tells your story. We combine strategic thinking with modern design
-              and development to create pages that don't just look great—they deliver results.
+              In a world obsessed with immediate conversions, AION takes a different approach. We believe in creating 
+              digital spaces that reflect true professional value—showcasing your expertise, work quality, and knowledge 
+              rather than pushing for quick sales.
             </p>
             <p>
-              From startups to established businesses, we've helped companies across industries increase
-              conversions, build trust, and grow their customer base.
+              When visitors land on an AION page, they experience excellence. They see clean design, understand your 
+              expertise, and develop trust through your demonstrated knowledge. The result? Meaningful professional 
+              connections instead of empty conversions.
             </p>
           </div>
         </div>

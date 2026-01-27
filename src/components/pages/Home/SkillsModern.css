@@ -1,15 +1,12 @@
 /* ===== SKILLS SECTION ===== */
 .lenguage-container-skills {
   padding: 5rem 0;
-  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+  background-color: #ffffff;
 }
 
 .lenguage-container-skills h2 {
-  grid-row: 1;
   color: #1a1a1a;
-  line-height: 1;
   font-family: "Pigiarniq", sans-serif;
-  font-weight: normal;
   font-size: 2.75rem;
   margin: 0 0 0.5rem 0;
   letter-spacing: -0.5px;
@@ -19,13 +16,14 @@
   font-size: 1.05rem;
   color: #666;
   margin: 0 0 2.5rem 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .skills-categories {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
 }
 
 /* ===== SKILL CATEGORY ===== */
@@ -36,6 +34,8 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  min-width: 280px;
+  flex: 1 1 calc(50% - 1rem);
 }
 
 .skill-category:hover {
@@ -51,13 +51,14 @@
   margin: 0 0 1.25rem 0;
   padding-bottom: 0.75rem;
   border-bottom: 2px solid #f4ce14;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
 }
 
 .skill-items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
+  justify-content: center;
 }
 
 /* ===== SKILL ITEM ===== */
@@ -103,7 +104,7 @@
   margin: 0;
   text-align: center;
   font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-family: monospace;
   line-height: 1.2;
 }
 
@@ -114,11 +115,6 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .skills-categories {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-  }
-
   .skill-category {
     padding: 1.5rem;
   }
@@ -143,12 +139,13 @@
   }
 
   .skills-categories {
-    grid-template-columns: 1fr;
     gap: 1.25rem;
   }
 
   .skill-category {
     padding: 1.25rem;
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 
   .skill-category-title {
@@ -157,7 +154,6 @@
   }
 
   .skill-items {
-    grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
 
@@ -189,7 +185,6 @@
   }
 
   .skill-items {
-    grid-template-columns: repeat(2, 1fr);
     gap: 0.7rem;
   }
 

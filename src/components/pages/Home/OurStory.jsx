@@ -1,4 +1,5 @@
 import personalPhoto from "./assets/personal_photo.webp";
+
 import "./AboutModern.css";
 
 const OurStory = () => {
