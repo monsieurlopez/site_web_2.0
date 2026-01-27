@@ -8,10 +8,11 @@ import cryptoworldImage from "./assets/img-cryptoworld.webp";
 import insidersPulseImage from "./assets/img-insiderspulse.webp";
 import euroratesImage from "./assets/img-eurorates.webp";
 import "./Portfolio.css";
-import "./PortfolioModern.css";
+import "./PortfolioAionStyle.css";
 
 const featuredProjects = [
   {
+    id: 1,
     name: "Insiders Pulse",
     image: insidersPulseImage,
     url: "https://insiderspulse.com/",
@@ -32,8 +33,11 @@ const featuredProjects = [
     status: "Online",
     demo: true,
     githubPrive: true,
+    icon: "📈",
+    color: "#667eea",
   },
   {
+    id: 2,
     name: "Cryptoworld",
     image: cryptoworldImage,
     url: "https://cryptoworld.cloud/",
@@ -55,8 +59,11 @@ const featuredProjects = [
     status: "Online",
     demo: false,
     githubPrive: false,
+    icon: "💰",
+    color: "#f093fb",
   },
   {
+    id: 3,
     name: "Bárbara García Torres",
     image: barbaraGarciaImage,
     url: "https://www.barbaragarciatorresibclc.com/",
@@ -74,6 +81,8 @@ const featuredProjects = [
     status: "Online",
     demo: true,
     githubPrive: true,
+    icon: "🏥",
+    color: "#4facfe",
   },
 ];
 
@@ -87,59 +96,61 @@ const Portfolio = () => {
       </div>
 
       <div className="featured-projects">
-        {featuredProjects.map((card, index) => (
-          <article key={index} className="project-card-modern">
-            <div className="project-card-modern-image">
-              <img src={card.image} alt={card.name} loading="lazy" />
+        {featuredProjects.map((project) => (
+          <article
+            key={project.id}
+            className="portfolio-project-card"
+            style={{ "--card-color": project.color }}
+          >
+            <div className="portfolio-project-visual">
+              <div className="portfolio-project-emoji">{project.icon}</div>
             </div>
-            
-            <div className="project-card-modern-content">
-              <div className="project-card-modern-header">
-                <div className="project-card-modern-title-section">
-                  <h3>{card.name}</h3>
-                  <div className="project-card-modern-badges-inline">
-                    <span className={`project-badge type-${card.type}`}>
-                      {card.type}
-                    </span>
-                    <span className={`project-badge status-${card.status}`}>
-                      {card.status}
-                    </span>
-                  </div>
-                </div>
-                
-                <div className="project-card-modern-icons">
-                  {card.demo && (
-                    <a
-                      href={card.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-card-modern-visit-link"
-                      title="Visit the site"
-                    >
-                      <FontAwesomeIcon icon={faLink} />
-                    </a>
-                  )}
-                  <a
-                    href={card.githubPrive ? undefined : card.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`project-card-modern-github-icon ${card.githubPrive ? "disabled" : ""}`}
-                    title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
-                    onClick={(e) => card.githubPrive && e.preventDefault()}
-                  >
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </div>
+
+            <div className="portfolio-project-content">
+              <div className="portfolio-project-header">
+                <h3>{project.name}</h3>
+                <span className="portfolio-type-badge">{project.type}</span>
               </div>
 
-              <p className="project-card-modern-description">{card.description}</p>
+              <p className="portfolio-project-description">{project.description}</p>
 
-              <div className="project-card-modern-tags">
-                {card.badges.map((badge, index) => (
-                  <span key={index} className="project-card-modern-tag">
+              <div className="portfolio-project-meta">
+                <span className={`portfolio-status-badge status-${project.status}`}>
+                  {project.status}
+                </span>
+              </div>
+
+              <div className="portfolio-project-tags">
+                {project.badges.map((badge, index) => (
+                  <span key={index} className="portfolio-project-tag">
                     {badge}
                   </span>
                 ))}
+              </div>
+
+              <div className="portfolio-project-actions">
+                {project.demo && (
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="portfolio-project-link"
+                  >
+                    Visit Site
+                    <FontAwesomeIcon icon={faLink} />
+                  </a>
+                )}
+                {!project.githubPrive && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="portfolio-project-link"
+                  >
+                    View Code
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                )}
               </div>
             </div>
           </article>
