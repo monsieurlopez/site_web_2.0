@@ -30,7 +30,7 @@
   color: #555;
   line-height: 1.6;
   margin-bottom: 2rem;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-hero-cta {
@@ -43,12 +43,12 @@
 .aion-btn-secondary {
   padding: 0.7rem 1.5rem;
   border-radius: 2rem;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 0.95rem;
   transition: all 0.3s ease;
   border: none;
   cursor: pointer;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-btn-primary {
@@ -206,7 +206,7 @@
   color: #666;
   line-height: 1.6;
   margin-bottom: 1.5rem;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-service-features {
@@ -222,7 +222,7 @@
   font-size: 0.85rem;
   color: #272e2e;
   border: 1px solid #e0e0e0;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-services-story {
@@ -243,7 +243,7 @@
   color: #555;
   line-height: 1.8;
   margin-bottom: 1rem;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-story-content p:last-child {
@@ -271,7 +271,7 @@
 .aion-gallery-header p {
   font-size: 1.1rem;
   color: #666;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-gallery-grid {
@@ -350,7 +350,7 @@
   font-size: 0.75rem;
   font-weight: bold;
   white-space: nowrap;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-project-description {
@@ -359,7 +359,7 @@
   line-height: 1.5;
   margin-bottom: 1rem;
   flex-grow: 1;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-project-metrics {
@@ -376,7 +376,7 @@
 .aion-metric-value {
   font-weight: bold;
   color: var(--card-color, #f4ce14);
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-project-link {
@@ -387,7 +387,7 @@
   font-weight: bold;
   text-decoration: none;
   transition: all 0.3s ease;
-  font-family: monospace;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
 .aion-project-link:hover {
