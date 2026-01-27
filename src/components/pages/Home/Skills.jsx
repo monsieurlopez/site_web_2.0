@@ -61,16 +61,18 @@ const skillCategories = [
       { name: "GitHub", image: githubLogo },
       { name: "Docker", image: dockerLogo },
       { name: "Vercel", image: vercelLogo },
+      { name: "Google Cloud", image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%234285F4' d='M24 8L12 20h6v16h12V20h6z'/%3E%3C/svg%3E" },
       { name: "Vite", image: viteLogo },
       { name: "Postman", image: postmanLogo },
     ],
   },
   {
-    category: "Libraries",
+    category: "Libraries & Services",
     skills: [
       { name: "Chart.js", image: chartjsLogo },
-      { name: "jQuery", image: jqueryLogo },
       { name: "Bootstrap Table", image: bootstrapTableLogo },
+      { name: "Resend", image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext x='2' y='18' font-size='12' font-weight='bold' fill='%23000'%3ERESEND%3C/text%3E%3C/svg%3E" },
+      { name: "Clerk", image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='%236366f1' stroke='%236366f1' stroke-width='2'/%3E%3C/svg%3E" },
     ],
   },
 ];
