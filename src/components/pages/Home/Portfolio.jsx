@@ -95,15 +95,8 @@ const Portfolio = () => {
 
   return (
     <section className="container portfolio-section" id="portfolio">
-      <div className="portfolio-intro">
-        <div className="portfolio-intro-content">
-          <h2>Fullstack Developer</h2>
-          <p>Capable of creating complete applications using modern technologies. From database architecture to user interfaces, I deliver high-quality solutions.</p>
-        </div>
-      </div>
-
       <div className="portfolio-header">
-        <h3>Featured Projects</h3>
+        <h2>My Projects</h2>
       </div>
 
       <div className="featured-projects">
@@ -176,19 +169,6 @@ const Portfolio = () => {
                 </div>
               </article>
             ))}
-            </div>
-
-            <div className="portfolio-aion-cta">
-            <div className="portfolio-aion-content">
-            <h3>Landing Pages Creator</h3>
-            <p>Besides developing complex applications, I also create beautiful, high-converting landing pages for businesses and entrepreneurs looking to establish their online presence.</p>
-            <button 
-            className="button-primary"
-            onClick={() => navigate('/aion')}
-            >
-            Explore Aion
-            </button>
-            </div>
             </div>
             </section>
             );

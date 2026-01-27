@@ -4,49 +4,23 @@
   background: white;
 }
 
-/* Portfolio Intro */
-.portfolio-intro {
-  margin-bottom: 3rem;
-  padding: 2rem;
-  background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.06);
-}
-
-.portfolio-intro-content h2 {
-  font-family: "Pigiarniq", sans-serif;
-  font-weight: normal;
-  font-size: 2.5rem;
-  color: #1a1a1a;
-  margin: 0 0 1rem 0;
-  letter-spacing: -0.5px;
-}
-
-.portfolio-intro-content p {
-  font-size: 1.05rem;
-  color: #555;
-  line-height: 1.7;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
-}
-
 .portfolio-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   flex-wrap: wrap;
 }
 
-.portfolio-header h3 {
+.portfolio-header h2 {
   line-height: 1;
   font-family: "Pigiarniq", sans-serif;
   font-weight: normal;
-  font-size: 1.75rem;
+  font-size: 2.75rem;
   color: #1a1a1a;
   margin: 0;
-  letter-spacing: -0.3px;
+  letter-spacing: -0.5px;
 }
 
 /* ===== FEATURED PROJECTS GRID ===== */
@@ -243,78 +217,18 @@
   color: #831843;
 }
 
-/* ===== PORTFOLIO AION CTA ===== */
-.portfolio-aion-cta {
-  margin-top: 4rem;
-  padding: 3rem;
-  background: linear-gradient(135deg, #272e2e 0%, #1a1f1f 100%);
-  border-radius: 8px;
-  text-align: center;
-  color: white;
-}
-
-.portfolio-aion-content h3 {
-  font-family: "Pigiarniq", sans-serif;
-  font-size: 2rem;
-  color: white;
-  margin: 0 0 1rem 0;
-  letter-spacing: -0.3px;
-}
-
-.portfolio-aion-content p {
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.7;
-  margin: 0 0 2rem 0;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
-}
-
-.portfolio-aion-content .button-primary {
-  background: #f4ce14;
-  color: #272e2e;
-}
-
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .portfolio-section {
     padding: 3rem 0;
   }
 
-  .portfolio-intro {
-    padding: 1.5rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .portfolio-intro-content h2 {
-    font-size: 2rem;
-  }
-
-  .portfolio-intro-content p {
-    font-size: 0.95rem;
-  }
-
   .portfolio-header {
     padding-bottom: 2rem;
   }
 
-  .portfolio-header h3 {
-    font-size: 1.5rem;
-  }
-
-  .portfolio-aion-cta {
-    padding: 2rem 1.5rem;
-    margin-top: 3rem;
-  }
-
-  .portfolio-aion-content h3 {
-    font-size: 1.5rem;
-  }
-
-  .portfolio-aion-content p {
-    font-size: 0.95rem;
+  .portfolio-header h2 {
+    font-size: 2rem;
   }
 
   .project-horizontal-card {
