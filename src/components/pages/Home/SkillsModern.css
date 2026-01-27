@@ -1,0 +1,204 @@
+/* ===== SKILLS SECTION ===== */
+.lenguage-container-skills {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+}
+
+.lenguage-container-skills h2 {
+  grid-row: 1;
+  color: #1a1a1a;
+  line-height: 1;
+  font-family: "Pigiarniq", sans-serif;
+  font-weight: normal;
+  font-size: 2.75rem;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.skills-subtitle {
+  font-size: 1.05rem;
+  color: #666;
+  margin: 0 0 2.5rem 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+}
+
+.skills-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* ===== SKILL CATEGORY ===== */
+.skill-category {
+  background: white;
+  border-radius: 8px;
+  padding: 1.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(244, 206, 20, 0.3);
+  transform: translateY(-2px);
+}
+
+.skill-category-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f4ce14;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+}
+
+.skill-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 1rem;
+}
+
+/* ===== SKILL ITEM ===== */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.skill-item-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: #f5f5f5;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.skill-item img {
+  max-width: 35px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover .skill-item-image {
+  background: #f4ce14;
+  border-color: #f4ce14;
+  transform: scale(1.1);
+}
+
+.skill-item:hover img {
+  transform: scale(1.15);
+}
+
+.skill-item h4 {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  line-height: 1.2;
+}
+
+.skill-item:hover h4 {
+  color: #f4ce14;
+  font-weight: 600;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .skills-categories {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .skill-category {
+    padding: 1.5rem;
+  }
+
+  .skill-items {
+    gap: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .lenguage-container-skills {
+    padding: 3rem 0;
+  }
+
+  .lenguage-container-skills h2 {
+    font-size: 2rem;
+  }
+
+  .skills-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-categories {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .skill-category {
+    padding: 1.25rem;
+  }
+
+  .skill-category-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .skill-items {
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .skill-item-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .skill-item img {
+    max-width: 30px;
+  }
+
+  .skill-item h4 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .lenguage-container-skills h2 {
+    font-size: 1.75rem;
+  }
+
+  .skills-categories {
+    gap: 1rem;
+  }
+
+  .skill-category {
+    padding: 1rem;
+  }
+
+  .skill-items {
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 0.7rem;
+  }
+
+  .skill-item-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-item img {
+    max-width: 25px;
+  }
+}
