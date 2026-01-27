@@ -5,21 +5,27 @@
 
 .portfolio-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+  flex-direction: column;
+  gap: 1rem;
   padding-bottom: 2.5rem;
-  flex-wrap: wrap;
 }
 
 .portfolio-header h2 {
   line-height: 1;
-  font-family: "Pigiarniq", sans-serif;
+  font-family: 'Pigiarniq', sans-serif;
   font-weight: normal;
   font-size: 2.75rem;
   color: #1a1a1a;
   margin: 0;
   letter-spacing: -0.5px;
+}
+
+.portfolio-header p {
+  font-size: 1.05rem;
+  color: #666;
+  margin: 0;
+  font-family: monospace;
+  max-width: 600px;
 }
 
 /* ===== FEATURED PROJECTS GRID ===== */
@@ -102,8 +108,7 @@
   margin: 0;
   color: #1a1a1a;
   font-weight: 600;
-  font-family:
-    monospace;
+  font-family: monospace;
 }
 
 .project-horizontal-icons {
@@ -160,8 +165,7 @@
   line-height: 1.6;
   color: #666;
   font-size: 0.95rem;
-  font-family:
-    monospace;
+  font-family: monospace;
 }
 
 .project-horizontal-badges {
@@ -184,8 +188,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  font-family:
-    monospace;
+  font-family: monospace;
   white-space: nowrap;
   border: none;
 }
@@ -260,12 +263,18 @@
     padding: 2rem 0;
   }
 
+  .portfolio-section > .container {
+    padding: 0 1.5rem;
+  }
+
   .portfolio-header h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .featured-projects {
     gap: 1rem;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .project-horizontal-card {
