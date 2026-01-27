@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
+import { useNavigate } from "react-router-dom";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -32,30 +33,6 @@ const featuredProjects = [
     status: "Online",
     demo: true,
     githubPrive: true,
-  },
-  {
-    name: "Euro Rates API",
-    image: euroratesImage,
-    url: "https://euroratesapi.dev/",
-    github: "https://github.com/monsieurlopez/landing-currencies",
-    description: `Free API for real-time EUR exchange rates from the European Central Bank (BCE).`,
-    badges: [
-      "PHP",
-      "Laravel",
-      "Vuejs",
-      "Vuetify",
-      "Tailwind",
-      "MySql",
-      "APIs",
-      "Docker",
-      "Nginx",
-      "Swagger",
-      "SEO",
-    ],
-    type: "Capstone",
-    status: "Online",
-    demo: true,
-    githubPrive: false,
   },
   {
     name: "Cryptoworld",
@@ -99,61 +76,11 @@ const featuredProjects = [
     demo: true,
     githubPrive: true,
   },
-  {
-    name: "Time to the Games",
-    image: euroratesImage,
-    url: "https://timetothegames.com/",
-    github: "",
-    description: `Countdown to the next Summer Olympic Games 2028. Stay updated with the time remaining until the Olympics begin.`,
-    badges: ["HTML", "CSS", "Vanilla Javascript", "Cloudflare", "SEO"],
-    type: "Capstone",
-    status: "Online",
-    demo: true,
-    githubPrive: true,
-  },
-  {
-    name: "Little Lemon",
-    image: insidersPulseImage,
-    url: "https://little-lemon-restaurant-wine.vercel.app/",
-    github: "https://github.com/monsieurlopez/little-lemon-restaurant",
-    description: `Project for Meta Front-end developer program on Coursera, which contains a detailed and responsive website with table-booking functionality.`,
-    badges: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Fontawesome",
-      "EmailJS",
-      "Formik",
-    ],
-    type: "Capstone",
-    status: "Demo",
-    demo: true,
-    githubPrive: false,
-  },
-  {
-    name: "In Code Coin",
-    image: cryptoworldImage,
-    url: "https://in-code-coin.github.io/in-code-solutions/",
-    github: "https://github.com/IN-CODE-COIN/in-code-solutions",
-    description: `The platform provides real-time prices, relevant news, and useful tools such as a currency converter.`,
-    badges: [
-      "HTML",
-      "CSS",
-      "Vanilla Javascript",
-      "Bootstrap",
-      "GridJs",
-      "APIs",
-    ],
-    type: "Capstone",
-    status: "Demo",
-    demo: true,
-    githubPrive: false,
-  },
 ];
 
 const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
@@ -168,11 +95,15 @@ const Portfolio = () => {
 
   return (
     <section className="container portfolio-section" id="portfolio">
+      <div className="portfolio-intro">
+        <div className="portfolio-intro-content">
+          <h2>Fullstack Developer</h2>
+          <p>Capable of creating complete applications using modern technologies. From database architecture to user interfaces, I deliver high-quality solutions.</p>
+        </div>
+      </div>
+
       <div className="portfolio-header">
-        <h2>Portfolio</h2>
-        <HashLink className="button-primary" onClick={handleClick}>
-          Download CV
-        </HashLink>
+        <h3>Featured Projects</h3>
       </div>
 
       <div className="featured-projects">
@@ -245,11 +176,22 @@ const Portfolio = () => {
                 </div>
               </article>
             ))}
-      </div>
+            </div>
 
+            <div className="portfolio-aion-cta">
+            <div className="portfolio-aion-content">
+            <h3>Landing Pages Creator</h3>
+            <p>Besides developing complex applications, I also create beautiful, high-converting landing pages for businesses and entrepreneurs looking to establish their online presence.</p>
+            <button 
+            className="button-primary"
+            onClick={() => navigate('/aion')}
+            >
+            Explore Aion
+            </button>
+            </div>
+            </div>
+            </section>
+            );
+            };
 
-    </section>
-  );
-};
-
-export default React.memo(Portfolio);
+            export default React.memo(Portfolio);
