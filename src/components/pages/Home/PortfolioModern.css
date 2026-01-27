@@ -1,0 +1,272 @@
+/* ===== MODERN PROJECT CARDS ===== */
+.featured-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card-modern {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card-modern:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: rgba(244, 206, 20, 0.2);
+  transform: translateY(-4px);
+}
+
+/* Image Section */
+.project-card-modern-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-card-modern-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card-modern:hover .project-card-modern-image img {
+  transform: scale(1.05);
+}
+
+/* Content Section */
+.project-card-modern-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.project-card-modern-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.project-card-modern-title-section {
+  flex: 1;
+}
+
+.project-card-modern-title-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.3;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+}
+
+/* Badges Inline */
+.project-card-modern-badges-inline {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+/* Icons */
+.project-card-modern-icons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.project-card-modern-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  background: transparent;
+  color: #666;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+  border: 1px solid #e5e5e5;
+}
+
+.project-card-modern-visit-link {
+  color: #0066cc;
+  border-color: #0066cc;
+}
+
+.project-card-modern-github-icon:not(.disabled) {
+  color: #24292e;
+  border-color: #24292e;
+}
+
+.project-card-modern-icons a:hover:not(.disabled) {
+  background: #f4ce14;
+  color: #1a1a1a;
+  border-color: #f4ce14;
+  transform: scale(1.08);
+}
+
+.project-card-modern-icons a.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Description */
+.project-card-modern-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  flex-grow: 1;
+}
+
+/* Tags */
+.project-card-modern-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.project-card-modern-tag {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  background: #f5f5f5;
+  color: #555;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  border: 1px solid #e5e5e5;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.project-card-modern-tag:hover {
+  background: #f4ce14;
+  color: #1a1a1a;
+  border-color: #f4ce14;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .featured-projects {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .project-card-modern-image {
+    height: 180px;
+  }
+
+  .project-card-modern-content {
+    padding: 1.25rem;
+    gap: 0.9rem;
+  }
+
+  .project-card-modern-title-section h3 {
+    font-size: 1rem;
+  }
+
+  .project-card-modern-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-projects {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.25rem;
+  }
+
+  .project-card-modern-image {
+    height: 160px;
+  }
+
+  .project-card-modern-content {
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+
+  .project-card-modern-title-section h3 {
+    font-size: 0.95rem;
+  }
+
+  .project-card-modern-icons a {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+
+  .project-card-modern-description {
+    font-size: 0.8rem;
+  }
+
+  .project-card-modern-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured-projects {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-card-modern-image {
+    height: 140px;
+  }
+
+  .project-card-modern-content {
+    padding: 0.9rem;
+    gap: 0.75rem;
+  }
+
+  .project-card-modern-title-section h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .project-card-modern-header {
+    gap: 0.5rem;
+  }
+
+  .project-card-modern-icons a {
+    width: 22px;
+    height: 22px;
+    font-size: 0.7rem;
+  }
+
+  .project-card-modern-description {
+    font-size: 0.75rem;
+  }
+
+  .project-card-modern-tag {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .project-card-modern-badges-inline {
+    gap: 0.35rem;
+  }
+}

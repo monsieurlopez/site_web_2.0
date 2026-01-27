@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { HashLink } from "react-router-hash-link";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,7 +8,7 @@ import cryptoworldImage from "./assets/img-cryptoworld.webp";
 import insidersPulseImage from "./assets/img-insiderspulse.webp";
 import euroratesImage from "./assets/img-eurorates.webp";
 import "./Portfolio.css";
-import Cards from "./Cards";
+import "./PortfolioModern.css";
 
 const featuredProjects = [
   {
@@ -79,19 +78,7 @@ const featuredProjects = [
 ];
 
 const Portfolio = () => {
-  const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
-
-  const handleClick = () => {
-    window.open("/CV_Sergio_LOPEZ.pdf", "_blank", "noopener,noreferrer");
-  };
 
   return (
     <section className="container portfolio-section" id="portfolio">
@@ -100,76 +87,64 @@ const Portfolio = () => {
       </div>
 
       <div className="featured-projects">
-        {isMobile
-          ? featuredProjects.map((card, index) => (
-              <Cards key={index} card={card} />
-            ))
-          : featuredProjects.map((card, index) => (
-              <article key={index} className="project-horizontal-card">
-                <div className="project-horizontal-image">
-                  <img src={card.image} alt={card.name} loading="lazy" />
-                  <div className="project-horizontal-overlay">
-                    {card.demo && (
-                      <a
-                        type="button"
-                        href={card.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="project-horizontal-link"
-                      >
-                        Visit the site
-                      </a>
-                    )}
-                  </div>
-                </div>
-                <div className="project-horizontal-content">
-                  <div className="project-horizontal-header">
-                    <h3>{card.name}</h3>
-                  </div>
-                  <div className="project-horizontal-meta">
-                    <div className="project-horizontal-badges-meta">
-                      <span className={`project-badge type-${card.type}`}>
-                        {card.type}
-                      </span>
-                      <span className={`project-badge status-${card.status}`}>
-                        {card.status}
-                      </span>
-                    </div>
-                    <div className="project-horizontal-icons">
-                      <a
-                        href={card.githubPrive ? undefined : card.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`project-horizontal-github-icon ${card.githubPrive ? "disabled" : ""}`}
-                        title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
-                        onClick={(e) => card.githubPrive && e.preventDefault()}
-                      >
-                        <FontAwesomeIcon icon={faGithub} />
-                      </a>
-                      <a
-                        href={card.demo ? card.url : undefined}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={`project-horizontal-link-icon ${!card.demo ? "disabled" : ""}`}
-                        title={`${!card.demo ? "Site not available" : "Go to site"}`}
-                        onClick={(e) => !card.demo && e.preventDefault()}
-                      >
-                        <FontAwesomeIcon icon={faLink} />
-                      </a>
-                    </div>
-                  </div>
-                  <p>{card.description}</p>
-                  <div className="project-horizontal-badges">
-                    {card.badges.map((badge, index) => (
-                      <span key={index} className="project-badge">
-                        {badge}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </article>
-            ))}
+        {featuredProjects.map((card, index) => (
+          <article key={index} className="project-card-modern">
+            <div className="project-card-modern-image">
+              <img src={card.image} alt={card.name} loading="lazy" />
             </div>
+            
+            <div className="project-card-modern-content">
+              <div className="project-card-modern-header">
+                <div className="project-card-modern-title-section">
+                  <h3>{card.name}</h3>
+                  <div className="project-card-modern-badges-inline">
+                    <span className={`project-badge type-${card.type}`}>
+                      {card.type}
+                    </span>
+                    <span className={`project-badge status-${card.status}`}>
+                      {card.status}
+                    </span>
+                  </div>
+                </div>
+                
+                <div className="project-card-modern-icons">
+                  {card.demo && (
+                    <a
+                      href={card.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-card-modern-visit-link"
+                      title="Visit the site"
+                    >
+                      <FontAwesomeIcon icon={faLink} />
+                    </a>
+                  )}
+                  <a
+                    href={card.githubPrive ? undefined : card.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`project-card-modern-github-icon ${card.githubPrive ? "disabled" : ""}`}
+                    title={`${card.githubPrive ? "Private repository" : "Go to GitHub"}`}
+                    onClick={(e) => card.githubPrive && e.preventDefault()}
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                </div>
+              </div>
+
+              <p className="project-card-modern-description">{card.description}</p>
+
+              <div className="project-card-modern-tags">
+                {card.badges.map((badge, index) => (
+                  <span key={index} className="project-card-modern-tag">
+                    {badge}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))}
+       </div>
             </section>
             );
             };
