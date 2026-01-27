@@ -23,28 +23,29 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
 }
 
+.portfolio-project-card:hover .portfolio-project-logo {
+  transform: scale(1.05);
+}
+
 /* Visual Section */
 .portfolio-project-visual {
   height: 180px;
-  background: linear-gradient(135deg, var(--card-color, #f4ce14) 0%, rgba(244, 206, 20, 0.2) 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #f0f3f7 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4rem;
   overflow: hidden;
+  border-bottom: 4px solid var(--card-color, #f4ce14);
+  position: relative;
 }
 
-.portfolio-project-emoji {
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.portfolio-project-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
 /* Content Section */

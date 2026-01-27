@@ -14,7 +14,7 @@ const featuredProjects = [
   {
     id: 1,
     name: "Insiders Pulse",
-    image: insidersPulseImage,
+    logo: insidersPulseImage,
     url: "https://insiderspulse.com/",
     github: "",
     description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
@@ -33,13 +33,12 @@ const featuredProjects = [
     status: "Online",
     demo: true,
     githubPrive: true,
-    icon: "📈",
-    color: "#667eea",
+    color: "#f4ce14",
   },
   {
     id: 2,
     name: "Cryptoworld",
-    image: cryptoworldImage,
+    logo: cryptoworldImage,
     url: "https://cryptoworld.cloud/",
     github: "https://github.com/IN-CODE-COIN/cryptoworld-2.0",
     description: `Web platform designed for searching, tracking, and managing cryptocurrencies.`,
@@ -59,13 +58,12 @@ const featuredProjects = [
     status: "Online",
     demo: false,
     githubPrive: false,
-    icon: "💰",
-    color: "#f093fb",
+    color: "#272e2e",
   },
   {
     id: 3,
     name: "Bárbara García Torres",
-    image: barbaraGarciaImage,
+    logo: barbaraGarciaImage,
     url: "https://www.barbaragarciatorresibclc.com/",
     github: "",
     description: `The website provides clear and accessible information on physiotherapy and lactation support offered by a professional certified.`,
@@ -81,8 +79,7 @@ const featuredProjects = [
     status: "Online",
     demo: true,
     githubPrive: true,
-    icon: "🏥",
-    color: "#4facfe",
+    color: "#f4ce14",
   },
 ];
 
@@ -103,7 +100,12 @@ const Portfolio = () => {
             style={{ "--card-color": project.color }}
           >
             <div className="portfolio-project-visual">
-              <div className="portfolio-project-emoji">{project.icon}</div>
+              <img 
+                src={project.logo} 
+                alt={project.name} 
+                className="portfolio-project-logo"
+                loading="lazy"
+              />
             </div>
 
             <div className="portfolio-project-content">
