@@ -13,6 +13,12 @@
   flex-wrap: wrap;
 }
 
+.portfolio-header .button-primary {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
 .portfolio-header h2 {
   line-height: 1;
   font-family: "Pigiarniq", sans-serif;

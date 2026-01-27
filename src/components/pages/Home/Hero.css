@@ -50,8 +50,10 @@
 
 .hero-information .button-primary {
   display: inline-block;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   align-self: center;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
 }
 
 /* ===== RESPONSIVE ===== */
