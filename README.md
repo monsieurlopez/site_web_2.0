@@ -1,107 +1,107 @@
 # SerLopez - Full Stack Developer
 
-**Tu puerta de entrada a soluciones web profesionales y modernas.**
+**Your gateway to professional and modern web solutions.**
 
-SerLopez es una plataforma completa que presenta dos servicios complementarios diseñados para ayudarte a crecer digitalmente. Ya sea que necesites una aplicación full-stack robusta o una landing page elegante y minimalista, aquí encontrarás la solución perfecta.
-
----
-
-## ¿Qué es SerLopez?
-
-Una plataforma que combina expertise en desarrollo full-stack con un enfoque pragmático hacia el diseño digital. SerLopez ofrece dos servicios diferenciados pero complementarios:
-
-### **Desarrollo Full Stack**
-Aplicaciones web completas y profesionales construidas con tecnologías modernas. Desde el concepto hasta la puesta en producción:
-- Aplicaciones web reactivas y dinámicas
-- Sistemas backend escalables
-- Arquitectura de base de datos sólida
-- Integración de APIs complejas
-- Soluciones personalizadas según tus necesidades
-
-**Casos de uso:** Plataformas SaaS, sistemas de gestión, aplicaciones empresariales, marketplaces.
-
-### **Aion - Creador de Landing Pages**
-Para profesionales que necesitan presencia online sin complicaciones. Aion se enfoca en lo esencial:
-- Diseño limpio y minimalista
-- Carga rápida y optimizada
-- 100% responsive en todos los dispositivos
-- Enfoque en conversiones
-- Presencia profesional al alcance de todos
-
-**Casos de uso:** Portfolios profesionales, servicios freelance, promoción de productos, presencia personal.
+SerLopez is a complete platform that showcases two complementary services designed to help you grow digitally. Whether you need a robust full-stack application or an elegant and minimalist landing page, you'll find the perfect solution here.
 
 ---
 
-## Características Principales
+## What is SerLopez?
 
-**Navegación Fluida**
-Experiencia de usuario sin fricciones con routing optimizado y transiciones suave entre secciones.
+A platform that combines full-stack development expertise with a pragmatic approach to digital design. SerLopez offers two differentiated yet complementary services:
 
-**Portfolio de Proyectos**
-Proyectos full-stack completamente funcionales y desplegados, listos para ser visitados y evaluados.
+### **Full Stack Development**
+Complete and professional web applications built with modern technologies. From concept to production:
+- Reactive and dynamic web applications
+- Scalable backend systems
+- Solid database architecture
+- Complex API integration
+- Custom solutions tailored to your needs
 
-**Formulario de Contacto**
-Integración directa de contacto para que te comuniques sin barreras.
+**Use cases:** SaaS platforms, management systems, enterprise applications, marketplaces.
 
-**Showcase de Servicios**
-Presentación clara de ambas líneas de servicio con ejemplos tangibles.
+### **Aion - Landing Pages Creator**
+For professionals who need an online presence without complications. Aion focuses on what matters:
+- Clean and minimalist design
+- Fast and optimized loading
+- 100% responsive across all devices
+- Conversion-focused
+- Professional presence within everyone's reach
 
-**Rendimiento Optimizado**
-Carga rápida, monitoreo de rendimiento en tiempo real y métricas de usuario.
-
-**Diseño Responsive**
-Funciona perfectamente en desktop, tablet y mobile.
-
----
-
-## Proyectos Destacados
-
-En el portfolio encontrarás proyectos full-stack completamente funcionales:
-
-- **Find Your API** - Plataforma interactiva para descubrir y evaluar APIs públicas
-- **Euro Rates API** - Sistema en tiempo real de tipos de cambio de monedas
-- **Insiders Pulse** - Plataforma de seguimiento de transacciones internas (insider trading)
-- **Cryptoworld** - Aplicación para buscar, rastrear y gestionar criptomonedas
-
-Todos están desplegados y listos para explorar.
+**Use cases:** Professional portfolios, freelance services, product promotion, personal presence.
 
 ---
 
-## ¿Por Qué SerLopez?
+## Key Features
 
-✨ **Experiencia Demostrada**  
-Con múltiples proyectos en producción, el código y el resultado hablan por sí solos.
+**Smooth Navigation**
+Frictionless user experience with optimized routing and smooth transitions between sections.
 
-🎯 **Enfoque en Resultados**  
-No añadimos complejidad innecesaria. Solo lo que funciona.
+**Project Portfolio**
+Fully functional and deployed full-stack projects, ready to be visited and evaluated.
 
-⚡ **Tecnología Moderna**  
-Usando stack actual y mejores prácticas de la industria.
+**Contact Form**
+Direct contact integration so you can reach out without barriers.
 
-🎨 **Diseño Limpio**  
-Interfaz intuitiva, profesional y agradable a la vista.
+**Service Showcase**
+Clear presentation of both service lines with tangible examples.
+
+**Optimized Performance**
+Fast loading, real-time performance monitoring, and user metrics.
+
+**Responsive Design**
+Works perfectly on desktop, tablet, and mobile.
+
+---
+
+## Featured Projects
+
+In the portfolio you'll find fully functional full-stack projects:
+
+- **Find Your API** - Interactive platform to discover and evaluate public APIs
+- **Euro Rates API** - Real-time currency exchange rate system
+- **Insiders Pulse** - Platform for tracking insider trading transactions
+- **Cryptoworld** - Application to search, track, and manage cryptocurrencies
+
+All are deployed and ready to explore.
+
+---
+
+## Why SerLopez?
+
+✨ **Proven Experience**  
+With multiple production projects, the code and results speak for themselves.
+
+🎯 **Results-Focused**  
+We don't add unnecessary complexity. Only what works.
+
+⚡ **Modern Technology**  
+Using current stack and industry best practices.
+
+🎨 **Clean Design**  
+Intuitive, professional, and beautiful interface.
 
 📱 **Mobile-First**  
-Optimizado para usuarios en cualquier dispositivo.
+Optimized for users on any device.
 
 ---
 
-## Nuestro Enfoque
+## Our Approach
 
-Creemos en el diseño minimalista: **solo lo esencial, nada innecesario**. Ya sea construyendo una aplicación compleja o una landing page elegante, el objetivo es siempre el mismo: funciona, se ve bien y resuelve tu problema.
+We believe in minimalist design: **only the essentials, nothing unnecessary**. Whether building a complex application or an elegant landing page, the goal is always the same: it works, it looks good, and it solves your problem.
 
-No vas a encontrar features que no uses. No vas a pagar por servicios que no necesitas. Solo soluciones directas y profesionales.
+You won't find features you don't use. You won't pay for services you don't need. Just direct and professional solutions.
 
 ---
 
-## Contacto
+## Get In Touch
 
 **Sergio López - Full Stack Developer**
 
-¿Listo para llevar tu proyecto al siguiente nivel? 
+Ready to take your project to the next level? 
 
-👉 [Escríbeme un mensaje](https://serlopez.com/contact)
+👉 [Send me a message](https://serlopez.com/contact)
 
 ---
 
-**Construido con pasión por el código limpio y el diseño elegante.**
+**Built with passion for clean code and elegant design.**
