@@ -21,7 +21,7 @@ const AionGallery = () => {
       id: 1,
       name: 'Bárbara García Torres',
       description:
-        'Professional website for physiotherapy and lactation support services with clear information architecture and client testimonials.',
+        'Professional website for lactation support and physiotherapy services, offering personalized care for babies and parents, including postnatal recovery, pelvic floor rehabilitation, and overall family well-being.',
       industry: 'Healthcare',
       url: 'https://www.barbaragarciatorresibclc.com/',
       image: barbaraGarciaImage,

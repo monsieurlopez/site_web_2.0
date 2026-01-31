@@ -48,7 +48,7 @@ const skillCategories = [
     ],
   },
   {
-    category: 'Backend',
+    category: 'Backend & DB',
     skills: [
       { name: 'Node.js', image: nodejsLogo },
       { name: 'Express', image: expressLogo },
