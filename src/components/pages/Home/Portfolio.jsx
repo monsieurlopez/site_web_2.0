@@ -105,7 +105,7 @@ const featuredProjects = [
     ],
     type: 'Capstone',
     status: 'Online',
-    demo: false,
+    demo: true,
     githubPrive: false,
     color: '#272e2e',
   },
@@ -118,7 +118,10 @@ const Portfolio = () => {
     <section className="container portfolio-section" id="portfolio">
       <div className="portfolio-header">
         <h2>My Projects</h2>
-        <p>Fully deployed fullstack projects showcasing complete applications built independently or in collaboration with other developers</p>
+        <p>
+          Fully deployed fullstack projects showcasing complete applications built independently or
+          in collaboration with other developers
+        </p>
       </div>
 
       <div className="featured-projects">
