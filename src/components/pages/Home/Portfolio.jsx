@@ -40,7 +40,7 @@ const featuredProjects = [
     id: 2,
     name: 'Euro Rates API',
     logo: euroratesImage,
-    url: 'https://eurorate.vercel.app/',
+    url: 'https://www.euroratesapi.dev/',
     github: 'https://github.com/monsieurlopez/euro-rates-api',
     description: `Real-time currency exchange rates API and web platform for tracking EUR conversions with historical data.`,
     badges: [
