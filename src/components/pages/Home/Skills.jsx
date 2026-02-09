@@ -32,6 +32,7 @@ import {
   vuetifyLogo,
   clerkLogo,
   nginxLogo,
+  astroLogo,
 } from './assets';
 
 const skillCategories = [
@@ -45,6 +46,7 @@ const skillCategories = [
       { name: 'CSS', image: cssLogo },
       { name: 'HTML', image: htmlLogo },
       { name: 'jQuery', image: jqueryLogo },
+      { name: 'Astro', image: astroLogo },
     ],
   },
   {

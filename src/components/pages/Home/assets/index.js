@@ -28,3 +28,4 @@ export { default as resendLogo } from './logo_resend.svg';
 export { default as vuetifyLogo } from './logo_vuetify.svg';
 export { default as clerkLogo } from './logo_clerk.svg';
 export { default as nginxLogo } from './logo_nginx.svg';
+export { default as astroLogo } from './logo_astro.svg';
