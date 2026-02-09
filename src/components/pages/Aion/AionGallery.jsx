@@ -3,6 +3,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import barbaraGarciaImage from '../Home/assets/img-barbara.webp';
 import littleLemonImage from '../Home/assets/logo_litle_lemon.webp';
+import seaImage from '../../layout/assets/img_sea.webp';
 
 import './aion.css';
 
@@ -19,6 +20,17 @@ const AionGallery = () => {
   const projects = [
     {
       id: 1,
+      name: 'SEA Traduction',
+      description:
+        'Traductrice professionnelle en français, espagnol et italien. Services de traduction, interprétation et cours de langue.',
+      industry: 'Curture',
+      url: 'https://landing-sabrina.pages.dev/',
+      image: seaImage,
+      isImageUrl: true,
+      color: '#fed7aa',
+    },
+    {
+      id: 2,
       name: 'Bárbara García Torres',
       description:
         'Professional website for lactation support and physiotherapy services, offering personalized care for babies and parents, including postnatal recovery, pelvic floor rehabilitation, and overall family well-being.',
@@ -29,7 +41,7 @@ const AionGallery = () => {
       color: '#F4A261',
     },
     {
-      id: 2,
+      id: 3,
       name: 'Little Lemon',
       description: `Project for Meta Front-end developer program on Coursera,
       which contains a detailed and responsive website with table-booking
