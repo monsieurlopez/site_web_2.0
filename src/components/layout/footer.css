@@ -6,8 +6,8 @@
   height: auto;
   display: grid;
   gap: 2rem;
-  justify-content: space-evenly;
-  grid-template-columns: repeat(2, minmax(6rem, max-content));
+  justify-content: space-around;
+  grid-template-columns: repeat(3, minmax(6rem, max-content));
   border-top: 0.1rem solid #272e2e;
 }
 
@@ -15,6 +15,12 @@
   display: flex;
   align-items: center;
 }
+
+.site-footer-conditions {
+  display: flex;
+  align-items: center;
+}
+
 
 .logo {
   width: 8rem;

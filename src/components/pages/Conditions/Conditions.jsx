@@ -72,10 +72,8 @@ export const Conditions = () => {
       </h3>
       <p>
         At any time, you can restrict the collection or use of personal
-        information provided to our website. Each time you are asked to fill out
-        a form, such as user registration, you can check or uncheck the option
-        to receive information by email. If you have marked the option to
-        receive our newsletter or advertising, you can cancel it at any time.
+        information provided to our website. To consult, delete, or modify your
+        personal data, you must write to contact@serlopez.com.
       </p>
       <p>
         This site web will not sell, assign, or distribute personal information
@@ -85,6 +83,9 @@ export const Conditions = () => {
       <p>
         Sergio López reserves the right to change the terms of this Privacy
         Policy at any time.
+      </p>
+      <p>
+        <strong>Last updated: February 2026</strong>
       </p>
     </section>
   );
