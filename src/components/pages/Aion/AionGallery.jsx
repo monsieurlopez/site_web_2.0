@@ -22,9 +22,9 @@ const AionGallery = () => {
       id: 1,
       name: 'SEA Traduction',
       description:
-        'Traductrice professionnelle en français, espagnol et italien. Services de traduction, interprétation et cours de langue.',
+        'Professional translator and interpreter in French, Spanish, and Italian. Translation, interpreting, and language training services.',
       industry: 'Curture',
-      url: 'https://landing-sabrina.pages.dev/',
+      url: 'https://www.seatraduction.com/',
       image: seaImage,
       isImageUrl: true,
       color: '#fed7aa',
