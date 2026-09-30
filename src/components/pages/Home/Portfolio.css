@@ -222,6 +222,11 @@
   color: #831843;
 }
 
+.status-Maintenance {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .portfolio-section {

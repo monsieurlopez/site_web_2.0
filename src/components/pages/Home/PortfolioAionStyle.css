@@ -126,6 +126,11 @@
   color: #92400e;
 }
 
+.status-Maintenance {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
 /* Tags */
 .portfolio-project-tags {
   display: flex;
