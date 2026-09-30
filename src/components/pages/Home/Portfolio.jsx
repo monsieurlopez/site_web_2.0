@@ -31,7 +31,7 @@ const featuredProjects = [
       'Clerk',
     ],
     type: 'Personal',
-    status: 'Online',
+    status: 'Maintenance',
     demo: false, // Link disabled: site is currently down
     githubPrive: true,
     color: '#8B5CF6',
