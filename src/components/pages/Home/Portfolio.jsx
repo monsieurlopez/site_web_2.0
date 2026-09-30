@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import findyourapiImage from './assets/img-findyourapi.webp';
 import cryptoworldImage from './assets/img-cryptoworld.webp';
-import insidersPulseImage from './assets/img-insiderspulse.webp';
+// import insidersPulseImage from './assets/img-insiderspulse.webp'; // Project currently not in use (commented out below)
 import euroratesImage from './assets/img-eurorates.webp';
 import './Portfolio.css';
 import './PortfolioAionStyle.css';
@@ -32,7 +32,7 @@ const featuredProjects = [
     ],
     type: 'Personal',
     status: 'Online',
-    demo: true,
+    demo: false, // Link disabled: site is currently down
     githubPrive: true,
     color: '#8B5CF6',
   },
@@ -60,30 +60,30 @@ const featuredProjects = [
     githubPrive: false,
     color: '#1e40af',
   },
-  {
-    id: 3,
-    name: 'Insiders Pulse',
-    logo: insidersPulseImage,
-    url: 'https://insiderspulse.com/',
-    github: '',
-    description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
-    badges: [
-      'Nodejs',
-      'Express',
-      'React',
-      'TypeScript',
-      'Tailwind',
-      'ChakraUI',
-      'Postgresql',
-      'Resend',
-      'Google Cloud',
-    ],
-    type: 'Personal',
-    status: 'Working',
-    demo: true,
-    githubPrive: true,
-    color: '#f4ce14',
-  },
+//   {
+//     id: 3,
+//     name: 'Insiders Pulse',
+//     logo: insidersPulseImage,
+//     url: 'https://insiderspulse.com/',
+//     github: '',
+//     description: `Web platform designed for track insider trades and ownership changes from EDGAR in real time.`,
+//     badges: [
+//       'Nodejs',
+//       'Express',
+//       'React',
+//       'TypeScript',
+//       'Tailwind',
+//       'ChakraUI',
+//       'Postgresql',
+//       'Resend',
+//       'Google Cloud',
+//     ],
+//     type: 'Personal',
+//     status: 'Working',
+//     demo: true,
+//     githubPrive: true,
+//     color: '#f4ce14',
+//   },
   {
     id: 4,
     name: 'Cryptoworld',
